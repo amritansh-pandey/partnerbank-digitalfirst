@@ -75,75 +75,110 @@ body {
   font-family: "MarkforMC";
 }
 
+button {
+  font-family: "MarkforMC";
+}
+
+input {
+  font-family: "MarkforMC";
+}
+
 .headline1 {
   font-family: "MarkforMC";
   font-weight: 300;
   font-size: 28px;
+  color: var(--primary-text);
 }
 
 .headline2 {
   font-family: "MarkforMC";
   font-weight: 500;
   font-size: 28px;
+  color: var(--primary-text);
 }
 
 .heading {
   font-family: "MarkforMC";
   font-weight: 400;
   font-size: 18px;
+  color: var(--primary-text);
 }
 
 .title1 {
   font-family: "MarkforMC";
   font-weight: 500;
-  font-size: 20px;
+  font-size: 24px;
+  color: var(--primary-text);
 }
 
 .title2 {
   font-family: "MarkforMC";
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--primary-text);
 }
 
 .body1 {
   font-family: "MarkforMC";
   font-weight: 400;
   font-size: 14px;
+  color: var(--primary-text);
 }
 
 .body2 {
   font-family: "MarkforMC";
   font-weight: 500;
   font-size: 14px;
+  color: var(--primary-text);
 }
 
 .subheading1 {
   font-family: "MarkforMC";
   font-weight: 400;
   font-size: 16px;
+  color: var(--primary-text);
 }
 
 .subheading2 {
   font-family: "MarkforMC";
   font-weight: 500;
   font-size: 16px;
+  color: var(--primary-text);
 }
 
 .caption {
   font-family: "MarkforMC";
   font-weight: 400;
   font-size: 12px;
+  color: var(--primary-text);
 }
 
 .regular-narrow {
   font-family: "MarkforMCNarrow";
   font-weight: 400;
+  color: var(--primary-text);
 }
 
 .medium-narrow {
   font-family: "MarkforMCNarrow";
   font-weight: 500;
+  color: var(--primary-text);
 }
+
+
+/* Icon */
+
+.icon24 {
+  width: 24px;
+  height: 24px;
+}
+
+/* Page Container */
+.page-container {
+  background: var(--primary-surface);
+  height: 100vh;
+}
+
 /* Dynamic Color Variables */
 
 /* PartnerBank - Light mode */
@@ -198,6 +233,7 @@ body {
   --primary-text: #212121;
   --secondary-text: #6e6e6e;
   --white-text: #ffffff;
+  --white-button-text: #18a886;
 
   /* Neutral colors */
   --black: #000000;
@@ -291,6 +327,7 @@ body {
  --primary-text: #f8f8f8;
  --secondary-text: #e1e1e1;
  --white-text: #ffffff;
+ --white-button-text: #141414;
 
  /* Neutral colors */
  --black: #000000;
@@ -377,6 +414,8 @@ body {
   --primary-text: #212121;
   --secondary-text: #6e6e6e;
   --white-text: #ffffff;
+  --white-button-text: #cf4500;
+  
 
   /* Neutral colors */
   --black: #000000;

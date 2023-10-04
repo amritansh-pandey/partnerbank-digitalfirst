@@ -38,42 +38,6 @@
   </div>
 </div>
 
-<div>
-  <div className="color pallete primary"></div>
-</div>
-</div>
 
 
 
-import "./style.css";
-import React, {useState, useEffect} from 'react'
-
-const brands = [
-    { name: 'partnerbank', themes: ['light', 'dark'] },
-    { name: 'bankpathy', themes: ['light'] },
-];
-
-
-   
-
-function Splash() {
-    const [selectedBrand, setSelectedBrand] = useState('partnerbank');
-    const [selectedTheme, setSelectedTheme] = useState('light'); // Default theme
-
-   
-    
-    const handleThemeChange = () => {
-        // Toggle between 'light' and 'dark' themes
-        setSelectedTheme((currentTheme) =>
-            currentTheme === 'light' ? 'dark' : 'light'
-        );
-    };
-    return (
-        <div className="splash-background" id="splash" data-brand={selectedBrand} data-theme={selectedTheme}>
-            <h1>Splash</h1>
-            <button onClick={handleThemeChange}>Toggle</button>
-        </div>
-    )
-}
-
-export default Splash;

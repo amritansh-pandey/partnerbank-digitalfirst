@@ -1,0 +1,77 @@
+.text-button-medium {
+  border: none;
+  padding: 0 32px;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+  border-radius: 50px;
+  height: 40px;
+  margin: 16px auto;
+  background: transparent;
+  text-align: center;
+}
+
+.text-button-small {
+    border: none;
+    padding: 0 16px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    border-radius: 50px;
+    height: 34px;
+    background: transparent;
+    text-align: center;
+  }
+
+.white-button-medium {
+  border: none;
+  padding: 0 32px;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+  border-radius: 50px;
+  height: 40px;
+  margin: 16px auto;
+  background: var(--white);
+  text-align: center;
+}
+
+.primary-button-medium {
+    border: none;
+    padding: 0 32px;
+    cursor: pointer;
+    font-size: 16px;
+    white-space: nowrap;
+    border-radius: 50px;
+    height: 40px;
+    margin: 16px auto;
+    background: var(--primary-gradient);
+    text-align: center;
+  }
+
+.button-text-white {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.button-text-black {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.button-text-primary-gradient {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.button-text-primary {
+  color: var(--white-button-text);
+  font-weight: 600;
+}
+
+
+.button-left-icon {
+}
+
+.button-right-icon {
+}

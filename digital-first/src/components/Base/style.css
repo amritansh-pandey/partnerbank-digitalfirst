@@ -1,0 +1,21 @@
+.gradiendt-base-container {
+    background: var(--gradient-surface);
+    height: 250px;
+    padding: 16px;
+}
+
+.primary-base-container {
+    background: var(--secondary-surface);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 25%;
+    height: 42px;
+    height: 600px;
+  
+    padding: 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+}

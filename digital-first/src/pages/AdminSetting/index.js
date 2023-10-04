@@ -14,7 +14,7 @@ function AdminSetting({ onSelectBrand, onSelectTheme }) {
     useEffect(() => {
         onSelectBrand(selectedBrand.name)
         onSelectTheme(selectedTheme)
-    }, [selectedBrand, selectedTheme])
+    })
 
     useEffect(() => {
         // When the component mounts or when the selectedBrand changes, set the theme to 'light' for 'Partner Bank'.
