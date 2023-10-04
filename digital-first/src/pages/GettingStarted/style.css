@@ -1,0 +1,57 @@
+
+.getting-started-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  
+
+  
+  .getting-started-title-container {
+    text-align: center;
+    width: 80%;
+    height: 64px;
+  }
+  
+
+  .getting-started-image-container {
+    text-align: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  
+  .getting-started-body-container {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 16px;
+    height: 64px;
+  }
+  
+  .getting-started-caption-container {
+    text-align: center;
+    width: 90%;
+    margin-bottom: 16px;
+    height: 64px;
+  }
+  .intro-indicator-container {
+    text-align: center;
+    width: 60%;
+  }
+  
+  .getting-started-button-container {
+    text-align: center;
+    width: 60%;
+  }
+  
+
+  
+  .getting-started-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8vh;
+  }
+  

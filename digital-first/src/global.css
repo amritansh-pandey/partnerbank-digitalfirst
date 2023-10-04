@@ -179,6 +179,11 @@ input {
   height: 100vh;
 }
 
+.highlighted {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
 /* Dynamic Color Variables */
 
 /* PartnerBank - Light mode */
