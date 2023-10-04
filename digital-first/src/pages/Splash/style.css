@@ -1,0 +1,12 @@
+@import '../../global.css';
+
+.splash-background {
+    background: var(--gradient-surface); 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

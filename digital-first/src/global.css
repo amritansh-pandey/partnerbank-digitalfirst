@@ -1,3 +1,5 @@
+
+
 /* Fonts */
 
 /* Mark for MC */
@@ -142,11 +144,11 @@ body {
   font-family: "MarkforMCNarrow";
   font-weight: 500;
 }
-
 /* Dynamic Color Variables */
 
 /* PartnerBank - Light mode */
-:root[data-brand="partnerbank"][data-theme="light"] {
+
+#theme[data-brand="partnerbank"][data-theme="light"] {
   /* Primary */
   --primary-color: #18a886;
   --primary-tint20: #7eccb7;
@@ -180,6 +182,7 @@ body {
   --primary-surface: #ffffff;
   --secondary-surface: #f8f8f8;
   --tertiary-surface: #f1f1f1;
+  --gradient-surface: linear-gradient(180deg, #18a886 0%, #2baab9 100%);
 
   /* Dividers */
   --divider-on-primary: #e1e1e1;
@@ -236,99 +239,100 @@ body {
   --chart-color-8: #f960a6;
 }
 
-/* PartnerBank - Dark mode */
-:root[data-brand="partnerbank"][data-theme="dark"] {
-  /* Primary */
-  --primary-color: #5fdbb6;
-  --primary-tint20: #a4e9d3;
-  --primary-tint30: #daf7ee;
-  --primary-tint40: #daf7ee;
-  --primary-shade10: #0c9b86;
-  --primary-shad20: #00513f;
 
-  /* Secondary */
-  --secondary-color: #4ed8ea;
-  --secondary-tint20: #82e4f0;
-  --secondary-tint30: #82e4f0;
-  --secondary-tint40: #e1f8fc;
-  --secondary-shade10: #0da6c6;
-  --secondary-shad20: #004f57;
 
-  /* Primary gradient */
-  --primary-gradient: linear-gradient(180deg, #5fdbb6 0%, #4ed8ea 100%);
-  --primary-gradient-tint20: linear-gradient(180deg, #a4e9d3 0%, #82e4f0 100%);
-  --primary-gradient-tint30: linear-gradient(180deg, #daf7ee 0%, #b4eef6 100%);
-  --primary-gradient-tint40: linear-gradient(180deg, #daf7ee 0%, #b4eef6 100%);
-  --primary-gradient-shade10: linear-gradient(180deg, #0c9b86 0%, #0da6c6 100%);
-  --primary-gradient-shad20: linear-gradient(
-    180deg,
-    #00513f 0%,
-    #2baab9 100%,
-    #004f57 100%
-  );
+#theme[data-brand="partnerbank"][data-theme="dark"] {
+ /* Primary */
+ --primary-color: #5fdbb6;
+ --primary-tint20: #a4e9d3;
+ --primary-tint30: #daf7ee;
+ --primary-tint40: #daf7ee;
+ --primary-shade10: #0c9b86;
+ --primary-shad20: #00513f;
 
-  /* Surface */
-  --primary-surface: #141414;
-  --secondary-surface: #212121;
-  --tertiary-surface: #292929;
+ /* Secondary */
+ --secondary-color: #4ed8ea;
+ --secondary-tint20: #82e4f0;
+ --secondary-tint30: #82e4f0;
+ --secondary-tint40: #e1f8fc;
+ --secondary-shade10: #0da6c6;
+ --secondary-shad20: #004f57;
 
-  /* Dividers */
-  --divider-on-primary: #404040;
-  --divider-on-secondary: #6e6e6e;
+ /* Primary gradient */
+ --primary-gradient: linear-gradient(180deg, #5fdbb6 0%, #4ed8ea 100%);
+ --primary-gradient-tint20: linear-gradient(180deg, #a4e9d3 0%, #82e4f0 100%);
+ --primary-gradient-tint30: linear-gradient(180deg, #daf7ee 0%, #b4eef6 100%);
+ --primary-gradient-tint40: linear-gradient(180deg, #daf7ee 0%, #b4eef6 100%);
+ --primary-gradient-shade10: linear-gradient(180deg, #0c9b86 0%, #0da6c6 100%);
+ --primary-gradient-shad20: linear-gradient(
+   180deg,
+   #00513f 0%,
+   #2baab9 100%,
+   #004f57 100%
+ );
 
-  /* Disabled */
-  --disabled-state: #404040;
+ /* Surface */
+ --primary-surface: #141414;
+ --secondary-surface: #212121;
+ --tertiary-surface: #292929;
+ --gradient-surface: linear-gradient(180deg, #141414 0%, #404040 100%);
 
-  /* Icons */
-  --icons: #c8c8c8;
+ /* Dividers */
+ --divider-on-primary: #404040;
+ --divider-on-secondary: #6e6e6e;
 
-  /* Text */
-  --primary-text: #f8f8f8;
-  --secondary-text: #e1e1e1;
-  --white-text: #ffffff;
+ /* Disabled */
+ --disabled-state: #404040;
 
-  /* Neutral colors */
-  --black: #000000;
-  --grey-950: #141414;
-  --grey-900: #212121;
-  --grey-800: #292929;
-  --grey-700: #303030;
-  --grey-600: #404040;
-  --grey-500: #6e6e6e;
-  --grey-400: #919191;
-  --grey-300: #acacac;
-  --grey-200: #c8c8c8;
-  --grey-100: #e1e1e1;
-  --grey-50: #f1f1f1;
-  --grey-25: #f8f8f8;
-  --white: #ffffff;
+ /* Icons */
+ --icons: #c8c8c8;
 
-  /* Message */
-  --success-text: #99f984;
-  --warning-text: #ffdf98;
-  --error-text: #ffdad4;
+ /* Text */
+ --primary-text: #f8f8f8;
+ --secondary-text: #e1e1e1;
+ --white-text: #ffffff;
 
-  --success-container: #005301;
-  --warning-container: #5a4300;
-  --error-container: #930100;
+ /* Neutral colors */
+ --black: #000000;
+ --grey-950: #141414;
+ --grey-900: #212121;
+ --grey-800: #292929;
+ --grey-700: #303030;
+ --grey-600: #404040;
+ --grey-500: #6e6e6e;
+ --grey-400: #919191;
+ --grey-300: #acacac;
+ --grey-200: #c8c8c8;
+ --grey-100: #e1e1e1;
+ --grey-50: #f1f1f1;
+ --grey-25: #f8f8f8;
+ --white: #ffffff;
 
-  --success-icon: #7edc6b;
-  --warning-icon: #f6be11;
-  --error-icon: #ffb4a8;
+ /* Message */
+ --success-text: #99f984;
+ --warning-text: #ffdf98;
+ --error-text: #ffdad4;
 
-  /* Chart Colors */
-  --chart-color-1: #93d4dc;
-  --chart-color-2: #ffcb85;
-  --chart-color-3: #b2e092;
-  --chart-color-4: #92c3f0;
-  --chart-color-5: #ffa268;
-  --chart-color-6: #cba0e8;
-  --chart-color-7: #e58ea2;
-  --chart-color-8: #ffabd1;
+ --success-container: #005301;
+ --warning-container: #5a4300;
+ --error-container: #930100;
+
+ --success-icon: #7edc6b;
+ --warning-icon: #f6be11;
+ --error-icon: #ffb4a8;
+
+ /* Chart Colors */
+ --chart-color-1: #93d4dc;
+ --chart-color-2: #ffcb85;
+ --chart-color-3: #b2e092;
+ --chart-color-4: #92c3f0;
+ --chart-color-5: #ffa268;
+ --chart-color-6: #cba0e8;
+ --chart-color-7: #e58ea2;
+ --chart-color-8: #ffabd1;
 }
 
-/* Bankpathy - Light mode */
-:root[data-brand="bankpathy"][data-theme="light"] {
+#theme[data-brand="bankpathy"][data-theme="light"] {
   /* Primary */
   --primary-color: #cf4500;
   --primary-tint20: #f88a5d;
@@ -342,13 +346,12 @@ body {
   --primary-gradient-tint20: #f88a5d;
   --primary-gradient-tint30: #faaa8b;
   --primary-gradient-tint40: #fccbb9;
-  --primary-gradient-shade10:: #dd4c03;
+  --primary-gradient-shade10: #dd4c03;
   --primary-gradient-shad20: #b73800;
-
 
   /* Secondary */
   --secondary-color: #f79f1b;
-  --secondary-tint20:#fad356;
+  --secondary-tint20: #fad356;
   --secondary-tint30: #fbde86;
   --secondary-tint40: #fdebb5;
   --secondary-shade10: #f68f19;
@@ -358,6 +361,7 @@ body {
   --primary-surface: #ffffff;
   --secondary-surface: #f8f8f8;
   --tertiary-surface: #f1f1f1;
+  --gradient-surface: linear-gradient(to bottom,  #cf4500, #f79f1b);
 
   /* Dividers */
   --divider-on-primary: #e1e1e1;
