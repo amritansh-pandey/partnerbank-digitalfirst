@@ -1,5 +1,5 @@
 import React from "react";
-import PartnerBankWhite from '../../assets/images/PartnerBank/Light/logo-light.png'
+import PartnerBankWhite from '../../assets/images/partnerbank/light/logo-light.png'
 import { Link } from "react-router-dom";
 import TextButtonMedium from "../../components/Buttons/TextButtonMedium";
 import WhiteButtonMedium from "../../components/Buttons/WhiteButtonMedium";
@@ -34,13 +34,3 @@ function Splash() {
 }
 
 export default Splash;
-
-
-
-
-
-
-
-
-
-

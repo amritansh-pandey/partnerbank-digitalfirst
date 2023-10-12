@@ -7,13 +7,14 @@ const brands = [
     { name: 'bankpathy', themes: ['light'] },
 ];
 
-function AdminSetting({ onSelectBrand, onSelectTheme }) {
+function AdminSetting({ onSelectBrand, onSelectTheme, onSelectLang }) {
     const [selectedBrand, setSelectedBrand] = useState(brands[0]);
     const [selectedTheme, setSelectedTheme] = useState('light'); // Default theme
-
+    const [selectedLang, setSelectedLang] = useState('US (English)');
     useEffect(() => {
         onSelectBrand(selectedBrand.name)
         onSelectTheme(selectedTheme)
+        onSelectLang(selectedLang)
     })
 
     useEffect(() => {
@@ -39,9 +40,31 @@ function AdminSetting({ onSelectBrand, onSelectTheme }) {
         );
     };
 
+    const handleLangChange = (e) => {
+console.log(e.target.value);
+        setSelectedLang(e.target.value);
+    };
     return (
         <div className="admin-settings">
             <h1>Admin Settings</h1>
+
+            <div className="lang-selector">
+                <h2>Select a Language:</h2>
+                <div className="radio-buttons">
+                    {["US (English)", "French"].map((lang) => (
+                        <label key={lang}>
+                            <input
+                                type="radio"
+                                value={lang}
+                                checked={selectedLang && selectedLang === lang}
+                                onChange={handleLangChange}
+                            />
+                            {lang}
+                        </label>
+                    ))}
+                </div>
+            </div>
+
             <div className="brand-selector">
                 <h2>Select a Brand:</h2>
                 <div className="radio-buttons">
@@ -77,7 +100,7 @@ function AdminSetting({ onSelectBrand, onSelectTheme }) {
                         </>
                     )}
                     <Link to="/" style={{ textDecoration: "none" }}>
-                     Confirm
+                        Confirm
                     </Link>
                 </div>
             )}

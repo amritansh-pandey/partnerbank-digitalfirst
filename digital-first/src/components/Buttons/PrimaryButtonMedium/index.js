@@ -5,7 +5,7 @@ import '../style.css';
 
 const PrimaryButtonMedium = ({ text, leftIcon, rightIcon }) => {
     return (
-        <button className="primary-button-medium button-text-white ">
+        <button className="primary-button-medium button-text">
         {leftIcon && <span className="button-left-icon">{leftIcon}</span>}
         {text}
         {rightIcon && <span className="button-right-icon">{rightIcon}</span>}

@@ -54,17 +54,22 @@
   font-weight: 600;
 }
 
+.button-text {
+  color: var(--button-text);
+  font-weight: 600;
+}
+
 .button-text-black {
   color: var(--black);
   font-weight: 600;
 }
 
-.button-text-primary-gradient {
+.button-text-primary{
   color: var(--primary-color);
   font-weight: 600;
 }
 
-.button-text-primary {
+.white-button-text-primary {
   color: var(--white-button-text);
   font-weight: 600;
 }

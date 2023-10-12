@@ -25,33 +25,26 @@
   .getting-started-body-container {
     text-align: center;
     width: 80%;
-    margin-bottom: 16px;
+    margin: auto;
+    margin-bottom: 24px;
     height: 64px;
   }
   
   .getting-started-caption-container {
-    text-align: center;
-    width: 90%;
-    margin-bottom: 16px;
+   display: flex;
+   justify-content: center;
+    width: 80%;
+    margin: auto;
     height: 64px;
   }
-  .intro-indicator-container {
-    text-align: center;
-    width: 60%;
-  }
-  
-  .getting-started-button-container {
-    text-align: center;
-    width: 60%;
-  }
-  
+ 
+
 
   
-  .getting-started-main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .getting-started-container {
     flex-direction: column;
-    padding-top: 8vh;
+    justify-content: center;
+    text-align: center;
+    display: flex;
   }
   

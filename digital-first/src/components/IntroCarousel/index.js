@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
-import Intro1 from '../../assets/images/PartnerBank/Light/intro1.png';
-import Intro2 from '../../assets/images/PartnerBank/Light/intro2.png';
-import Intro3 from '../../assets/images/PartnerBank/Light/intro3.png';
+import { importImage } from '../../utils';
+// import Intro1 from '../../assets/images/partnerbank/light/intro1.png';
+import Intro2 from '../../assets/images/partnerbank/light/intro2.png';
+import Intro3 from '../../assets/images/partnerbank/light/intro3.png';
 import TextButtonSmall from '../Buttons/TextButtonSmall';
+import data from '../../assets/data/data.json';
 
-const IntroCarousel = () => {
+const IntroCarousel = ({brand, theme, lang="en"}) => {
   const carouselData = [
     {
-      heading: 'No hanging around, go digital',
-      image: Intro1,
-      text: 'Why wait for a card to arrive? Apply and start using your new digital debit card right away.',
+      heading: data['carousel-intro1-heading'][lang],
+      image: importImage(brand, theme, "intro1"),
+      text: data['carousel-intro1-text'][lang]
     },
     {
       heading: 'Take charge of your card',
@@ -74,14 +76,14 @@ const IntroCarousel = () => {
               </button>
             </Link>
           ) : (
-            <button className='primary-button-medium button-text-white' onClick={nextSlide}>Next</button>
+            <button className='primary-button-medium button-text' onClick={nextSlide}>Next</button>
           )}
         </div>
 
         <div >
           <span className='body1'> Existing user?</span>
           <Link to="/login-faceid" style={{ textDecoration: "none" }}>
-            <button className='text-button-small button-text-primary-gradient space8'>
+            <button className='text-button-small button-text-primary space8'>
               Log in
             </button>
           </Link>

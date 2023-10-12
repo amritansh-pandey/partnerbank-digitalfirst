@@ -5,3 +5,9 @@
 .home-logo-white {
     height: 24px;
 }
+
+
+.custom-icon {
+    /* Set the default color using a CSS variable */
+    --icon-color: rgb(230, 19, 19);
+  }

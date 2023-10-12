@@ -1,0 +1,30 @@
+.enter-detail-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 24px;
+}
+
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 40% 0;
+}
+
+/* 
+.form-phone-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.country-container {
+  flex: 2;
+}
+
+.phone-container {
+  flex: 8;
+} */
