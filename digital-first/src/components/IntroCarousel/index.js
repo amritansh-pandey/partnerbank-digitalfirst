@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
 import { importImage } from '../../utils';
-// import Intro1 from '../../assets/images/partnerbank/light/intro1.png';
-import Intro2 from '../../assets/images/partnerbank/light/intro2.png';
-import Intro3 from '../../assets/images/partnerbank/light/intro3.png';
 import TextButtonSmall from '../Buttons/TextButtonSmall';
 import data from '../../assets/data/data.json';
 
@@ -16,14 +13,14 @@ const IntroCarousel = ({brand, theme, lang="en"}) => {
       text: data['carousel-intro1-text'][lang]
     },
     {
-      heading: 'Take charge of your card',
-      image: Intro2,
-      text: 'Control card access and settings straight from your smartphone, anywhere, anytime.',
+      heading: data['carousel-intro2-heading'][lang],
+      image: importImage(brand, theme, "intro2"),
+      text: data['carousel-intro2-text'][lang]
     },
     {
-      heading: 'Zero fees',
-      image: Intro3,
-      text: 'Seamless transactions, zero Fees. Your Money, your freedom.',
+      heading: data['carousel-intro3-heading'][lang],
+      image: importImage(brand, theme, "intro3"),
+      text: data['carousel-intro3-text'][lang]
     },
   ];
 
@@ -71,7 +68,7 @@ const IntroCarousel = ({brand, theme, lang="en"}) => {
         <div className="carousel-controls">
           {currentSlide === carouselData.length - 1 ? (
             <Link to="/getting-started" style={{ textDecoration: "none" }}>
-              <button className='primary-button-medium button-text-white'>
+              <button className='primary-button-medium button-text'>
                 Continue
               </button>
             </Link>

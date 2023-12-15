@@ -1,0 +1,19 @@
+.intruction-container {
+display: flex;
+flex-direction: column;
+gap: 16px;
+justify-content: center;
+margin-top: 64px;
+}
+
+.intruction-image-container {
+text-align: center;
+margin: 0 auto;
+}
+.photo-id {
+    width: 30%;
+}
+
+.record-video {
+    width: 30%;
+}

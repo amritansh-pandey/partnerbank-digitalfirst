@@ -1,0 +1,91 @@
+.monthly_text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.graph_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.graph {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar1 {
+  border-radius: 1.4px;
+  opacity: 0.5;
+  background-color: var(--primary-color);
+  width: 12px;
+  height: 40px;
+  border-bottom: 1px solid var(--grey-50);
+  margin-bottom: 0px;
+  margin-right: 6px;
+}
+
+.bar2 {
+  border-radius: 1.4px;
+  opacity: 0.3;
+  background-color: var(--primary-color);
+  width: 12px;
+  height: 56px;
+  border-bottom: 1px solid var(--grey-50);
+  margin-bottom: 14px;
+  margin-right: 6px;
+}
+.bar3 {
+  border-radius: 1.4px;
+  opacity: 0.7;
+  background-color: var(--primary-color);
+  width: 12px;
+  height: 60px;
+  border-bottom: 1px solid var(--grey-50);
+  margin-right: 6px;
+  margin-bottom: 17px;
+}
+.bar4 {
+  border-radius: 1.4px;
+  opacity: 0.2;
+  background-color: var(--primary-color);
+  width: 12px;
+  height: 50px;
+  border-bottom: 1px solid var(--grey-50);
+  margin-right: 6px;
+  margin-bottom: 8px;
+}
+.bar5 {
+  border-radius: 1.4px;
+  opacity: 0.8;
+  background-color: var(--primary-color);
+  width: 12px;
+  height: 46px;
+  border-bottom: 1px solid var(--grey-50);
+  margin-bottom: 6px;
+}
+
+.month {
+ display: flex;
+ gap: 6px;
+ flex-direction: row;
+ margin-top: -12px;
+ text-align: center;
+ margin-right: 6px;
+}
+
+.month_text {
+  font-size: 10px;
+  color: var(--grey-300);
+ 
+}
+
+.graph_month {
+    display: flex;
+    flex-direction: column;
+}

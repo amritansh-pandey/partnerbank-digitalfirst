@@ -7,19 +7,19 @@ function TextField({ label, value, onChange }) {
     <div className="textfield-container">
 
 
-<div class="input-container">
-  <input
-    type="text"
-    id="fname"
-    name="fname"
-    value=""
-    aria-labelledby="label-fname"
-  />
-  <label class="label" for="fname" id="label-fname">
-    <div class="text">First Name</div>
-  </label>
-</div>
-
+      <div class="input-container">
+        <input
+          type="text"
+          id={label}
+          name={label}
+          value={value}
+          aria-labelledby={`label-${label}`}
+        />
+      <label class="label" for={label} id={`label-${label}`}> 
+          <div class="text">{label}</div> 
+        </label>
+      </div>
+ 
 
     </div>
   )

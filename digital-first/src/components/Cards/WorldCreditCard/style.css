@@ -1,0 +1,12 @@
+.world_card_image {
+   height: 100px; 
+}
+
+.world_card_text_container {
+    justify-content: center;
+    align-items: left;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    text-align: left;
+}

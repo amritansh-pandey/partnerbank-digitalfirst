@@ -6,15 +6,11 @@
   margin: 0 24px;
 }
 
-
-
 .form-container {
   display: flex;
   flex-direction: column;
-  margin: 40% 0;
 }
 
-/* 
 .form-phone-container {
   display: flex;
   flex-direction: row;
@@ -22,9 +18,9 @@
 }
 
 .country-container {
-  flex: 2;
+  flex: 3;
 }
 
 .phone-container {
-  flex: 8;
-} */
+  flex: 7;
+}

@@ -1,0 +1,27 @@
+.top-navigation-container2 {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.09);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-bottom: 32px;
+}
+
+.left-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.page-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.right-icon {
+  width: 24px;
+  height: 24px;
+}

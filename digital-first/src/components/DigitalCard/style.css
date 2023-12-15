@@ -1,0 +1,85 @@
+.digital_card {
+    height: 100%;
+    width: 295px;
+    background: var( --primary-gradient);
+    text-align: left;
+    border-radius: 20px;
+    padding-top: 16px;
+    box-shadow: rgba(52, 52, 52, 0.2) 0px 2px 8px 0px;
+}
+
+.balance_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 16px;
+}
+
+
+.white_card_text {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.white_card_title {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.white_bold {
+    color: var(--white);
+    font-weight: 800;
+}
+
+.logo24 {
+    height: 20px;
+    width: auto;
+    margin-bottom: 12px;
+}
+
+.white_bg {
+    height: 48px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0 16px;
+}
+
+.amount_container {
+    margin: 8px 0;
+}
+
+.amount_text_container {
+    margin: 0px 16px;
+}
+
+
+
+.card_detail_container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.card_button_text_container {
+   display: flex;
+   align-items: center;
+}
+
+
+
+.logo16 {
+    height: 16px;
+    padding-top: 4px;
+}
+
+.chevron-container {
+display: flex;
+align-items: center;
+}

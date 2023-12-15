@@ -1,0 +1,48 @@
+
+.getting-started-image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .getting-started-title-container {
+    text-align: center;
+    width: 80%;
+    height: 64px;
+  }
+  
+
+  .getting-started-image-container {
+    text-align: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  
+  .scan-photo-id-body-container {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 24px;
+    height: 72px;
+  }
+  
+  .scan-photo-id-caption-container{
+   display: flex;
+   justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 16px;
+  }
+
+  .getting-started-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+  }
+  
+
+  
+  .slide-enter {
+    transform: translateX(100%);
+  }

@@ -8,6 +8,14 @@ import Page404 from './pages/404Page';
 import AdminSetting from './pages/AdminSetting';
 import NewHomePage from './pages/NewHomePage';
 import EnterDetails from './pages/EnterDetails';
+import Authentication from './pages/Authentication';
+import ScanInstruction from './pages/ScanInstruction';
+import ScanPhotoID from './pages/ScanPhotoID';
+import CameraScanID from './pages/CameraScanID';
+import HomeAddress from './pages/HomeAddress';
+import VideoSelfieRecording from './pages/VideoSelfieRecording';
+import VideoSelfieCamera from './pages/VideoSelfieCamera';
+import Transactions from './pages/Transactions';
 
 function AppRoutes() {
   // Define your brands array here
@@ -37,7 +45,8 @@ function AppRoutes() {
   return (
     <div id="theme" data-brand={selectedBrand} data-theme={selectedTheme} >
       <Routes >
-        <Route path="/" element={<Splash />} /> {/* Default route for Splash */}
+        <Route path="/" element={<Splash brand={selectedBrand}
+          theme={selectedTheme} lang={selectedLang} />} /> 
 
         <Route
           path="/admin-setting"
@@ -57,9 +66,22 @@ function AppRoutes() {
         <Route path="/intro" element={<Intro brand={selectedBrand}
           theme={selectedTheme} lang={selectedLang} />} />
         <Route path="/login-faceid" element={<LoginFaceID />} />
-        <Route path="/getting-started" element={<GettingStarted />} />
+        <Route path="/getting-started" element={<GettingStarted brand={selectedBrand}
+          theme={selectedTheme} lang={selectedLang} />} />
         <Route path="/enter-detail" element={<EnterDetails />} />
-        <Route path="/new-homepage" element={<NewHomePage />} />
+        <Route path="/authentication" element={<Authentication />} />
+        <Route path="/scan-instructions" element={<ScanInstruction brand={selectedBrand}
+          theme={selectedTheme} lang={selectedLang} />} />
+        <Route path="/scan-photo-id" element={<ScanPhotoID brand={selectedBrand}
+          theme={selectedTheme} lang={selectedLang} />} />
+        <Route path="/camera-photo-id" element={<CameraScanID />} />
+        <Route path="/transactions" element={<Transactions />} />
+        <Route path="/home-address" element={<HomeAddress />} />
+        <Route path="/new-home" element={<NewHomePage brand={selectedBrand}
+          theme={selectedTheme} lang={selectedLang} />} />
+           <Route path="/video-selfie" element={<VideoSelfieRecording brand={selectedBrand}
+          theme={selectedTheme} lang={selectedLang} />} />
+           <Route path="/video-selfie-camera" element={<VideoSelfieCamera />} />
         <Route path="404" element={<Page404 />} />
         {/* Redirect to the brand and theme selector if the route doesn't match */}
         <Route path="*" element={<Navigate to="/admin-setting" />} />

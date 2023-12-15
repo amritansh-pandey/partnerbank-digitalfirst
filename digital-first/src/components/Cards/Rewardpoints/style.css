@@ -1,0 +1,8 @@
+.reward_image {
+    height: 80px;
+}
+
+.reward_space {
+    justify-content: left;
+    gap: 36px;
+}

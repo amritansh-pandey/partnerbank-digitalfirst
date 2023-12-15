@@ -1,6 +1,6 @@
 .gradiendt-base-container {
     background: var(--gradient-surface);
-    height: 250px;
+    height: 150px;
     padding: 16px;
 }
 
@@ -10,9 +10,9 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 25%;
+    top: 20%;
     height: 42px;
-    height: 600px;
+    height: 1000px;
   
     padding: 16px;
     border-top-left-radius: 16px;

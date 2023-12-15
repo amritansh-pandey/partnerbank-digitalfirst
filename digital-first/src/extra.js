@@ -35,9 +35,34 @@
     <div>
       <span className="medium-narrow">Medium Narrow</span>
     </div>
+    {
+    contacts[lang].map(contact => {
+    return (
+        <div>{contact.image}</div>
+        <div>{contact.name}</div>
+    )
+})}
   </div>
 </div>
 
 
 
+
+import contacts from '../../assets/data/contact.js';
+const GettingStarted = ({ brand, theme, lang = "en" }) => {
+
+return (
+
+  <div>
+ {
+    contacts[lang].map(contact => {
+    return (
+      <div>
+
+        <div>{contact.image}</div>
+        <div>{contact.name}</div>
+        </div>
+    )
+})}
+  </div>
 

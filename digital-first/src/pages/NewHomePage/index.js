@@ -1,30 +1,69 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./style.css";
 import GradientBase from '../../components/Base/GradientBase';
 import PrimaryBase from '../../components/Base/PrimaryBase';
-import PartnerBankWhite from '../../assets/images/partnerbank/light/logo-light.png'
-import WhiteFilledBellIcon from '../../assets/icons/bell-filled-white.svg'
+import TopNavigation2 from '../../components/TopNavigation/TopNavigation2'
+import { BellIcon } from '../../components/Icons';
+import BankLogo from '../../assets/images/bank-logo.png'
+import DigitalCard from '../../components/DigitalCard';
+import CircelNavigation from '../../components/CircleNavigations/Index';
+import MonthlySpendCard from '../../components/Cards/MonthlySpend';
+import WorldCreditCard from '../../components/Cards/WorldCreditCard';
+import Rewardpoints from '../../components/Cards/Rewardpoints';
+import { Link } from 'react-router-dom';
+import data from '../../assets/data/data.json';
+import { importImage } from '../../utils';
 
-function NewHomePage() {
-    return (
-        <div className='new-home-container'>
-            <GradientBase>
-                <div>
-                    <div>
-                        <img src={PartnerBankWhite} alt="logo" className="home-logo-white" />
-                    </div>
-                    <div>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"  className="custom-icon">
-                            <g id="bell">
-                                <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M5.24903 8.9998C5.24914 5.27197 8.27118 2.25 11.999 2.25C15.727 2.25 18.749 5.27208 18.749 9L18.7488 9.04919V9.75C18.7488 11.8731 19.5499 13.8074 20.8674 15.2699C21.0339 15.4547 21.0979 15.71 21.0383 15.9516C20.9787 16.1931 20.8033 16.3893 20.5699 16.4755C19.0259 17.0455 17.4096 17.4659 15.7386 17.7192C15.7455 17.812 15.749 17.9056 15.749 18C15.749 20.0711 14.0701 21.75 11.999 21.75C9.92797 21.75 8.24903 20.0711 8.24903 18C8.24903 17.9056 8.25254 17.812 8.25942 17.7192C6.58836 17.4659 4.9719 17.0455 3.42777 16.4755C3.19441 16.3893 3.01895 16.1931 2.95935 15.9516C2.89976 15.71 2.96379 15.4547 3.13029 15.2699C4.44782 13.8074 5.24884 11.8731 5.24884 9.75L5.24903 8.9998ZM9.75124 17.8993C9.74977 17.9326 9.74903 17.9662 9.74903 18C9.74903 19.2426 10.7564 20.25 11.999 20.25C13.2417 20.25 14.249 19.2426 14.249 18C14.249 17.9662 14.2483 17.9326 14.2468 17.8992C13.5063 17.9659 12.7564 18 11.9988 18C11.2414 18 10.4917 17.966 9.75124 17.8993Z" fill="var(--icon-color)" />
-                            </g>
-                        </svg>
-                    </div>
-                </div>
-            </GradientBase>
-            <PrimaryBase > </PrimaryBase>
+const NewHomePage = ({ brand, theme, lang = "en" }) => {
+  const cardText = 'Discover the all new Digital World Credit Card';
+  const approvalText = 'Apply and get instant approval';
+
+
+  const [shouldAnimate, setShouldAnimate] = useState(true);
+
+  useEffect(() => {
+    // Disable animation after the initial render
+    setShouldAnimate(false);
+  }, []);
+
+
+
+  return (
+    <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
+      <div className='digital-card-container'>
+        <DigitalCard />
+      </div>
+
+      <GradientBase>
+
+        <div>
+          <TopNavigation2
+            pageLogo={<img src={BankLogo} alt="Page Logo" className='page-logo' />}
+            rightIcon={<BellIcon size={24} className="icon-white" />} />
         </div>
-    )
+
+      </GradientBase>
+      <PrimaryBase >
+        <div className='base_gradient_container'>
+          <CircelNavigation />
+          <MonthlySpendCard />
+
+          <Link to="/admin-setting" style={{ textDecoration: "none" }}>
+            <div>
+              <WorldCreditCard
+                cardImage={ <img src={importImage(brand, theme, "world-card")} alt="world-card"/>}
+                cardText={cardText}
+                approvalText={approvalText}
+              />
+            </div>
+          </Link>
+          <Rewardpoints />
+        </div>
+
+
+      </PrimaryBase>
+    </div>
+  )
 }
 
-export default NewHomePage
+export default NewHomePage;

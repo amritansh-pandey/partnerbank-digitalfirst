@@ -1,0 +1,59 @@
+{
+  "register-button": {
+    "en": "Register",
+    "fr": ""
+  },
+
+  "login-button": {
+    "en": "Log in",
+    "fr": ""
+  },
+  
+
+  "carousel-intro1-heading": {
+    "en": "No hanging around, go digital",
+    "fr": "Ne traînez plus, passez au"
+  },
+  "carousel-intro1-text": {
+    "en": "Why wait for a card to arrive? Apply and start using your new digital debit card right away.",
+    "fr": "Pourquoi attendre qu'une carte arrive ? Faites une demande et commencez immédiatement à utiliser."
+  },
+
+  "carousel-intro2-heading": {
+    "en": "Take charge of your card",
+    "fr": "Ne traînez plus, passez au"
+  },
+  "carousel-intro2-text": {
+    "en": "Why wait for a card to arrive? Apply and start using your new digital debit card right away.",
+    "fr": "Pourquoi attendre qu'une carte arrive ? Faites une demande et commencez immédiatement à utiliser."
+  },
+
+  "carousel-intro3-heading": {
+    "en": "Zero fees",
+    "fr": "Ne traînez plus, passez au"
+  },
+  "carousel-intro3-text": {
+    "en": "Seamless transactions, zero Fees. Your Money, your freedom.",
+    "fr": "Pourquoi attendre qu'une carte arrive ? Faites une demande et commencez immédiatement à utiliser."
+  },
+
+  "getting-started-title": {
+    "en": "Getting started is easy.",
+    "fr": "Commencer est facile."
+  },
+
+  "getting-started-body": {
+    "en": "To open an account, we need a few details. Please have your photo ID on-hand. This should only take a few minutes.",
+    "fr": "Pour ouvrir un compte, nous avons besoin de quelques détails. Veuillez avoir votre pièce d'identité avec photo à portée de main. Cela ne devrait prendre que quelques minutes."
+  },
+
+  "getting-started-caption": {
+    "en": "By continuing, you agree to our Terms  and understand your data will be processed according to the",
+    "fr": "En continuant, vous acceptez nos Conditions et comprenez que vos données seront traitées conformément aux"
+  },
+
+  "getting-started-privacy": {
+    "en": "Privacy Notice.",
+    "fr": "Avis de confidentialité."
+  }
+}

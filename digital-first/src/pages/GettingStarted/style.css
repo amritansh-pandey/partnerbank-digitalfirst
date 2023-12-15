@@ -3,11 +3,7 @@
     max-width: 100%;
     height: auto;
   }
-  
-  
-  
 
-  
   .getting-started-title-container {
     text-align: center;
     width: 80%;
@@ -37,10 +33,7 @@
     margin: auto;
     height: 64px;
   }
- 
 
-
-  
   .getting-started-container {
     flex-direction: column;
     justify-content: center;
@@ -48,3 +41,8 @@
     display: flex;
   }
   
+
+  
+  .slide-enter {
+    transform: translateX(100%);
+  }

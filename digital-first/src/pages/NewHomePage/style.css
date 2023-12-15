@@ -1,13 +1,19 @@
 .new-home-container {
-    width: 100%;
+  width: 100%;
 }
 
 .home-logo-white {
-    height: 24px;
+  height: 24px;
 }
 
+.digital-card-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 96px;
+  z-index: 10;
+}
 
-.custom-icon {
-    /* Set the default color using a CSS variable */
-    --icon-color: rgb(230, 19, 19);
-  }
+.base_gradient_container {
+  margin: 96px 0; 
+}

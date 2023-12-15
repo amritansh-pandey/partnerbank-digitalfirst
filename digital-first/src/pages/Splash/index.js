@@ -1,18 +1,17 @@
 import React from "react";
-import PartnerBankWhite from '../../assets/images/partnerbank/light/logo-light.png'
 import { Link } from "react-router-dom";
 import TextButtonMedium from "../../components/Buttons/TextButtonMedium";
 import WhiteButtonMedium from "../../components/Buttons/WhiteButtonMedium";
 import "./style.css";
+import { importImage } from '../../utils';
 
 
-
-function Splash() {
+function Splash({brand, theme}) {
 
     return (
         <div className="splash-background" >
             <div>
-                <img src={PartnerBankWhite} alt="logo" className="splash-logo-white" />
+                <img src={importImage(brand, theme, "logo")} alt="logo" className="splash-logo-white" />
             </div>
 
             <div className="button-container-splash">

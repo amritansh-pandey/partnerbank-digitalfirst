@@ -1,0 +1,52 @@
+.face-recognition-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.card-scanner-camera .overlay {
+  position: absolute;
+  width: 300px;
+  height: 450px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5), 0 0 0 100vmax rgba(0, 0, 0, 0.5),
+    inset 0 0 0 6px rgb(255, 255, 255);
+    z-index: 10;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.video-camera-text {
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.video-caption-container {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.video-button-container {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  bottom: 96px;
+}
