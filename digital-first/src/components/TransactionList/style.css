@@ -1,0 +1,40 @@
+
+.transaction-list-logo {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .transaction-list-container {
+    margin: 16px;
+  }
+  
+  .transaction-list-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .transaction-list-item {
+    display: grid;
+    grid-template-columns: 12% 80%;
+    gap: 16px;
+    margin: 16px 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--grey-50);
+  }
+  
+  .transaction-list-name-amount {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    align-items: center;
+  }
+  
+  .transaction-list-heading-container {
+    margin: 16px 0;
+  }
+  
+  .transaction-list-container {
+    margin-bottom: 200px;
+  }
+  

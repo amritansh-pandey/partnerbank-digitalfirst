@@ -1,0 +1,82 @@
+.reward-info-card-container {
+margin: 32px 16px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+padding: 16px;
+border-radius: 8px;
+}
+
+.points-cash-card-container {
+display: flex;
+justify-content: space-between;
+padding-bottom: 24px;
+border-bottom: 1px solid var(--grey-50);
+}
+
+
+.points-cash-container {
+display: flex;
+gap: 32px;
+}
+
+.points-container {
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+
+.cash-equivalent-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.reward-card-image-container {
+
+}
+.reward-card-image {
+width: 72px;
+}
+
+.pay-with-points-container {
+margin: 24px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+
+.all-purchase-next-purchase-container {
+display: flex;
+gap: 16px;
+margin-bottom: 16px;
+}
+
+.check-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.pill-container-filled {
+    background-color: var(--primary-color);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+
+.pill-container {
+    background-color: var(--white);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 50px;
+}

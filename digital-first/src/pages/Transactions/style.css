@@ -1,3 +1,18 @@
 .donut-container {
     margin: 32px;
 }
+
+.card-carousel-container {
+    margin: 32px auto;
+}
+
+.carousel-heading-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 16px;
+}
+
+.slick-next {
+   right: 0 !important;
+   display: none !important;
+}

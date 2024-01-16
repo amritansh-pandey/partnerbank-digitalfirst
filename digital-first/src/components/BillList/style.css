@@ -1,0 +1,33 @@
+.bill-list-container {
+   
+}
+
+.bill-list-title {
+    margin: 24px 0;
+}
+
+.bill-item-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--grey-50);
+}
+
+.bill-image-title {
+    display: flex;
+    gap: 16px;
+}
+
+.bill-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.bill-amount-date-arrow {
+    display: flex;
+    align-items: center;
+}
+
+.bill-amount {
+   display: flex;
+}

@@ -13,6 +13,8 @@ import Rewardpoints from '../../components/Cards/Rewardpoints';
 import { Link } from 'react-router-dom';
 import data from '../../assets/data/data.json';
 import { importImage } from '../../utils';
+import BottomNavigationHome from '../../components/BottomNavigation/BottomNavigationHome';
+import AccountReady from '../../components/Cards/AccountReady';
 
 const NewHomePage = ({ brand, theme, lang = "en" }) => {
   const cardText = 'Discover the all new Digital World Credit Card';
@@ -29,9 +31,12 @@ const NewHomePage = ({ brand, theme, lang = "en" }) => {
 
 
   return (
+    <div style={{overflow: "scroll"}}>
     <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
       <div className='digital-card-container'>
-        <DigitalCard />
+      <DigitalCard
+        amount="$0.00"
+        />
       </div>
 
       <GradientBase>
@@ -45,8 +50,13 @@ const NewHomePage = ({ brand, theme, lang = "en" }) => {
       </GradientBase>
       <PrimaryBase >
         <div className='base_gradient_container'>
+
+          <AccountReady />
+          <div style={{height: "24px"}}></div>
           <CircelNavigation />
-          <MonthlySpendCard />
+          <MonthlySpendCard
+          money="$0.00"
+          />
 
           <Link to="/admin-setting" style={{ textDecoration: "none" }}>
             <div>
@@ -57,11 +67,16 @@ const NewHomePage = ({ brand, theme, lang = "en" }) => {
               />
             </div>
           </Link>
-          <Rewardpoints />
+          <Rewardpoints
+          points="0 pts"
+          />
         </div>
 
-
+        <div style={{height:"32px"}}></div>
       </PrimaryBase>
+   
+    </div>
+    <BottomNavigationHome />
     </div>
   )
 }

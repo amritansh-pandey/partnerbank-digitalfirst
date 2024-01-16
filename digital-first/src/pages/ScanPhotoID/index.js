@@ -25,7 +25,7 @@ const ScanPhotoID = ({ brand, theme, lang = "en" }) => {
       </div>
                 <div style={{height: "64px"}}></div>
                 <div className='mt-64 getting-started-image-container'>
-                <img src={importImage(brand, theme, "photo-id")} alt="photo-id"/>
+                <img src={importImage(brand, theme, "photo-id.png")} alt="photo-id"/>
                 
                 </div>
 

@@ -1,0 +1,39 @@
+
+.contact-amount.pending,
+.contact-status.pending {
+  color: #FB853C;
+}
+
+.contact-amount.completed,
+.contact-status.completed {
+  color: #79B252;
+}
+
+
+.contact-list-container {
+    margin: 24px 16px;
+}
+
+.contact-list-title {
+    margin: 24px 0;
+}
+
+.contact {
+    display: flex;
+    margin: 16px 0;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--grey-50);
+}
+
+.contact-image-info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.contact-image {
+    width: 48px;
+}

@@ -1,0 +1,27 @@
+.face-id-blur {
+  height: 100vh;
+  width: 100%;
+  filter: blur(5px) brightness(0.7);
+  z-index: 10;
+}
+
+.face-id-container {
+  height: 120px;
+  width: 120px;
+  background-color: white;
+  z-index: 100;
+  border-radius: 16px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 40%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.face-id-animation-container {
+  height: 80px;
+  width: 80px;
+ display: flex;
+ margin: 20px auto;
+}

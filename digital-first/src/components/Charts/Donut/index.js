@@ -60,8 +60,10 @@ const DonutChart = () => {
     : chartData.datasets[0].data.reduce((total, value) => total + value, 0);
 
   return (
-    <div>
-      <canvas ref={chartRef}></canvas>
+    <div className="chart-container">
+      <div className="canvas-wrapper">
+        <canvas ref={chartRef} className="chart"></canvas>
+      </div>
       <div className="chart-center-text">
         <div className="body2">{selectedCategory || 'Total spend'}</div>
         <div className="title4">${totalValue}</div>

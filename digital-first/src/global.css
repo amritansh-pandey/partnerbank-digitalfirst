@@ -179,6 +179,20 @@ label {
   color: var(--primary-text);
 }
 
+.subheading4 {
+  font-family: "MarkforMC";
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.subheading5 {
+  font-family: "MarkforMC";
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--primary-text);
+}
+
 .caption {
   font-family: "MarkforMC";
   font-weight: 400;
@@ -204,12 +218,13 @@ label {
   background: var(--primary-surface);
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
   transition: transform 0.5s ease-in-out;
+  position: relative;
 }
 
 .title-container1 {
-  margin-top: 32px;
+ 
 }
 
 .sub-title-container1 {
@@ -222,6 +237,18 @@ label {
   right: 0;
   margin: 0 auto;
   bottom: 128px;
+}
+ 
+.animation-container64 {
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.animation-container128 {
+  height: 240px;
+  width: 240px;
+  margin: 0 auto;
 }
 
 .margin24 {
@@ -387,7 +414,22 @@ label {
   color: var(--primary-color);
 }
 
-.icon-white {
+
+.icon16 {
+  height: 16px;
+  width: 16px;
+}
+
+.icon24 {
+  height: 24px;
+  height: 24px;
+}
+
+.icon32 {
+  height: 32px;
+  width: 32px;
+}
+/* .icon-white {
   stroke: var(--icons-white);
 }
 
@@ -401,7 +443,7 @@ label {
 
 .icon-black {
   stroke: var(--icons-black);
-}
+} */
 
 /* Dynamic Color Variables */
 

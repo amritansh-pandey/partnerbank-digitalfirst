@@ -4,6 +4,8 @@ import TopNavigation1 from '../../components/TopNavigation/TopNavigation1';
 import { ChevronLeftIcon } from '../../components/Icons';
 import { Link } from 'react-router-dom';
 import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
+import { useNavigate } from 'react-router-dom';
+
 
 const VideoSelfieCamera = () => {
   const videoRef = useRef();
@@ -20,6 +22,15 @@ const VideoSelfieCamera = () => {
 
     startCamera();
   }, []);
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/uploadingvideo", { replace: true });
+    }, 4000);
+  }, []);
+
 
   return (
     <div className='card-scanner-camera'>
@@ -39,7 +50,7 @@ const VideoSelfieCamera = () => {
       </div>
 
       <div className='mt-56 video-button-container'>
-        <Link to="/transactions" style={{ textDecoration: 'none' }}>
+        <Link to="/uploadingvideo" style={{ textDecoration: 'none' }}>
           <PrimaryButtonMedium text={'Scan'} />
         </Link>
       </div>

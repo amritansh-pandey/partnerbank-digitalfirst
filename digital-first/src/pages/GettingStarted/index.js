@@ -21,7 +21,7 @@ const GettingStarted = ({ brand, theme, lang = "en" }) => {
         <Title2 text={data['getting-started-title'][lang]} />
 
         <div className='mt-56 getting-started-image-container'>
-          <img src={importImage(brand, theme, "getting-started")} alt="getting started" />
+          <img src={importImage(brand, theme, "getting-started.png")} alt="getting started" />
         </div>
 
         <div className='mt-32 getting-started-body-container'>

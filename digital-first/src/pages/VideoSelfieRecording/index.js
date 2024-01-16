@@ -25,7 +25,7 @@ const VideoSelfieRecording = ({ brand, theme, lang = "en" }) => {
       </div>
                 <div style={{height: "64px"}}></div>
                 <div className='mt-64 getting-started-image-container'>
-                <img src={importImage(brand, theme, "video-selfie")} alt="photo-id"/>
+                <img src={importImage(brand, theme, "video-selfie.png")} alt="photo-id"/>
                 
                 </div>
 
@@ -41,7 +41,7 @@ const VideoSelfieRecording = ({ brand, theme, lang = "en" }) => {
 
                 <div className='mt-56'>
                 <div className='scan-photo-id-caption-container'>
-                    <span className="caption">By continuing, you agree to the use of your facial biometrics to verify your identity.</span> 
+                    <span className="caption">By continuing, you agree to the use of your facial biometrics to verify your identity.</span> 
                 </div>
                     <Link to="/video-selfie-camera" style={{ textDecoration: "none" }}>
                         <PrimaryButtonMedium text={"Verify yourself"} />

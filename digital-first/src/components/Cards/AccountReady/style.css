@@ -1,0 +1,17 @@
+
+
+.credit-card-space {
+    justify-content: space-around;
+    gap: 16px;
+    align-items: center;
+}
+
+.credit-card-container-home {
+    background: var(--primary-gradient);
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

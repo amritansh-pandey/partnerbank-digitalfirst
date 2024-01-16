@@ -1,34 +1,24 @@
-.carousel-item {
-    padding: 0 16px;
-    box-sizing: border-box;
-  }
-  
-  .label-box {
-    padding: 16px;
-    border-radius: 8px;
-    color: #fff;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .selected .label-box {
-    border: 2px solid #fff;
-  }
+.chart-container {
+  position: relative;
+}
 
-  .chart-center-text {
-    position: absolute;
-    top: 34%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-  }
-  
+.chart-center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
 
-  
-  .chart-value {
-    font-size: 16px;
-    color: #555;
-  }
+.canvas-wrapper {
+  overflow: hidden;
+}
+
+.chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}

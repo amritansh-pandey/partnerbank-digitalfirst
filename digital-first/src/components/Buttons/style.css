@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.text-button-small {
+.text-button-small-icon {
     border: none;
     padding: 0 16px;
     cursor: pointer;
@@ -20,7 +20,22 @@
     border-radius: 50px;
     height: 34px;
     background: transparent;
-    text-align: center;
+    padding: 8px;
+    align-items: center;
+    display: flex;
+  }
+
+
+  .text-button-small {
+    border: none;
+    padding: 0 16px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    border-radius: 50px;
+    height: 34px;
+    background: transparent;
+    padding: 8px;
   }
 
 .white-button-medium {
@@ -75,8 +90,8 @@
 }
 
 
-.button-left-icon {
-}
 
-.button-right-icon {
+.button-right-icon-small {
+  height: 16px;
+  width: 16px;
 }

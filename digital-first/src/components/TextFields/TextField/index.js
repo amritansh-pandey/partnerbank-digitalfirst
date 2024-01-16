@@ -1,6 +1,6 @@
 import React from 'react'
 import '../style.css'
-
+import ForwardArrow from '../../../assets/images/chevron-down-black.svg'
 
 function TextField({ label, value, onChange }) {
   return (
@@ -15,11 +15,13 @@ function TextField({ label, value, onChange }) {
           value={value}
           aria-labelledby={`label-${label}`}
         />
-      <label class="label" for={label} id={`label-${label}`}> 
-          <div class="text">{label}</div> 
+        <label class="label" for={label} id={`label-${label}`}>
+          <div class="text">{label}</div>
         </label>
+
+
       </div>
- 
+   
 
     </div>
   )

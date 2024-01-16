@@ -3,7 +3,7 @@ import './style.css'
 import '../style.css'
 
 
-function MonthlySpendCard() {
+function MonthlySpendCard({money}) {
     return (
         <div className='card-container'>
             <div className='monthly_text_container'>
@@ -11,7 +11,7 @@ function MonthlySpendCard() {
                     <span className='body3'>Total monthly spend</span>
                 </div>
                 <div>
-                    <span className='title2'>$817.44</span>
+                    <span className='title2'>{money}</span>
                 </div>
 
                 <div>

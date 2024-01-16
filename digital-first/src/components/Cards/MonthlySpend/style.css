@@ -72,16 +72,16 @@
 
 .month {
  display: flex;
- gap: 6px;
+ gap: 11px;
  flex-direction: row;
  margin-top: -12px;
- text-align: center;
  margin-right: 6px;
 }
 
 .month_text {
-  font-size: 10px;
+  font-size: 8px;
   color: var(--grey-300);
+  text-align: center;
  
 }
 

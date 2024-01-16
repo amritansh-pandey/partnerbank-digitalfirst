@@ -11,7 +11,7 @@ function Splash({brand, theme}) {
     return (
         <div className="splash-background" >
             <div>
-                <img src={importImage(brand, theme, "logo")} alt="logo" className="splash-logo-white" />
+                <img src={importImage(brand, theme, "logo.png")} alt="logo" className="splash-logo-white" />
             </div>
 
             <div className="button-container-splash">
@@ -21,8 +21,11 @@ function Splash({brand, theme}) {
                     </Link>
                 </div>
                 <div>
-                    <Link to="/login" style={{ textDecoration: "none" }}>
+                    <Link to="/new-home" style={{ textDecoration: "none" }}>
+                        <div className="button-text-white">
                         <TextButtonMedium text={"Log in"} />
+                        </div>
+                       
                     </Link>
                 </div>
 

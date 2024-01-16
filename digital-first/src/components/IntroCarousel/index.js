@@ -9,17 +9,17 @@ const IntroCarousel = ({brand, theme, lang="en"}) => {
   const carouselData = [
     {
       heading: data['carousel-intro1-heading'][lang],
-      image: importImage(brand, theme, "intro1"),
+      image: importImage(brand, theme, "intro1.png"),
       text: data['carousel-intro1-text'][lang]
     },
     {
       heading: data['carousel-intro2-heading'][lang],
-      image: importImage(brand, theme, "intro2"),
+      image: importImage(brand, theme, "intro2.png"),
       text: data['carousel-intro2-text'][lang]
     },
     {
       heading: data['carousel-intro3-heading'][lang],
-      image: importImage(brand, theme, "intro3"),
+      image: importImage(brand, theme, "intro3.png"),
       text: data['carousel-intro3-text'][lang]
     },
   ];
@@ -36,8 +36,10 @@ const IntroCarousel = ({brand, theme, lang="en"}) => {
     <div className="intro-carousel">
       <div className="intro-skip-container">
         {currentSlide !== carouselData.length - 1 && (
-           <Link to="/getting-started" style={{ textDecoration: "none" }}>
-          <TextButtonSmall text={"Skip"} />
+            <Link to="/getting-started" style={{ textDecoration: "none" }}>
+            <button className='text-button-small button-text-primary space8'>
+              Skip
+            </button>
           </Link>
         )}
       </div>

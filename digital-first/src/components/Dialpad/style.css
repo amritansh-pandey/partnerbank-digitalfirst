@@ -1,0 +1,32 @@
+.dial-pad-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+    margin: 20px auto;
+    margin-top: 64px;
+  }
+  
+  .dial-pad-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .dial-pad-container button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+
+ 
+  
+
+  

@@ -1,0 +1,32 @@
+.custom-bottom-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto; 
+    background-color: var(--white);
+    transition: transform 0.3s ease-out;
+    transform: translateY(100%);
+    z-index: 10; 
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+  
+  .show {
+    transform: translateY(0);
+  }
+  
+  .bottom-sheet-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9; 
+  }
+  
+
+  .custom-bottom-sheet-header {
+    margin: 24px 16px;
+  }

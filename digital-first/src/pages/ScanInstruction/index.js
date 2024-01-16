@@ -31,7 +31,7 @@ const ScanInstruction = ({ brand, theme, lang = "en" }) => {
 
       <div className='intruction-container'>
         <div className='intruction-image-container'>
-        <img src={importImage(brand, theme, "scan-photo")} alt="scan-photo" className='photo-id'/>
+        <img src={importImage(brand, theme, "scan-photo.png")} alt="scan-photo" className='photo-id'/>
     
         </div>
         <div className='text-center'>
@@ -41,7 +41,7 @@ const ScanInstruction = ({ brand, theme, lang = "en" }) => {
 
       <div className='intruction-container'>
         <div className='intruction-image-container'>
-        <img src={importImage(brand, theme, "record-video")} alt="record-video" className='record-video'/>
+        <img src={importImage(brand, theme, "record-video.png")} alt="record-video" className='record-video'/>
       
         </div>
         <div className='text-center'>

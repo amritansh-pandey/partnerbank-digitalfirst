@@ -4,7 +4,7 @@ import './style.css'
 import Rewards from '../../../assets/images/rewards.png'
 
 
-function Rewardpoints() {
+function Rewardpoints({points}) {
 
     return (
         <div className='card-container reward_space'>
@@ -17,7 +17,7 @@ function Rewardpoints() {
                     <span className='body3'>My reward points</span>
                 </div>
                 <div>
-                    <span className='subheading1'>8,096 pts</span>
+                    <span className='subheading1'>{points}</span>
                 </div>
                   </div>
         </div>

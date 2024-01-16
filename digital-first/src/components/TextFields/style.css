@@ -54,3 +54,9 @@
   color:  var(--primary-color);
   font-weight: 500;
 }
+
+
+.drop-down-arrow {
+  position: absolute;
+  bottom: 20px;
+}

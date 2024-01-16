@@ -2,15 +2,17 @@ import React from 'react';
 import '../style.css';
 
 
+import { Link } from 'react-router-dom';
 
-const TextButtonSmall = ({ text, leftIcon, rightIcon }) => {
-    return (
-        <button className="text-button-small button-text-primary">
-        {leftIcon && <span className="button-left-icon">{leftIcon}</span>}
+const TextButtonSmall = ({ text, leftIcon, rightIcon, to }) => (
+  <Link to={to} style={{ textDecoration: 'none' }}>
+        <button className="text-button-small-icon button-text-primary">
+        {leftIcon}
         {text}
-        {rightIcon && <span className="button-right-icon">{rightIcon}</span>}
+        {rightIcon}
       </button>
-    )
-}
+      </Link>
+
+    );
 
 export default TextButtonSmall;

@@ -4,7 +4,9 @@ import './style.css';
 import MCLogo from '../../assets/images/logo.svg';
 import { ChevronRightIcon, InfoIcon } from '../Icons';
 import TextButtonSmall from '../Buttons/TextButtonSmall';
-function DigitalCard() {
+
+
+function DigitalCard({amount}) {
     return (
         <div className="digital_card">
 
@@ -19,7 +21,7 @@ function DigitalCard() {
 
             <div className="amount_text_container">
                 <div>
-                    <span className="title1 white_bold">$2,640.55</span>
+                    <span className="title1 white_bold">{amount}</span>
                 </div>
                 <div>
                     <div className="card_detail_container">

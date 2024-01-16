@@ -16,6 +16,22 @@ import HomeAddress from './pages/HomeAddress';
 import VideoSelfieRecording from './pages/VideoSelfieRecording';
 import VideoSelfieCamera from './pages/VideoSelfieCamera';
 import Transactions from './pages/Transactions';
+import CardDetailPage from './pages/CardDetailPage';
+import UploadingVideo from './pages/UploadingVideo';
+import ConfirmPasscode from './pages/ConfirmPasscode';
+import CreatePasscode from './pages/CreatePasscode';
+import UseFaceID from './pages/UseFaceID';
+import BottomNavigationDefault from './components/BottomNavigation/BottomNavigationDefault';
+import OldHomePage from './pages/OldHomePage';
+import SendMoney from './pages/SendMoney';
+import PayBill from './pages/PayBills';
+import Rewards from './pages/Rewards';
+import MyGoals from './pages/MyGoals';
+import UseFaceID2 from './pages/UseFaceID/UseFaceID2';
+import FaceIDLoader from './pages/UseFaceID/FaceIDLoader';
+import AccountReady from './pages/AccountReady';
+import SelectReciept from './pages/SelectReciept';
+import TransferDetails from './pages/TransferDetails';
 
 function AppRoutes() {
   // Define your brands array here
@@ -77,14 +93,30 @@ function AppRoutes() {
         <Route path="/camera-photo-id" element={<CameraScanID />} />
         <Route path="/transactions" element={<Transactions />} />
         <Route path="/home-address" element={<HomeAddress />} />
+        <Route path="/uploadingvideo" element={<UploadingVideo />} />
+        <Route path="/faceidloader" element={<FaceIDLoader />} />
+        <Route path="/account-ready" element={<AccountReady/>} />
+        <Route path="/create-passcode" element={<CreatePasscode />} />
+        <Route path="/confirm-passcode" element={<ConfirmPasscode />} />
+        <Route path="/card-details" element={<CardDetailPage/>} />
+        <Route path="/use-faceid" element={<UseFaceID/>} />
+        <Route path="/select-recipient" element={<SelectReciept />} />
+        <Route path="/transfer-details" element={<TransferDetails/>} />
+        <Route path="/use-faceid2" element={<UseFaceID2/>} />
         <Route path="/new-home" element={<NewHomePage brand={selectedBrand}
+          theme={selectedTheme} lang={selectedLang} />} />
+           <Route path="/old-home" element={<OldHomePage brand={selectedBrand}
           theme={selectedTheme} lang={selectedLang} />} />
            <Route path="/video-selfie" element={<VideoSelfieRecording brand={selectedBrand}
           theme={selectedTheme} lang={selectedLang} />} />
            <Route path="/video-selfie-camera" element={<VideoSelfieCamera />} />
+           <Route path="/send-money" element={<SendMoney />} />
+           <Route path="/rewards" element={<Rewards />} />
+           <Route path="/mygoals" element={<MyGoals />} />
+           <Route path="/paybill" element={<PayBill />} />
         <Route path="404" element={<Page404 />} />
         {/* Redirect to the brand and theme selector if the route doesn't match */}
-        <Route path="*" element={<Navigate to="/admin-setting" />} />
+        <Route path="*" element={<Navigate to="/new-home" />} />
       </Routes>
     </div>
   );

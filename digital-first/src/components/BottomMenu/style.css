@@ -1,0 +1,27 @@
+
+.account-detail-flex {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey-100);
+    padding-bottom: 16px;
+    align-content: center;
+    margin-bottom: 16px;
+  }
+  .digital-card-thubnail {
+    height: 24px;
+  }
+  
+  .menu-card-detail {
+    display: flex;
+    gap: 16px;
+    align-content: center;
+  }
+  
+  
+  .menu-heading-container {
+    margin: 16px 0;
+  }
+  
+  .menu-bottom-sheet {
+    margin-bottom: 64px;
+  }

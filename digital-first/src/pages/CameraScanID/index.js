@@ -6,6 +6,8 @@ import IDFront from '../../assets/images/id-front.png';
 import IDBack from '../../assets/images/id-back.png';
 import { Link } from 'react-router-dom';
 import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
+import { useNavigate } from 'react-router-dom';
+
 
 const CameraScanID = () => {
   const videoRef = useRef();
@@ -17,7 +19,7 @@ const CameraScanID = () => {
 
     const timeoutId = setTimeout(() => {
       setShowBackSide(true);
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timeoutId);
   }, []);
@@ -36,6 +38,16 @@ const CameraScanID = () => {
   const toggleCard = () => {
     setShowBackSide((prev) => !prev);
   };
+
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/home-address", { replace: true });
+    }, 8000);
+  }, []);
+
 
   return (
     <div id="camera-container">

@@ -3,8 +3,8 @@ import './style.css';
 import { Link } from 'react-router-dom';
 import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
 import TextField from '../../components/TextFields/TextField';
-import TopNavigation1 from '../../components/TopNavigation/TopNavigation1';
 import { ChevronLeftIcon } from '../../components/Icons';
+import TopNavigation5 from '../../components/TopNavigation/TopNavigation5';
 
 function HomeAddress() {
     const [shouldAnimate, setShouldAnimate] = useState(true);
@@ -15,10 +15,12 @@ function HomeAddress() {
     }, []);
 
     return (
+        <div>
+             <TopNavigation5 leftIcon={<ChevronLeftIcon size={24} className="icon-black" />} />
         <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
-            <TopNavigation1 leftIcon={<ChevronLeftIcon size={24} className="icon-black" />} />
+           
             <div className='home-address-container'>
-                <div className='title-container1 text-center'>
+                <div className='text-center'>
                     <span className='title3'>Confirm your details</span>
                 </div>
 
@@ -84,6 +86,7 @@ function HomeAddress() {
                     </Link>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

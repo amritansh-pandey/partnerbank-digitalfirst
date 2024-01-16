@@ -21,7 +21,7 @@ function Authentication() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/scan-instructions", { replace: true });
-    }, 5000);
+    }, 6000);
   }, []);
 
 
@@ -72,7 +72,13 @@ function Authentication() {
       </div>
 
       <div className='sub-title-container1 text-center primary-text'>
-        <TextButtonSmall text={"Resend SMS OTP"} />
+       
+
+       
+            <button className='text-button-small button-text-primary space8'>
+            Resend SMS OTP
+            </button>
+  
       </div>
 
       <SMSAlert message_title="OTP Verification" message_text="Use verification code 123-456 within 10 minutes" onClose={() => setShowAlert(false)} initialSlideIn={showAlert} />

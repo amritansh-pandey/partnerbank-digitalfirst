@@ -1,0 +1,32 @@
+.send-recipient-container {
+  margin: 32px 16px;
+  margin-bottom: 128px;
+}
+
+.recipient-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.search-input {
+ 
+  border: 0px solid;
+  font-size: 16px;
+  outline: none;
+}
+
+.recipient-search-container {
+  display: flex;
+  padding-bottom: 12px;
+  gap: 16px;
+  margin-bottom: 32px;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-200);
+}
+
+.recipient-search-container.clicked {
+    border-bottom-color: var(--primary-color);
+  }

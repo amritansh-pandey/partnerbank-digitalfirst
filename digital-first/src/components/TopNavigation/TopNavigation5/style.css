@@ -1,0 +1,24 @@
+.top-navigation-container5 {
+    display: flex;
+    flex-direction: row;
+    margin: 16px;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    background-color: var(--white);
+    }
+    
+    .left-icon {
+    width: 24px;
+    height: 24px;
+    }
+    
+    .page-title {
+    font-size: 16px;
+    font-weight: 600;
+    }
+    
+    .right-icon {
+        width: 24px;
+        height: 24px;
+    }
