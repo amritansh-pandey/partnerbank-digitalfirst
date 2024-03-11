@@ -1,0 +1,117 @@
+.navigation-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.debit-card-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 16px;
+background-color: var(--white);
+padding: 24px 16px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+border-radius: 16px;
+position: absolute;
+left: 0;
+right: 0;
+margin: 16px;
+top: -85px;
+}
+.debit-card-image {
+    width: 260px;
+}
+
+
+.base_gradient_container2 {
+   
+}
+
+.available-container {
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.sustainable-icon-container2 {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-settings-container {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.card-setting-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-setting-item-text {
+    text-align: center;
+}
+
+.recent-transaction-container {
+    margin-top: 316px;
+    background-color: var(--white);
+    padding-top: 8px;
+    margin-bottom: 16px;
+    
+}
+
+.primary-base-container2 {
+    background: var(--secondary-surface);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 20%;
+    padding: 16px 0;
+    margin-bottom: 64px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.card-connection-container {
+    background-color: var(--white);
+    padding-top: 8px;   
+    padding: 16px;
+
+}
+
+.card-connection-image-container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.card-connection-image {
+    height: 52px;
+}
+
+.card-benefits-container {
+    background-color: var(--white);
+    padding-top: 8px;   
+    padding: 16px;
+    overflow-x: auto;
+}
+
+.card-benefit-image-container {
+    overflow-x: auto;
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+.benefit-image {
+    height: 200px;
+}

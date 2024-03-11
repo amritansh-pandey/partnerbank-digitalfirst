@@ -5,3 +5,34 @@
 .apple-wallet {
     width: 150px;
 }
+
+.sustainable-icon-container {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.sustainable-icon1 {
+    height: 16px;
+}
+
+.sustainble-text {
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 4px;
+    font-weight: 500;
+}
+
+.info-icon-sustainable {
+    height: 20px;
+}
+
+.sustainable-cards-pop-up {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+

@@ -16,14 +16,22 @@ function AccountReady() {
                 <div>
                     <span className='body3'>Your account is ready</span>
                 </div>
-                <div style={{width: "90%"}}>
+                <div style={{ width: "90%" }}>
                     <span className='caption'>Add money to your account </span>
                 </div>
-                  </div>
+            </div>
 
-                  <div>
-                  <TextButtonSmall text={"Add now"} />
-                  </div>
+
+            <div>
+
+                <TextButtonSmall text={"Add now"}
+                    to={"/add-money"} />
+
+            </div>
+
+
+
+
         </div>
     )
 }

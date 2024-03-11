@@ -45,7 +45,8 @@ function DigitalCard({amount}) {
 
                 <div className=" white_bg">
                     <div className="card_button_text_container">
-                        <TextButtonSmall text={"View & manage"} />
+                        <TextButtonSmall text={"View & manage"}
+                        to={"/manage-card"} />
                     </div>
                     <div className='chevron-container'>
                     <ChevronRightIcon size={24} className="icon-white" />

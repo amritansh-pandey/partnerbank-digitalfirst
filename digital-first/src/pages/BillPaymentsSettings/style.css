@@ -1,0 +1,91 @@
+.bill-info-card-container {
+  margin: 32px 16px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.bill-card-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--grey-50);
+}
+
+
+.auto-pay-container {
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.biller-detail-container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 32px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill-due-text {
+    color: #FB853C;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.warning-message-container {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.biller-settings-container {
+  background-color: var(--white);
+  padding: 24px 16px;
+}
+
+.grey-bg-setting {
+  background-color: var(--grey-50);
+}
+
+.biller-settings-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bill-settings-list-container {
+  margin: 16px 0;
+}
+
+.bill-setting-icon-text {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.bill-setting-icon-text2 {
+  display: flex;
+  gap: 16px;
+}
+
+.bill-settings-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-bottom: solid 1px var(--grey-100);
+}
+
+.biller-added-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}

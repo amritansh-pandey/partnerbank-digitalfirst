@@ -14,6 +14,7 @@
     transform: translateY(-20px);
     display: flex;
     align-items: center;
+    z-index: 30;
   }
   
   .alert-image {

@@ -2,20 +2,20 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import SMSImage from '../../assets/images/alert.png';
 
-const SMSAlert = ({ message_title, message_text, onClose, initialSlideIn }) => {
-  const [visible, setVisible] = useState(initialSlideIn);
+const SMSAlert = ({ message_title, message_text, onClose }) => {
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    console.log('SMSAlert component mounted'); // Check if the component is being mounted
+    console.log('SMSAlert component mounted'); 
 
     const timerToShow = setTimeout(() => {
       setVisible(true);
-    }, 2000);
+    }, 1500);
 
     const timerToHide = setTimeout(() => {
       setVisible(false);
       onClose();
-    }, 2000); 
+    }, 5000); 
 
     return () => {
       clearTimeout(timerToShow);

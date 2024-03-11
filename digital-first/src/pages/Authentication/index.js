@@ -32,7 +32,7 @@ function Authentication() {
   
     const timeoutId = setTimeout(() => {
       changeOtpInputClass();
-    }, 4000);
+    }, 3000);
 
  
     return () => clearTimeout(timeoutId);

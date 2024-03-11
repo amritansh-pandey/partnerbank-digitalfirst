@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 import BillListItem1 from './BillListItem1'
-
+import billData from '../../assets/data/bill'
 
 function UpcommingBill() {
     return (
@@ -12,9 +12,11 @@ function UpcommingBill() {
                     <span className='title3'>Bill schedule</span>
                 </div>
             </div>
+    
+                <BillListItem1 bills={billData} />
+          
 
-            <BillListItem1 />
-            
+
         </div>
     )
 }

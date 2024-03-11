@@ -1,0 +1,16 @@
+.biller-name {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.bill-category-container {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.check-box-bill-term-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 24px;
+}

@@ -30,7 +30,7 @@ const ScanPhotoID = ({ brand, theme, lang = "en" }) => {
                 </div>
 
                 <div className='mt-32 scan-photo-id-body-container'>
-                    <span className="body1">To complete this step, you’ll need your photo ID. This will help us verify your account information.
+                    <span className="body1">To complete this step, you'll need your photo ID. This will help us verify your account information.
                     </span>
 <div style={{height: "24px"}}></div>
                     <span className="body1">Please find a well-lit area to scan your photo ID. 

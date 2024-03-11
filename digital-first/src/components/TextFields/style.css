@@ -60,3 +60,9 @@
   position: absolute;
   bottom: 20px;
 }
+
+.text-field-icon {
+  position: absolute;
+  right: 0;
+  top: 12px;
+}

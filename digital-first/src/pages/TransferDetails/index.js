@@ -6,25 +6,25 @@ import InfoActive from '../../assets/images/info-active.svg';
 import './style.css';
 import { Link } from 'react-router-dom';
 import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
-import TransferDetailForm from '../../components/TransferDetailForm';
-import contactsData from '../../assets/data/contact';
+import TextField from '../../components/TextFields/TextField';
+import { useParams, useNavigate } from 'react-router-dom';
+import contacts from '../../assets/data/contact';
 
 
-function TransferDetails() {
+
+
+const TransferDetails = () => {
     const [shouldAnimate, setShouldAnimate] = useState(true);
+    const { id } = useParams();
+    const navigate = useNavigate();
+
+    const selectedItem = contacts.find((item) => item.id === parseInt(id, 10));
 
 
     useEffect(() => {
         // Disable animation after the initial render
         setShouldAnimate(false);
     }, []);
-
-   
-  
-
-   
-  
-
 
     return (
         <div>
@@ -37,14 +37,31 @@ function TransferDetails() {
             <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
 
 
-<TransferDetailForm contacts={contactsData} />
+                <div className='contact-list'>
+                    <div>
+                        <div className='form-container margin24'>
+                            <div className='mt-32'>
+                                <TextField label={"Full Name"} value={selectedItem.name} />
+                            </div>
+                            <div className='mt-32'>
+                                <TextField label={"Email ID"} value={selectedItem.detail} />
+                            </div>
+                            <div className='mt-32'>
+                                <TextField label={"Category"} value="Gift" />
+                            </div>
+                            <div className='mt-32'>
+                                <TextField label={"Transfer from"} value="Digital Debit Card •••• 8832" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
 
-                <div className='mt-32' style={{textAlign: "center"}}>
-                    <Link to="/video-selfie" style={{ textDecoration: "none" }}>
+                <div className='mt-32' style={{ textAlign: "center" }}>
+                    <div onClick={() => navigate(`/amount-send/${id}`)}>
                         <PrimaryButtonMedium text={"Next"} />
-                    </Link>
+                    </div>
                 </div>
             </div>
         </div>

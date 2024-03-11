@@ -32,6 +32,23 @@ import FaceIDLoader from './pages/UseFaceID/FaceIDLoader';
 import AccountReady from './pages/AccountReady';
 import SelectReciept from './pages/SelectReciept';
 import TransferDetails from './pages/TransferDetails';
+import AmountToSend from './pages/AmountToSend';
+import AmountSendConfirmation from './pages/AmountSendConfirmation';
+import SentMoney from './pages/SendMoney/SentMoney';
+import BillSearch from './pages/BillSearch';
+import AddBiller from './pages/AddBiller';
+import BillPaymentsSettings from './pages/BillPaymentsSettings';
+import AddMoney from './pages/AddMoney';
+import AddMoneyCard from './pages/AddMoney/AddMoneyCard';
+import CardCameraScan from './pages/AddMoney/CardCameraScan';
+import AddMoneyCardFilled from './pages/AddMoney/AddMoneyCardFilled';
+import AddMoneyValue from './pages/AddMoney/AddMoneyValue';
+import AddMoneyVerification from './pages/AddMoney/AddMoneyVerification';
+import AddMoneyOTP from './pages/AddMoney/AddMoneyOTP';
+import AddMoneyOTPFilled from './pages/AddMoney/AddMoneyOTPFilled';
+import AddMoneyDone from './pages/AddMoney/AddMoneyDone';
+import ManageCard from './pages/ManageCard/Index';
+import BillAdded from './pages/BillPaymentsSettings/BillerAdded';
 
 function AppRoutes() {
   // Define your brands array here
@@ -95,14 +112,31 @@ function AppRoutes() {
         <Route path="/home-address" element={<HomeAddress />} />
         <Route path="/uploadingvideo" element={<UploadingVideo />} />
         <Route path="/faceidloader" element={<FaceIDLoader />} />
+        <Route path="/add-money" element={<AddMoney/>} />
+        <Route path="/card-camera-scan" element={<CardCameraScan/>} />
+        <Route path="/add-money-card" element={<AddMoneyCard/>} />
+        <Route path="/add-money-value" element={<AddMoneyValue/>} />
+        <Route path="/add-money-otp" element={<AddMoneyOTP/>} />
+        <Route path="/add-money-done" element={<AddMoneyDone/>} />
+        <Route path="/add-money-otp-filled" element={<AddMoneyOTPFilled/>} />
+        <Route path="/add-money-verification" element={<AddMoneyVerification/>} />
+        <Route path="/add-money-card-filled" element={<AddMoneyCardFilled/>} />
         <Route path="/account-ready" element={<AccountReady/>} />
         <Route path="/create-passcode" element={<CreatePasscode />} />
         <Route path="/confirm-passcode" element={<ConfirmPasscode />} />
         <Route path="/card-details" element={<CardDetailPage/>} />
         <Route path="/use-faceid" element={<UseFaceID/>} />
+        <Route path="/biller-added/:id" element={<BillAdded/>} />
         <Route path="/select-recipient" element={<SelectReciept />} />
-        <Route path="/transfer-details" element={<TransferDetails/>} />
+        <Route path="/transfer-details/:id" element={<TransferDetails />} />
+        <Route path="/amount-send/:id" element={<AmountToSend/>} />
+        <Route path="/amount-send-confrimation/:id" element={<AmountSendConfirmation/>} />
+        <Route path="/amount-sent/:id" element={<SentMoney/>} />
+        <Route path="/add-biller/:id" element={<AddBiller/>} />
+        <Route path="/bill-payments-settings/:id" element={<BillPaymentsSettings/>} />
+        <Route path="/bill-search" element={<BillSearch/>} />
         <Route path="/use-faceid2" element={<UseFaceID2/>} />
+        <Route path="/manage-card" element={<ManageCard/>} />
         <Route path="/new-home" element={<NewHomePage brand={selectedBrand}
           theme={selectedTheme} lang={selectedLang} />} />
            <Route path="/old-home" element={<OldHomePage brand={selectedBrand}

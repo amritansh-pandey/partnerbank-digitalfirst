@@ -1,0 +1,55 @@
+
+.amount-grey-container {
+    background-color: var(--grey-25);
+    padding: 32px 16px;
+}
+
+.amount-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.payee-image {
+    height: 90px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.payee-name {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--grey-400);
+}
+.enter-amount-container {
+    margin-top: 64px;
+    text-align: center;
+}
+.enter-amount {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.payment-info-container {
+    padding: 32px 16px;
+    padding-bottom: 16px;
+}
+.add-note-container {
+    margin-bottom: 32px;
+}
+
+.pay-with-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--grey-50);
+    padding-bottom: 16px;
+}
+
+.send-to-text {
+    margin: 0 16px;
+}

@@ -1,9 +1,11 @@
 import React from 'react';
 import './style.css';
-import AddPlusIcon from '../../../assets/images/plus-circle-active.svg';
+import AddPlusIcon from '../../../assets/images/plus-circle-filled.svg';
+import { Link } from 'react-router-dom';
 
 function AddNewButton({ title }) {
   return (
+  <Link to="/bill-search" style={{ textDecoration: "none" }}>
     <div className='add-new-button-container'>
       <div>
         <span className='subheading5'>{title}</span>
@@ -12,6 +14,7 @@ function AddNewButton({ title }) {
         <img src={AddPlusIcon} alt='add' className='icon32' />
       </div>
     </div>
+    </Link>
   );
 }
 

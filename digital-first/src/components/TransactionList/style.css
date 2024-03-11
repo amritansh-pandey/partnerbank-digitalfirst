@@ -7,8 +7,18 @@
   .transaction-list-container {
     margin: 16px;
   }
+
+  .transaction-list-container2 {
+    margin: 16px;
+  }
   
   .transaction-list-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .transaction-list-container2 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -32,6 +42,13 @@
   
   .transaction-list-heading-container {
     margin: 16px 0;
+  }
+
+  .transaction-list-heading-container2 {
+    margin: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .transaction-list-container {

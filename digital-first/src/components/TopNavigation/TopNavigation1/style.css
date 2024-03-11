@@ -8,8 +8,11 @@ height: 56px;
 }
 
 .left-icon {
-width: 24px;
-height: 24px;
+width: 32px;
+height: 32px;
+padding: 12px;
+background-color: var(--white);
+border-radius: 50%;
 }
 
 .page-title {

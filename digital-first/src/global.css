@@ -200,6 +200,13 @@ label {
   color: var(--primary-text);
 }
 
+.caption-bold {
+  font-family: "MarkforMC";
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--primary-text);
+}
+
 .regular-narrow {
   font-family: "MarkforMCNarrow";
   font-weight: 400;

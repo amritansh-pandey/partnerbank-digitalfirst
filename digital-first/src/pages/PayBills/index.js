@@ -51,9 +51,7 @@ function PayBill() {
 
 <BottomNavigationBill />
 
-<UpcommingBill />
 
-     
     </div>
   );
 }

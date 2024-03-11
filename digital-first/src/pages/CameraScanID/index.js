@@ -4,50 +4,57 @@ import TopNavigation1 from '../../components/TopNavigation/TopNavigation1';
 import { ChevronLeftIcon } from '../../components/Icons';
 import IDFront from '../../assets/images/id-front.png';
 import IDBack from '../../assets/images/id-back.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
-import { useNavigate } from 'react-router-dom';
-
 
 const CameraScanID = () => {
   const videoRef = useRef();
   const [isBackCamera, setIsBackCamera] = useState(true);
   const [showBackSide, setShowBackSide] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
+    let stream = null;
+
+    const openCamera = async () => {
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({
+          video: { facingMode: isBackCamera ? 'environment' : 'user' },
+        });
+        videoRef.current.srcObject = stream;
+      } catch (error) {
+        console.error('Error accessing camera:', error);
+      }
+    };
+
     openCamera();
 
     const timeoutId = setTimeout(() => {
       setShowBackSide(true);
     }, 3000);
 
-    return () => clearTimeout(timeoutId);
+    return () => {
+      // Stop the media stream when component unmounts or navigates away
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+      }
+      clearTimeout(timeoutId);
+    };
   }, []);
-
-  const openCamera = async () => {
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({
-        video: { facingMode: isBackCamera ? 'environment' : 'user' },
-      });
-      videoRef.current.srcObject = stream;
-    } catch (error) {
-      console.error('Error accessing camera:', error);
-    }
-  };
-
-  const toggleCard = () => {
-    setShowBackSide((prev) => !prev);
-  };
-
-
-  const navigate = useNavigate();
 
   useEffect(() => {
-    setTimeout(() => {
+    const navigationTimeout = setTimeout(() => {
       navigate("/home-address", { replace: true });
     }, 8000);
-  }, []);
 
+    return () => {
+      clearTimeout(navigationTimeout);
+    };
+  }, [navigate]);
+
+  const toggleCard = () => {
+    setShowBackSide(prev => !prev);
+  };
 
   return (
     <div id="camera-container">
@@ -78,7 +85,7 @@ const CameraScanID = () => {
         </div>
 
         <div className='camera-caption-container'>
-          <span className='caption' style={{color: "#fff"}}>Position your ID inside the frame</span>
+          <span className='caption' style={{ color: "#fff" }}>Position your ID inside the frame</span>
         </div>
       </div>
 

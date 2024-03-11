@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./style.css";
 import GradientBase from '../../components/Base/GradientBase';
 import PrimaryBase from '../../components/Base/PrimaryBase';
-import TopNavigation2 from '../../components/TopNavigation/TopNavigation2'
+import TopNavigation6 from '../../components/TopNavigation/TopNavigation6'
 import { BellIcon } from '../../components/Icons';
 import BankLogo from '../../assets/images/bank-logo.png'
 import DigitalCard from '../../components/DigitalCard';
@@ -42,7 +42,7 @@ const NewHomePage = ({ brand, theme, lang = "en" }) => {
       <GradientBase>
 
         <div>
-          <TopNavigation2
+          <TopNavigation6
             pageLogo={<img src={BankLogo} alt="Page Logo" className='page-logo' />}
             rightIcon={<BellIcon size={24} className="icon-white" />} />
         </div>
@@ -51,14 +51,17 @@ const NewHomePage = ({ brand, theme, lang = "en" }) => {
       <PrimaryBase >
         <div className='base_gradient_container'>
 
+      
           <AccountReady />
+          
+
           <div style={{height: "24px"}}></div>
           <CircelNavigation />
           <MonthlySpendCard
           money="$0.00"
           />
 
-          <Link to="/admin-setting" style={{ textDecoration: "none" }}>
+ 
             <div>
               <WorldCreditCard
                 cardImage={ <img src={importImage(brand, theme, "world-card")} alt="world-card"/>}
@@ -66,7 +69,7 @@ const NewHomePage = ({ brand, theme, lang = "en" }) => {
                 approvalText={approvalText}
               />
             </div>
-          </Link>
+     
           <Rewardpoints
           points="0 pts"
           />

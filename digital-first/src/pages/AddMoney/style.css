@@ -1,0 +1,99 @@
+.expiry-date-cvv-container {
+    display: flex;
+    gap: 16px;
+}
+
+.checkbox-text {
+    font-size: 14px;
+    color: var(--grey-600);
+}
+
+.card-camera-icon-container {
+    display: flex;
+    gap: 8px;
+}
+
+.add-money-value-container {
+    text-align: center;
+    margin: 32px;
+}
+
+.add-money-value-subtext {
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.card-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.084);
+    margin: 32px 24px;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.add-money-card-detail {
+    display: flex;
+    gap: 12px;
+}
+
+.bottom-sheet-container-loader {
+    z-index: 30;
+}
+
+.south-bank-logo-container {
+    background-color: #CF4500;
+    padding: 24px;
+    text-align: center;
+}
+
+.southbank-logo {
+    height: 24px;
+}
+
+.southbank-otp-container {
+    margin: 32px;
+    box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.084);
+    padding: 24px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.otp-number-container {
+    height: 36px;
+    width: 100%;
+    border: solid 1px var(--grey-200);
+    border-radius: 4px;
+    padding-top: 14px;
+    font-weight: 500;
+}
+
+.otp-button-container {
+    background-color: #CF4500;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.otp-text-button-container {
+    padding: 10px;
+    font-size: 14px;
+    color: #CF4500;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.otp-payment-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
