@@ -23,7 +23,7 @@ const BottomNavigationHome = ({ brand, theme, lang = "en" }) => {
   return (
     <div className="bottom_navigation_container">
       <div className="bottom_navigation">
-        <Link to="/home" style={{ textDecoration: "none" }}>
+        <Link to="old-home" style={{ textDecoration: "none" }}>
           <div className="bottom_navigation_button">
             <div>
               <img src={HomeActive} alt="home" className="" />
@@ -57,7 +57,7 @@ const BottomNavigationHome = ({ brand, theme, lang = "en" }) => {
               <img src={PayBills} alt="billpay" className="" />
             </div>
             <div>
-              <span className="bottom_navigation_text">Paybills</span>
+              <span className="bottom_navigation_text">Pay bills</span>
             </div>
           </div>
         </Link>

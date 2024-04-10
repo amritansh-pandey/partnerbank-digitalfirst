@@ -50,9 +50,11 @@ const OldHomePage = ({ brand, theme, lang = "en" }) => {
       <PrimaryBase >
         <div className='base_gradient_container'>
           <CircelNavigation />
+          <Link to="/transactions" style={{ textDecoration: "none" }}>
           <MonthlySpendCard
           money="$817.44"
           />
+          </Link>
 
          
             <div>
@@ -62,10 +64,11 @@ const OldHomePage = ({ brand, theme, lang = "en" }) => {
                 approvalText={approvalText}
               />
             </div>
-
+            <Link to="/rewards" style={{ textDecoration: "none" }}>
           <Rewardpoints
           points="8,096 pts"
           />
+          </Link>
         </div>
 
         <div style={{height:"32px"}}></div>

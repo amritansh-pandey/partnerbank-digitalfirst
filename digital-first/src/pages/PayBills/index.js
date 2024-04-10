@@ -18,14 +18,14 @@ function PayBill() {
     setShouldAnimate(false);
   }, []);
 
-  
+
   const tabs = ['Upcoming bills', 'Connected billers'];
 
   const tabContent = {
     'Upcoming bills': <UpcommingBill />,
     'Connected billers': <ConnectedBill />,
   };
-  
+
 
   return (
     <div>
@@ -35,21 +35,22 @@ function PayBill() {
       />
 
       <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
-       
-<div className='add-new-button-background'>
-    <AddNewButton
-    title={'Add new biller'}
-    />
-</div>
 
-<div className='bill-list-container'>
-<Tab tabs={tabs} defaultTab="Upcoming bills" content={tabContent} onTabChange={(tab) => console.log(`Switched to ${tab}`)} />
+        <div className='add-new-button-background'>
+          <AddNewButton
+            title={'Add new biller'}
+            to={"/bill-search"}
+          />
+        </div>
 
-</div>
-    
+        <div className='bill-list-container'>
+          <Tab tabs={tabs} defaultTab="Upcoming bills" content={tabContent} onTabChange={(tab) => console.log(`Switched to ${tab}`)} />
+
+        </div>
+
       </div>
 
-<BottomNavigationBill />
+      <BottomNavigationBill />
 
 
     </div>

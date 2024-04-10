@@ -97,3 +97,22 @@
     align-items: center;
     gap: 16px;
 }
+
+.save-card-button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.save-card-button-pop-up {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.save-card-button-pop-up-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

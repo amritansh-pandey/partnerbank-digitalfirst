@@ -30,6 +30,24 @@
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
   }
+
+
+  .black-checkbox {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .black-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .black-checkbox input:checked ~ .checkmark {
+    background-color: var(--grey-900);
+    border: 1px solid var(--grey-900);
+  }
   
   .custom-checkbox .label {
     margin-left: 24px; 

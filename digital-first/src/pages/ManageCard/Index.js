@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import "./style.css";
 import GradientBase from '../../components/Base/GradientBase';
-import PrimaryBase from '../../components/Base/PrimaryBase';
 import TopNavigation6 from '../../components/TopNavigation/TopNavigation6'
 import WhiteChevronLeft from '../../assets/images/chevron-left-white.svg'
 import DigitalDebitCard from '../../assets/images/digital-card.png'
 import { Link } from 'react-router-dom';
 import BottomNavigationHome from '../../components/BottomNavigation/BottomNavigationHome';
-import AppleWallet from '../../assets/images/AddtoAppleWallet.png';
 import SustainableIcon from '../../assets/images/sustainable-logo.svg';
 import InfoIcon from '../../assets/images/info-black.svg';
 import Eye from '../../assets/images/eye-active.svg';
@@ -21,6 +19,7 @@ import Benefit2 from '../../assets/images/manage-card-1.png';
 import CustomHeightBottomSheet from "../../components/BottomSheet/CustomHeightBottomSheet";
 import RecentTransaction from '../../components/TransactionList/RecentTransaction';
 import PrimaryBase2 from '../../components/Base/PrimaryBase/PrimaryBase2';
+import C2PPopup from '../../components/C2PPopoup';
 
 const ManageCard = ({ brand, theme, lang = "en" }) => {
 
@@ -38,6 +37,13 @@ const ManageCard = ({ brand, theme, lang = "en" }) => {
 
     const closeBottomSheet = () => {
         setShowBottomSheet(false);
+    };
+
+    const [showPopup, setShowPopup] = useState(false);
+
+    const togglePopup = () => {
+        setShowPopup(!showPopup); // Toggle pop-up visibility
+        console.log("Popup visibility:", !showPopup);
     };
 
 
@@ -87,31 +93,37 @@ const ManageCard = ({ brand, theme, lang = "en" }) => {
                                     <span className='caption'>Available balance</span>
                                 </div>
                                 <div>
-                                    <span className='title1'>$1,640.55</span>
+                                    <span className='title1'>$2,640.55</span>
                                 </div>
                             </div>
 
                             <div className='card-settings-container'>
+                            <Link to="/view-card-detail-faceid" style={{ textDecoration: "none" }}>
                                 <div className='card-setting-item'>
                                     <div><img src={Eye} alt="photo-id" className='' /></div>
                                     <div className='card-setting-item-text'><span className='caption-bold'>Card details</span></div>
                                 </div>
-
+                                </Link>
+                                <Link to="/add-money" style={{ textDecoration: "none" }}>
                                 <div className='card-setting-item'>
                                     <div><img src={Plus} alt="photo-id" className='' /></div>
                                     <div className='card-setting-item-text'><span className='caption-bold'>Add money</span></div>
                                 </div>
+                                </Link>
 
+                                <Link to="/card-lock-faceid" style={{ textDecoration: "none" }}>
                                 <div className='card-setting-item'>
                                     <div><img src={Lock} alt="photo-id" className='' /></div>
                                     <div className='card-setting-item-text'><span className='caption-bold'>Lock card</span></div>
                                 </div>
+                                </Link>
 
+                                <Link to="/card-settings" style={{ textDecoration: "none" }}>
                                 <div className='card-setting-item'>
                                     <div><img src={Setting} alt="photo-id" className='' /></div>
                                     <div className='card-setting-item-text'><span className='caption-bold'>Manage card</span></div>
                                 </div>
-
+                                </Link>
 
                             </div>
 
@@ -128,7 +140,7 @@ const ManageCard = ({ brand, theme, lang = "en" }) => {
                     <div className='recent-transaction-container'>
                         <RecentTransaction />
 
-                 
+
                     </div>
                     <div className='card-connection-container'>
                         <div>
@@ -137,16 +149,19 @@ const ManageCard = ({ brand, theme, lang = "en" }) => {
                             </div>
                             <div className='card-connection-image-container'>
                                 <div>
-                                <img src={ApplePay} alt="Page Logo" className='card-connection-image' />
+                                    <Link to="/apple-wallet" style={{ textDecoration: "none" }}>
+                                        <img src={ApplePay} alt="Page Logo" className='card-connection-image' />
+                                    </Link>
                                 </div>
-                                <div>
-                                <img src={C2P} alt="Page Logo" className='card-connection-image' />
+                                <div  className='click-to-pay-button' onClick={togglePopup}>
+                              
+                                    <img src={C2P} alt="Page Logo" className='card-connection-image' />
                                 </div>
                             </div>
                         </div>
                     </div>
-               
-<div style={{backgroundColor: "#f8f8f8", height: "16px"}}></div>
+
+                    <div style={{ backgroundColor: "#f8f8f8", height: "16px" }}></div>
                     <div className='card-benefits-container'>
                         <div>
                             <div>
@@ -154,29 +169,32 @@ const ManageCard = ({ brand, theme, lang = "en" }) => {
                             </div>
                             <div className='card-benefit-image-container'>
                                 <div>
-                                <img src={Benefit1} alt="Page Logo" className='benefit-image' />
+                                    <img src={Benefit1} alt="Page Logo" className='benefit-image' />
                                 </div>
                                 <div>
-                                <img src={Benefit2} alt="Page Logo" className='benefit-image' />
+                                    <img src={Benefit2} alt="Page Logo" className='benefit-image' />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div style={{backgroundColor: "#f8f8f8", height: "100px"}}></div>
+                    {showPopup && <C2PPopup onClose={togglePopup} />}
+                    <div style={{ backgroundColor: "#f8f8f8", height: "100px" }}></div>
                 </PrimaryBase2>
 
 
                 <CustomHeightBottomSheet
                     show={showBottomSheet}
-                    title="Sustainable Card"
+                   
                     setShowBottomSheet={closeBottomSheet}
                 >
                     <div className='sustainable-cards-pop-up'>
+
+                        <div><span className='subheading2'>Sustainable Card</span></div>
                         <div>
                             <img src={SustainableIcon} alt="sustaible" className='sustainable-icon2' />
                         </div>
                         <div>
-                            <span className='body1'>Your account's physical card was made with 100% recycled plastic. This approach yields 40% fewer CO2 emissions than using new plastic and diverts materials from landfills.</span>
+                            <span className='body1'>Your account's physical card was made with 100% recycled plastic. This approach yields 40% fewer CO<sub>2</sub> emissions than using new plastic and diverts materials from landfills.</span>
                         </div>
                         <div>
                             <button onClick={closeBottomSheet} className='primary-button-medium'>
@@ -188,6 +206,7 @@ const ManageCard = ({ brand, theme, lang = "en" }) => {
                 </CustomHeightBottomSheet>
 
             </div>
+          
             <BottomNavigationHome />
         </div>
     )

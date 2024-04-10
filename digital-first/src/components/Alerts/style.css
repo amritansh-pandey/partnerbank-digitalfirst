@@ -1,0 +1,14 @@
+.success-alert-container {
+    background-color: #DFF7DF;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 24px;
+    border-radius: 8px;
+}
+
+.success-text {
+    color: #097007;
+    font-weight: 500;
+}

@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TopNavigation4 from '../../components/TopNavigation/TopNavigation4';
 import { ChevronLeftIcon } from '../../components/Icons';
 import './style.css';
-import './style.css';
-import { Link } from 'react-router-dom';
-import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
+import { Link, useNavigate } from 'react-router-dom';
 import TextField from '../../components/TextFields/TextField';
 import CustomCheckbox from '../../components/Checkbox';
 import DisabledButtonMedium from '../../components/Buttons/DisabledButtonMedium';
@@ -12,6 +10,16 @@ import Camera from '../../assets/images/camera.svg'
 
 
 function AddMoneyCard() {
+
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+      setTimeout(() => {
+        navigate("/card-camera-scan", { replace: true });
+      }, 3000);
+    }, []);
+
 
 
     const [shouldAnimate, setShouldAnimate] = useState(true);
@@ -52,6 +60,7 @@ function AddMoneyCard() {
                     <div className='mt-32' style={{position: "relative"}}>
                         <TextField
                             label={"Card number*"}
+                            value={""}
                       />
 
                             <div className='text-field-icon'>
@@ -66,6 +75,7 @@ function AddMoneyCard() {
                         <div className='mt-32'>
                             <TextField
                                 label={"Expiry date*"}
+                                value={""}
                                  />
                         </div>
 
@@ -73,6 +83,7 @@ function AddMoneyCard() {
                         <div className='mt-32'>
                             <TextField
                                 label={"CVC*"}
+                                value={""}
                                  />
                         </div>
 

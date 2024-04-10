@@ -51,7 +51,7 @@ function AmountToSend() {
 
 
                     <div className='enter-amount-container'>
-                        <span className='enter-amount'>$50.00</span>
+                        <span className='enter-amount'>{selectedItem.money}</span>
                     </div>
                 </div>
                 <div className='payment-info-container'>
@@ -74,7 +74,7 @@ function AmountToSend() {
                     </div>
                 </div>
                 <div className='send-to-text'>
-                    <span className='subheading3'>Send: $50.00</span>
+                    <span className='subheading3'>Send: {selectedItem.money}</span>
                 </div>
                 <div className='mt-32' style={{ textAlign: "center" }}>
                     <div onClick={() => navigate(`/amount-send-confrimation/${id}`)}>

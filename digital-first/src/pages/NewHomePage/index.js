@@ -5,16 +5,15 @@ import PrimaryBase from '../../components/Base/PrimaryBase';
 import TopNavigation6 from '../../components/TopNavigation/TopNavigation6'
 import { BellIcon } from '../../components/Icons';
 import BankLogo from '../../assets/images/bank-logo.png'
-import DigitalCard from '../../components/DigitalCard';
-import CircelNavigation from '../../components/CircleNavigations/Index';
 import MonthlySpendCard from '../../components/Cards/MonthlySpend';
 import WorldCreditCard from '../../components/Cards/WorldCreditCard';
 import Rewardpoints from '../../components/Cards/Rewardpoints';
-import { Link } from 'react-router-dom';
-import data from '../../assets/data/data.json';
 import { importImage } from '../../utils';
-import BottomNavigationHome from '../../components/BottomNavigation/BottomNavigationHome';
 import AccountReady from '../../components/Cards/AccountReady';
+import NewDigitalCard from '../../components/DigitalCard/NewDigitalCard';
+import NewCircelNavigation from '../../components/CircleNavigations/NewCircleNavigation';
+import BottomNavigationHome2 from '../../components/BottomNavigation/BottomNavigationHome2';
+import { useNavigate } from 'react-router-dom';
 
 const NewHomePage = ({ brand, theme, lang = "en" }) => {
   const cardText = 'Discover the all new Digital World Credit Card';
@@ -28,58 +27,71 @@ const NewHomePage = ({ brand, theme, lang = "en" }) => {
     setShouldAnimate(false);
   }, []);
 
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/pause", { replace: true });
+    }, 4000);
+  }, []);
+
 
 
   return (
-    <div style={{overflow: "scroll"}}>
-    <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
-      <div className='digital-card-container'>
-      <DigitalCard
-        amount="$0.00"
-        />
-      </div>
+    <div style={{ overflow: "scroll" }}>
+      <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
+        <div className='digital-card-container'>
 
-      <GradientBase>
 
-        <div>
-          <TopNavigation6
-            pageLogo={<img src={BankLogo} alt="Page Logo" className='page-logo' />}
-            rightIcon={<BellIcon size={24} className="icon-white" />} />
+          <NewDigitalCard
+            amount="$0.00"
+          />
         </div>
 
-      </GradientBase>
-      <PrimaryBase >
-        <div className='base_gradient_container'>
+        <GradientBase>
 
-      
-          <AccountReady />
-          
+          <div>
+            <TopNavigation6
+              pageLogo={<img src={BankLogo} alt="Page Logo" className='page-logo' />}
+              rightIcon={<BellIcon size={24} className="icon-white" />} />
+          </div>
 
-          <div style={{height: "24px"}}></div>
-          <CircelNavigation />
-          <MonthlySpendCard
-          money="$0.00"
-          />
+        </GradientBase>
+        <PrimaryBase >
+          <div className='base_gradient_container'>
 
- 
+
+            <AccountReady />
+
+
+            <div style={{ height: "24px" }}></div>
+
+            <NewCircelNavigation />
+
+
+            <MonthlySpendCard
+              money="$0.00"
+            />
+
+
             <div>
               <WorldCreditCard
-                cardImage={ <img src={importImage(brand, theme, "world-card")} alt="world-card"/>}
+                cardImage={<img src={importImage(brand, theme, "world-card")} alt="world-card" />}
                 cardText={cardText}
                 approvalText={approvalText}
               />
             </div>
-     
-          <Rewardpoints
-          points="0 pts"
-          />
-        </div>
 
-        <div style={{height:"32px"}}></div>
-      </PrimaryBase>
-   
-    </div>
-    <BottomNavigationHome />
+            <Rewardpoints
+              points="0 pts"
+            />
+          </div>
+
+          <div style={{ height: "32px" }}></div>
+        </PrimaryBase>
+
+      </div>
+      <BottomNavigationHome2 />
     </div>
   )
 }

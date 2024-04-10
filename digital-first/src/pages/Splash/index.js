@@ -21,7 +21,7 @@ function Splash({brand, theme}) {
                     </Link>
                 </div>
                 <div>
-                    <Link to="/new-home" style={{ textDecoration: "none" }}>
+                    <Link to="/login" style={{ textDecoration: "none" }}>
                         <div className="button-text-white">
                         <TextButtonMedium text={"Log in"} />
                         </div>

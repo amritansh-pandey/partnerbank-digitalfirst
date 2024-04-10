@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import TopNavigation4 from '../../components/TopNavigation/TopNavigation4';
 import { ChevronLeftIcon } from '../../components/Icons';
 import './style.css';
-import BottomNavigationReward from '../../components/BottomNavigation/BottomNavigationReward';
-import AddNewButton from '../../components/Buttons/AddNewButton';
+import BottomNavigationDefault from '../../components/BottomNavigation/BottomNavigationDefault';
+import AddNewButton2 from '../../components/Buttons/AddNewButton/Addbutton2';
 import SavingGoalCard from '../../components/SavingGoalCard';
 
 function MyGoals() {
@@ -20,15 +20,17 @@ function MyGoals() {
         <div>
             <TopNavigation4
                 leftIcon={<ChevronLeftIcon />}
-                pageTitle={"Rewards"}
+                pageTitle={"My saving goals"}
             />
 
             <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
 
                 <div className='add-new-button-background'>
-                    <AddNewButton
-                        title={'Create a new goal'}
-                    />
+
+                    <AddNewButton2 
+                     title={'Create a new goal'}
+                     />
+                   
                 </div>
 
                 <div>
@@ -36,7 +38,7 @@ function MyGoals() {
                 </div>
 
             </div>
-            <BottomNavigationReward />
+            <BottomNavigationDefault />
 
 
 

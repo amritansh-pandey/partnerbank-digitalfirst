@@ -9,23 +9,31 @@ import TextField from '../../components/TextFields/TextField';
 import CustomCheckbox from '../../components/Checkbox';
 import Camera from '../../assets/images/camera.svg'
 import MCLogo from '../../assets/images/mc24.svg'
-
+import CustomHeightBottomSheet from "../../components/BottomSheet/CustomHeightBottomSheet";
 
 function AddMoneyCardFilled() {
 
-
+    const [showBottomSheet, setShowBottomSheet] = useState(false);
+    const [isChecked, setIsChecked] = useState(true);
     const [shouldAnimate, setShouldAnimate] = useState(true);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setShowBottomSheet(true);
+        }, 3000); // Show after 3 seconds
+
+        return () => clearTimeout(timeout);
+    }, []);
 
     useEffect(() => {
         setShouldAnimate(false);
     }, []);
 
-
-    const [isChecked, setIsChecked] = useState(true);
-
     const handleCheckboxChange = (newValue) => {
         setIsChecked(newValue);
     };
+
+ 
 
     return (
         <div>
@@ -49,20 +57,20 @@ function AddMoneyCardFilled() {
                     </div>
 
 
-                    <div className='mt-32' style={{position: "relative"}}>
+                    <div className='mt-32' style={{ position: "relative" }}>
                         <TextField
                             label={"Card number*"}
                             value={"5873 3873 6836 3456"}
-                      />
+                        />
 
-                            <div className='text-field-icon'>
-                          <div className='card-camera-icon-container'>
-                            <div> <img src={MCLogo} alt="photo-id" className='' /></div>
-                            <div> <img src={Camera} alt="photo-id" className='' /></div>
-                          </div>
-                           
-                          
+                        <div className='text-field-icon'>
+                            <div className='card-camera-icon-container'>
+                                <div> <img src={MCLogo} alt="photo-id" className='' /></div>
+                                <div> <img src={Camera} alt="photo-id" className='' /></div>
                             </div>
+
+
+                        </div>
                     </div>
 
                     <div className='expiry-date-cvv-container'>
@@ -71,7 +79,7 @@ function AddMoneyCardFilled() {
                             <TextField
                                 label={"Expiry date*"}
                                 value={"09 / 28"}
-                                 />
+                            />
                         </div>
 
 
@@ -79,7 +87,7 @@ function AddMoneyCardFilled() {
                             <TextField
                                 label={"CVC*"}
                                 value={"123"}
-                                 />
+                            />
                         </div>
 
 
@@ -95,13 +103,43 @@ function AddMoneyCardFilled() {
                         <div>
                             <span className='checkbox-text'>Save this card to enable faster account funding in the future.</span>
                         </div>
+
+                        <CustomHeightBottomSheet
+                            show={showBottomSheet}
+                           
+
+                        >
+                            <div className='save-card-button-pop-up'>
+
+                                <div className='save-card-button-pop-up-info'>
+                                    <span className='subheading2'> Would you like to save this card</span>
+                                    <span className='body1'>Save this card to enable faster account funding in the future</span>
+                                </div>
+                                <div>
+                                <Link to="/add-money-value" style={{ textDecoration: "none" }}>
+                                    <div className='save-card-button-container'> 
+                                    <button className='primary-button-medium'>
+                                        <span className='button-text-white'>Save card</span>
+                                    </button>
+
+                                    <button className='text-button-medium'>
+                                        <span className='button-text-primary'>Not now</span>
+                                    </button>
+
+                                    </div>
+                                    
+                                    </Link>
+
+                                </div>
+                            </div>
+                        </CustomHeightBottomSheet>
                     </div>
                 </div>
-                <div style={{textAlign: "center", margin: "24px"}}>
-                <Link to="/add-money-value" style={{ textDecoration: "none" }}>
-                    <PrimaryButtonMedium
-                        text={"Next"} />
-                        </Link>
+                <div style={{ textAlign: "center", margin: "24px" }}>
+                
+                        <PrimaryButtonMedium
+                            text={"Next"} />
+                   
                 </div>
 
 

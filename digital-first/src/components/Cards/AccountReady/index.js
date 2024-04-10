@@ -25,7 +25,7 @@ function AccountReady() {
             <div>
 
                 <TextButtonSmall text={"Add now"}
-                    to={"/add-money"} />
+                    />
 
             </div>
 

@@ -16,77 +16,77 @@ function HomeAddress() {
 
     return (
         <div>
-             <TopNavigation5 leftIcon={<ChevronLeftIcon size={24} className="icon-black" />} />
-        <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
-           
-            <div className='home-address-container'>
-                <div className='text-center'>
-                    <span className='title3'>Confirm your details</span>
-                </div>
+            <TopNavigation5 leftIcon={<ChevronLeftIcon size={24} className="icon-black" />} />
+            <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
 
-                <div className='sub-title-container1 text-center' style={{ margin: "32px 70px" }}>
-                    <span className='body1'>Make sure this information is correct and up-to-date</span>
-                </div>
+                <div className='home-address-container'>
+                    <div className='text-center'>
+                        <span className='title3'>Confirm your details</span>
+                    </div>
 
-            
-                <div className='form-container margin24'>
-
-             
-
-                    <div className='mt-32'>
-                        <TextField
-                            label={"First Name"}
-                            value={"Mira"} />
+                    <div className='sub-title-container1 text-center' style={{ margin: "32px 70px" }}>
+                        <span className='body1'>Make sure this information is correct and up-to-date</span>
                     </div>
 
 
-                    <div className='mt-32'>
-                        <TextField
-                            label={"Last Name"}
-                            value={"Jansen"} />
+                    <div className='form-container margin24'>
+
+
+
+                        <div className='mt-32'>
+                            <TextField
+                                label={"First Name"}
+                                value={"Mira"} />
+                        </div>
+
+
+                        <div className='mt-32'>
+                            <TextField
+                                label={"Last Name"}
+                                value={"Jansen"} />
+                        </div>
+
+
+                        <div className='mt-32'>
+                            <TextField
+                                label={"Address line 1"}
+                                value={"123 Main street"} />
+                        </div>
+
+
+                        <div className='mt-32'>
+                            <TextField
+                                label={"Address line 2"}
+                            />
+                        </div>
+
+                        <div className='mt-32'>
+                            <TextField
+                                label={"City"}
+                                value={"New York"} />
+                        </div>
+
+                        <div className='mt-32'>
+                            <TextField
+                                label={"State"}
+                                value={"NY"} />
+                        </div>
+
+                        <div className='mt-32'>
+                            <TextField
+                                label={"Zipcode"}
+                                value={"10001"} />
+                        </div>
+
+
                     </div>
-
-
                     <div className='mt-32'>
-                        <TextField
-                            label={"Address line 1"}
-                            value={"123 Main street"} />
+                        <Link to="/video-selfie" style={{ textDecoration: "none" }}>
+                            <PrimaryButtonMedium text={"Next"} />
+                        </Link>
                     </div>
-
-
-                    <div className='mt-32'>
-                        <TextField
-                            label={"Address line 2"}
-                             />
-                    </div>
-
-                    <div className='mt-32'>
-                        <TextField
-                            label={"City"}
-                            value={"New York"} />
-                    </div>
-
-                    <div className='mt-32'>
-                        <TextField
-                            label={"State"}
-                            value={"NY"} />
-                    </div>
-
-                    <div className='mt-32'>
-                        <TextField
-                            label={"Zipcode"}
-                            value={"10001"} />
-                    </div>
-
-
-                </div>
-                <div className='mt-32'>
-                    <Link to="/video-selfie" style={{ textDecoration: "none" }}>
-                        <PrimaryButtonMedium text={"Next"} />
-                    </Link>
                 </div>
             </div>
-        </div>
         </div>
     );
 };

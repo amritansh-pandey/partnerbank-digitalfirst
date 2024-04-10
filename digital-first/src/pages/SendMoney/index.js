@@ -6,8 +6,8 @@ import InfoActive from '../../assets/images/info-active.svg';
 import './style.css';
 import BottomNavigationSend from '../../components/BottomNavigation/BottomNavigationSend';
 import contactsData from '../../assets/data/contact';
-import RecentContacts from '../../components/RecentContact';
-import ContactList from '../../components/ContactList'; 
+import AddNewButton from '../../components/Buttons/AddNewButton';
+import ContactList from '../../components/ContactList';
 
 function SendMoney() {
   const [shouldAnimate, setShouldAnimate] = useState(true);
@@ -28,12 +28,13 @@ function SendMoney() {
       />
 
       <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
-        <RecentContacts
-          title="Send again"
-          buttonText="All contacts"
-          buttonTo="/select-recipient"
-          contacts={firstThreeContacts}
-        />
+
+        <div className='add-new-button-background'>
+          <AddNewButton
+            title={'New payment'}
+            to={"/select-recipient"}
+          />
+        </div>
 
         <div className='contact-list-container'>
           <div className='contact-list-title'>
@@ -42,6 +43,8 @@ function SendMoney() {
 
           <ContactList contacts={contactsData} />
         </div>
+
+        <div style={{ height: "200px" }}></div>
       </div>
 
       <BottomNavigationSend />

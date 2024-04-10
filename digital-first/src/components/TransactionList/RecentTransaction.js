@@ -26,7 +26,7 @@ const RecentTransaction = () => {
           </div>
 
           <div>
-          <Link to="/scan-photo-id" style={{ textDecoration: "none" }}>
+          <Link to="/transactions" style={{ textDecoration: "none" }}>
             <span className='subheading4'>See all</span>
             </Link>
           </div>

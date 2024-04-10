@@ -57,7 +57,9 @@ const AccountReady = ({ brand, theme, lang = "en" }) => {
                 </div>
                 <div style={{ height: "48px" }}></div>
                 <div>
+                <Link to="/apple-wallet" style={{ textDecoration: "none" }}>
                     <img src={AppleWallet} alt="photo-id" className='apple-wallet' />
+                    </Link>
                 </div>
                 <div style={{ height: "24px" }}></div>
 
@@ -71,7 +73,7 @@ const AccountReady = ({ brand, theme, lang = "en" }) => {
                             <img src={SustainableIcon} alt="sustaible" className='sustainable-icon2' />
                         </div>
                         <div>
-                            <span className='body1'>Your account's physical card was made with 100% recycled plastic. This approach yields 40% fewer CO2 emissions than using new plastic and diverts materials from landfills.</span>
+                            <span className='body1'>Your account's physical card was made with 100% recycled plastic. This approach yields 40% fewer CO<sub>2</sub> emissions than using new plastic and diverts materials from landfills.</span>
                         </div>
                         <div>
                             <button onClick={closeBottomSheet}  className='primary-button-medium'>

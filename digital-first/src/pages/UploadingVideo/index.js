@@ -27,7 +27,7 @@ const UploadingVideo = ({ brand, theme, lang = "en" }) => {
             setHideBody1(true);
         }, 3000);
 
-        // Show bottom sheet after 10 seconds
+      
         const showBottomSheetTimeout = setTimeout(() => {
             setShowBottomSheet(true);
         }, 7000);

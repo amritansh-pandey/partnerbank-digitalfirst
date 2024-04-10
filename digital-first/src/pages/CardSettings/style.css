@@ -1,0 +1,162 @@
+.card-setting-list-container {
+  margin: 32px 16px;
+  padding: 24px 16px 0;
+  background-color: var(--white);
+  box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.084);
+  border-radius: 16px;
+}
+
+.card-setting-main-container {
+  margin: 32px 16px;
+  padding: 24px 16px 0;
+  background-color: var(--white);
+  box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.084);
+  border-radius: 16px;
+}
+
+.card-setting-main-container-changed {
+  margin: 32px 16px;
+  padding: 24px 16px 0;
+  background-color: var(--white);
+  box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.084);
+  border-radius: 16px;
+}
+
+.card-setting-main-item {
+  margin-bottom: 24px;
+}
+
+.card-setting-main-item-title {
+  margin-bottom: 16px;
+}
+.card-setting-sub-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.card-setting-sub-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 0 16px;
+  border-bottom: solid 1px var(--grey-50);
+}
+
+.sub-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-setting-sub-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0 16px;
+  border-bottom: solid 1px var(--grey-50);
+}
+
+.card-setting-sub-item-info {
+  display: flex;
+  gap: 8px;
+}
+
+.card-setting-sub-item-container2 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 0 24px;
+  justify-content: space-between;
+}
+
+.setting-title-contatiner {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: solid 1px var(--grey-50);
+}
+
+.settings-icon64 {
+  width: 32px;
+  height: 32px;
+}
+
+.spend-alerts-settings-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: solid 1px var(--grey-50);
+  gap: 56px;
+}
+
+.spend-alerts-settings-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spend-alerts-settings-item-title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.spend-alerts-settings-list-item2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 56px;
+}
+
+.transaction-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.changed-spend-alert {
+  padding: 24px 0;
+  border-bottom: solid 1px var(--grey-50);
+}
+
+.chang-spend-alert {
+  padding: 24px 0;
+  border-bottom: solid 1px var(--grey-50);
+}
+
+.info-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.setting-amount-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.setting-amount-container-value {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.success-alert-container-absolute {
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+}

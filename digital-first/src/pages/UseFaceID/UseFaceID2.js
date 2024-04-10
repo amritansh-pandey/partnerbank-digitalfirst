@@ -4,9 +4,9 @@ import TopNavigation1 from '../../components/TopNavigation/TopNavigation1';
 import Lottie from "lottie-react";
 import FaceIDPartial from "../../assets/animation/FaceIDPartial.json";
 import FaceIDLogin from "../../assets/animation/FaceID.json";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
-import { useNavigate } from 'react-router-dom';
+
 
 
 const UseFaceID2 = ({ brand, theme, lang = "en" }) => {

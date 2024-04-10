@@ -15,7 +15,7 @@ function BottomMenu() {
         <div className="memu-digital-card-container">
         <div className="account-detail-flex">
 
-        <Link to="/old-home" style={{ textDecoration: "none" }}>
+        <Link to="/manage-card" style={{ textDecoration: "none" }}>
           <div className="menu-card-detail">
               <div>
             <img src={CardThumbnail} alt="digital-card" className="digital-card-thubnail" />
@@ -66,14 +66,14 @@ function BottomMenu() {
           </div>
           </div>
           </Link>
-          <Link to="/admin-setting" style={{ textDecoration: "none" }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
           <div className="account-detail-flex">
           <div className="menu-card-detail">
               <div>
             <img src={Settings} alt="digital-card" className="digital-card-thubnail" />
             </div>
             <div>
-              <span className="body1">Admin settings</span>
+              <span className="body1">Log out</span>
             </div>
             
           </div>

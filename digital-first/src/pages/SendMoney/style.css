@@ -2,11 +2,13 @@
 .contact-amount.pending,
 .contact-status.pending {
   color: #FB853C;
+  text-align: right;
 }
 
 .contact-amount.completed,
 .contact-status.completed {
   color: #79B252;
+  text-align: right;
 }
 
 

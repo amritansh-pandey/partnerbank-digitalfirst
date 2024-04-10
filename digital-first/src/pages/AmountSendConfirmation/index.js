@@ -37,7 +37,7 @@ function AmountSendConfirmation() {
                     </div>
 
                     <div className=''>
-                        <span className='payee-info'>You sent $50.00 to {selectedItem.name}</span>
+                        <span className='payee-info'>You sent {selectedItem.money} to {selectedItem.name}</span>
                     </div>
 
                 </div>

@@ -28,7 +28,7 @@ const VideoSelfieCamera = () => {
   useEffect(() => {
     setTimeout(() => {
       navigate("/uploadingvideo", { replace: true });
-    }, 4000);
+    }, 40000);
   }, []);
 
 
