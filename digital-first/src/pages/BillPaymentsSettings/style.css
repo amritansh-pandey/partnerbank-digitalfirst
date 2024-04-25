@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 24px;
-  border-bottom: 1px solid var(--grey-50);
+  /* border-bottom: 1px solid var(--grey-50); */
 }
 
 
@@ -88,4 +88,18 @@
   align-items: center;
   flex-direction: column;
   gap: 24px;
+}
+
+
+.bill-amount-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.amount-due-text {
+  font-weight: 600;
+  color: var(--grey-500);
 }

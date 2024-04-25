@@ -15,14 +15,14 @@ const AccountReady = ({ brand, theme, lang = "en" }) => {
         setShouldAnimate(false);
     }, []);
 
-    const [showBottomSheet, setShowBottomSheet] = useState(false);
+    const [bottomSheetOpen, setBottomSheetOpen] = useState(false);
 
-    const openBottomSheet = () => {
-        setShowBottomSheet(true);
+    const handleOpenBottomSheet = () => {
+        setBottomSheetOpen(true);
     };
 
-    const closeBottomSheet = () => {
-        setShowBottomSheet(false);
+    const handleCloseBottomSheet = () => {
+        setBottomSheetOpen(false);
     };
 
 
@@ -37,7 +37,7 @@ const AccountReady = ({ brand, theme, lang = "en" }) => {
                 <div className='mt-64 getting-started-image-container'>
                     <img src={DigitalCardArt} alt="photo-id" className='digital-card-image' />
                 </div>
-                <div className="" onClick={openBottomSheet}>
+                <div className="" onClick={handleOpenBottomSheet}>
                     <div className='sustainable-icon-container'>
                         <div>
                             <img src={SustainableIcon} alt="sustaible" className='sustainable-icon1' />
@@ -57,16 +57,16 @@ const AccountReady = ({ brand, theme, lang = "en" }) => {
                 </div>
                 <div style={{ height: "48px" }}></div>
                 <div>
-                <Link to="/apple-wallet" style={{ textDecoration: "none" }}>
-                    <img src={AppleWallet} alt="photo-id" className='apple-wallet' />
+                    <Link to="/apple-wallet2" style={{ textDecoration: "none" }}>
+                        <img src={AppleWallet} alt="photo-id" className='apple-wallet' />
                     </Link>
                 </div>
                 <div style={{ height: "24px" }}></div>
 
                 <CustomHeightBottomSheet
-                    show={showBottomSheet}
-                    title="Sustainable Card"
-                    setShowBottomSheet={closeBottomSheet}
+                    show={bottomSheetOpen}
+                    title="Sustainable card"
+                    onClose={handleCloseBottomSheet}
                 >
                     <div className='sustainable-cards-pop-up'>
                         <div>
@@ -76,8 +76,8 @@ const AccountReady = ({ brand, theme, lang = "en" }) => {
                             <span className='body1'>Your account's physical card was made with 100% recycled plastic. This approach yields 40% fewer CO<sub>2</sub> emissions than using new plastic and diverts materials from landfills.</span>
                         </div>
                         <div>
-                            <button onClick={closeBottomSheet}  className='primary-button-medium'>
-                             <span className='button-text-white'>Got it</span>  
+                            <button onClick={handleCloseBottomSheet} className='primary-button-medium'>
+                                <span className='button-text-white'>Got it</span>
                             </button>
 
                         </div>

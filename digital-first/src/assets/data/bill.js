@@ -16,6 +16,7 @@ const bills = [
         type: "Utilities",
         due: "Due on: 08/03",
         money: "$144.55",
+        billid: "NW12345678910",
         stat: Math.random() < 0.5 ? "Pending" : "Completed",
     },
     {
@@ -25,6 +26,7 @@ const bills = [
         type: "Subscription",
         due: "Due on: 08/03",
         money: "$144.55",
+        billid: "TT12345678910",
         stat: Math.random() < 0.5 ? "Pending" : "Completed",
     },
     {
@@ -33,7 +35,8 @@ const bills = [
         name: "Muse",
         type: "Streaming",
         due: "Due on: 08/03",
-        money: "$144.55",
+        money: "$4.55",
+        billid: "MU12345678910",
         stat: Math.random() < 0.5 ? "Pending" : "Completed",
     },
     {
@@ -52,6 +55,7 @@ const bills = [
         type: "Banking",
         due: "Due on: 08/03",
         money: "$144.55",
+        billid: "BP12345678910",
         stat: Math.random() < 0.5 ? "Pending" : "Completed",
     }
 

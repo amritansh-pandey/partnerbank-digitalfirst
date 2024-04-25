@@ -58,8 +58,8 @@ function SpendingAlerts() {
             setShowSuccessAlert(true);
             setTimeout(() => {
                 setShowSuccessAlert(false);
-            }, 2500);
-        }, 1500);
+            }, 1000);
+        }, 1000);
     };
 
     return (
@@ -124,7 +124,7 @@ function SpendingAlerts() {
                             <div><span className='caption'>Let me know when my card is used in another country</span></div>
                         </div>
                         <div>
-                            <Toggle isChecked={isChecked} onToggle={handleToggle} />
+                            <Toggle />
                         </div>
                     </div>
 
@@ -137,7 +137,7 @@ function SpendingAlerts() {
                             <div><span className='caption'>Notify me when cash is withdrawn using my card </span></div>
                         </div>
                         <div>
-                            <Toggle isChecked={isChecked} onToggle={handleToggle} />
+                        <Toggle />
                         </div>
                     </div>
 
@@ -150,7 +150,7 @@ function SpendingAlerts() {
                             <div><span className='caption'>Notify when card is used online</span></div>
                         </div>
                         <div>
-                            <Toggle isChecked={isChecked} onToggle={handleToggle} />
+                        <Toggle />
                         </div>
                     </div>
                 </div>

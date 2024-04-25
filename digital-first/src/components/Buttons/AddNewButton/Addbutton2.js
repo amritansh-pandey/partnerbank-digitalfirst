@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function AddNewButton2({ title }) {
   return (
-  <Link to="/mygoals" style={{ textDecoration: "none" }}>
+  <Link to="/newgoal" style={{ textDecoration: "none" }}>
     <div className='add-new-button-container'>
       <div>
         <span className='subheading5'>{title}</span>

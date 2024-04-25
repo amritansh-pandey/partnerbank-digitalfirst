@@ -119,7 +119,7 @@ function C2PInfo() {
                                     </div>
                                     <div className='c2p-phone'>
                                         <span className='caption'>Mobile number</span>
-                                        <span>(212) 123-4567</span>
+                                        <span>468-272-6821</span>
                                     </div>
 
                                 </div>

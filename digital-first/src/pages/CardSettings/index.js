@@ -10,8 +10,11 @@ import setting_data from '../../assets/data/settings'
 import ChevronRight from '../../assets/images/chevron-right-black.svg'
 import BottomNavigationDefault from '../../components/BottomNavigation/BottomNavigationDefault';
 import { Link } from 'react-router-dom';
-function CardSettings() {
 
+
+
+
+function CardSettings() {
 
 
 
@@ -71,6 +74,7 @@ function CardSettings() {
             <div className='card-setting-sub-item-list'>
 
               <div>
+              <Link to="/change-passcode" style={{ textDecoration: 'none' }}>
                 <div className='card-setting-sub-item-container'>
                   <div className='card-setting-sub-item-info'>
                     <img src={ChangePin} alt="Change card PIN" />
@@ -82,6 +86,7 @@ function CardSettings() {
                     <img src={ChevronRight} />
                   </div>
                 </div>
+                </Link>
 
               </div>
              

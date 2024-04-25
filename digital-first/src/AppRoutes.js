@@ -65,11 +65,27 @@ import Pause from './pages/NewHomePage/Pause';
 import SettingsDone from './pages/CardSettings/SettingsDone';
 import SpendingAlerts from './pages/CardSettings/SpendingAlerts';
 import ContactlessPayments from './pages/CardSettings/ContactlessPayments';
-import OnlineShoping from './pages/CardSettings/OnlineShopping';
 import OnlineShopingSettings from './pages/CardSettings/OnlineShopping';
 import InStoreShopping from './pages/CardSettings/InStoreShopping';
 import InternationalPayments from './pages/CardSettings/InternationalPayments';
 import ATMSettings from './pages/CardSettings/ATMSettings';
+import ChangePasscode from './pages/ChangePin';
+import ForgotPasscode from './pages/ForgotPasscode';
+import CreateNewPin from './pages/ChangePin/CreateNewPin';
+import ConfrimPin from './pages/ChangePin/ConfirmPin';
+import ChangePinConfrimation from './pages/ChangePin/ChangePinConfrimation';
+import PayBillAdded from './pages/PayBills/PayBillAdded';
+import BillDetails from './pages/BillPaymentsSettings/BillDetails';
+import AppleCardTerms2 from './pages/AppleWallet2/AppleCardTerms2';
+import AppleCardAdded2 from './pages/AppleWallet2/AppleCardAdded2';
+import AppleCardDone2 from './pages/AppleWallet2/AppleCardDone2';
+import AppleWallet2 from './pages/AppleWallet2';
+import AddAppleCard2 from './pages/AppleWallet2/AddAppleCard2';
+import NewGoal from './pages/MyGoals/NewGoal';
+import NewGoal2 from './pages/MyGoals/NewGoal2';
+import GoalCreated from './pages/MyGoals/GoalCreated';
+import GoalDetail from './pages/MyGoals/GoalDetail';
+
 
 function AppRoutes() {
   // Define your brands array here
@@ -126,6 +142,13 @@ function AppRoutes() {
         <Route path="/apple-wallet-card-added-done" element={<AppleCardDone />} />
         <Route path="/apple-wallet" element={<AppleWallet />} />
         <Route path="/apple-wallet-add-card" element={<AddAppleCard />} />
+        
+        <Route path="/apple-wallet-terms2" element={<AppleCardTerms2 />} />
+        <Route path="/apple-wallet-card-added2" element={<AppleCardAdded2 />} />
+        <Route path="/apple-wallet-card-added-done2" element={<AppleCardDone2 />} />
+        <Route path="/apple-wallet2" element={<AppleWallet2 />} />
+        <Route path="/apple-wallet-add-card2" element={<AddAppleCard2 />} />
+
         <Route path="/intro" element={<Intro brand={selectedBrand}
           theme={selectedTheme} lang={selectedLang} />} />
         <Route path="/login-faceid" element={<LoginFaceID />} />
@@ -162,6 +185,11 @@ function AppRoutes() {
         <Route path="/account-ready" element={<AccountReady/>} />
         <Route path="/create-passcode" element={<CreatePasscode />} />
         <Route path="/confirm-passcode" element={<ConfirmPasscode />} />
+        <Route path="/change-passcode" element={<ChangePasscode />} />
+        <Route path="/create-pin" element={<CreateNewPin/>} />
+        <Route path="/create-pin-confirmation" element={<ChangePinConfrimation/>} />
+        <Route path="/confirm-pin" element={<ConfrimPin/>} />
+        <Route path="/forgot-passcode" element={<ForgotPasscode />} />
         <Route path="/card-details" element={<CardDetailPage/>} />
         <Route path="/use-faceid" element={<UseFaceID/>} />
         <Route path="/biller-added/:id" element={<BillAdded/>} />
@@ -173,11 +201,13 @@ function AppRoutes() {
         <Route path="/amount-sent/:id" element={<SentMoney/>} />
         <Route path="/add-biller/:id" element={<AddBiller/>} />
         <Route path="/bill-payments-settings/:id" element={<BillPaymentsSettings/>} />
+        <Route path="/bill-detail/:id" element={<BillDetails/>} />
         <Route path="/bill-search" element={<BillSearch/>} />
-        <Route path="/use-faceid2" element={<UseFaceID2/>} />
+        <Route path="/use-faceid2" element={<UseFaceID2/>} /> 
         <Route path="/manage-card" element={<ManageCard/>} />
         <Route path="/view-card-detail" element={<ViewCardDetail/>} />
         <Route path="/view-card-detail-faceid" element={<ViewCardFaceID/>} />
+        <Route path="/card-lock-faceid" element={<CardLockFaceID/>} />
         <Route path="/card-lock-faceid" element={<CardLockFaceID/>} />
         <Route path="/lock-card" element={<CardLock/>} />
         <Route path="/new-home" element={<NewHomePage brand={selectedBrand} makePageUnclickable={true}
@@ -190,7 +220,12 @@ function AppRoutes() {
            <Route path="/send-money" element={<SendMoney />} />
            <Route path="/rewards" element={<Rewards />} />
            <Route path="/mygoals" element={<MyGoals />} />
+           <Route path="/newgoal" element={<NewGoal />} />
+           <Route path="/newgoal2" element={<NewGoal2 />} />
+           <Route path="/goalcreated" element={<GoalCreated />} />
+           <Route path="/goaldetail/:id" element={<GoalDetail />} />
            <Route path="/paybill" element={<PayBill />} />
+           <Route path="/paybill-added/:id" element={<PayBillAdded />} />
         <Route path="404" element={<Page404 />} />
         {/* Redirect to the brand and theme selector if the route doesn't match */}
         <Route path="*" element={<Navigate to="/old-home" />} />

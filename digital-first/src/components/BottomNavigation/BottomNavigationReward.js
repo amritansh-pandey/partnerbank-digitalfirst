@@ -11,15 +11,16 @@ import BottomMenu from "../BottomMenu";
 
 const BottomNavigationReward = ({ brand, theme, lang = "en" }) => {
 
-  const [showBottomSheet, setShowBottomSheet] = useState(false);
-
-  const openBottomSheet = () => {
-    setShowBottomSheet(true);
+  const [bottomSheetOpen, setBottomSheetOpen] = useState(false);
+  
+  const handleOpenBottomSheet = () => {
+    setBottomSheetOpen(true);
   };
 
-  const closeBottomSheet = () => {
-    setShowBottomSheet(false);
+  const handleCloseBottomSheet = () => {
+    setBottomSheetOpen(false);
   };
+
 
   return (
     <div className="bottom_navigation_container">
@@ -46,7 +47,7 @@ const BottomNavigationReward = ({ brand, theme, lang = "en" }) => {
           </div>
         </Link>
 
-        <div className="bottom_navigation_button" onClick={openBottomSheet}>
+        <div className="bottom_navigation_button" onClick={handleOpenBottomSheet}>
           <div className="menu-bg">
             <img src={ChevronUpWhite} alt="money_transfer" className="bottom-nav-icon32" />
           </div>
@@ -76,9 +77,9 @@ const BottomNavigationReward = ({ brand, theme, lang = "en" }) => {
       </div>
 
       <CustomHeightBottomSheet
-        show={showBottomSheet}
+        show={bottomSheetOpen}
         title="Accounts"
-        setShowBottomSheet={closeBottomSheet}
+        onClose={handleCloseBottomSheet}
       >
       
       <BottomMenu />

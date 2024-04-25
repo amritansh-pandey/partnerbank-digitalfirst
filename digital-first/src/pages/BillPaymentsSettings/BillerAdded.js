@@ -4,8 +4,6 @@ import TopNavigation4 from '../../components/TopNavigation/TopNavigation4';
 import './style.css';
 import { useParams, useNavigate } from 'react-router-dom';
 import bills from '../../assets/data/bill';
-import BellAlert from '../../assets/images/bell-alert.svg'
-import Toggle from '../../components/Toggle'
 import Lottie from "lottie-react";
 import DoneAnimation from "../../assets/animation/LoadingDone.json";
 import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
@@ -57,7 +55,7 @@ function BillAdded() {
                 </div>
 
                 <div style={{ textAlign: "center", marginTop: "128px" }}>
-                    <div onClick={() => navigate(`/paybill`)}>
+                    <div onClick={() => navigate(`/paybill-added/${id}`)}>
                         <PrimaryButtonMedium text={"Done"} />
                     </div>
                 </div>

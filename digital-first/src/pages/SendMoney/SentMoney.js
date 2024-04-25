@@ -70,7 +70,7 @@ function SentMoney() {
           <div>
             <span className='subheading3'>{selectedItem.money}</span>
           </div>
-          <div>
+          <div style={{textAlign: "right"}}>
             <span style={{ fontSize: '12px', color: "#FB853C" }}>Pending</span>
           </div>
         </div>

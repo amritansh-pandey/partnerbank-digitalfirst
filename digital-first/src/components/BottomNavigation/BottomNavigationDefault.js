@@ -11,14 +11,14 @@ import BottomMenu from "../BottomMenu";
 
 const BottomNavigationDefault = ({ brand, theme, lang = "en" }) => {
 
-  const [showBottomSheet, setShowBottomSheet] = useState(false);
-
-  const openBottomSheet = () => {
-    setShowBottomSheet(true);
+  const [bottomSheetOpen, setBottomSheetOpen] = useState(false);
+  
+  const handleOpenBottomSheet = () => {
+    setBottomSheetOpen(true);
   };
 
-  const closeBottomSheet = () => {
-    setShowBottomSheet(false);
+  const handleCloseBottomSheet = () => {
+    setBottomSheetOpen(false);
   };
 
   return (
@@ -46,7 +46,7 @@ const BottomNavigationDefault = ({ brand, theme, lang = "en" }) => {
           </div>
         </Link>
 
-        <div className="bottom_navigation_button" onClick={openBottomSheet}>
+        <div className="bottom_navigation_button" onClick={handleOpenBottomSheet}>
           <div className="menu-bg">
             <img src={ChevronUpWhite} alt="money_transfer" className="bottom-nav-icon32" />
           </div>
@@ -75,10 +75,11 @@ const BottomNavigationDefault = ({ brand, theme, lang = "en" }) => {
         </Link>
       </div>
 
+
       <CustomHeightBottomSheet
-        show={showBottomSheet}
+        show={bottomSheetOpen}
         title="Accounts"
-        setShowBottomSheet={closeBottomSheet}
+        onClose={handleCloseBottomSheet}
       >
       
       <BottomMenu />

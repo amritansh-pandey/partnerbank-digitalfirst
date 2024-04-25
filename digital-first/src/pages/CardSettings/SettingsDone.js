@@ -22,8 +22,8 @@ function SettingsDone() {
       setShowSuccessAlert(true);
       setTimeout(() => {
         setShowSuccessAlert(false);
-      }, 3000);
-    }, 2500);
+      }, 2000);
+    }, 1500);
   
     // Clear the timeout when the component unmounts
     return () => clearTimeout(timeout);
@@ -81,12 +81,14 @@ function SettingsDone() {
 
               <div>
                 <div className='card-setting-sub-item-container'>
+                <Link to="/change-passcode" style={{ textDecoration: 'none' }}>
                   <div className='card-setting-sub-item-info'>
                     <img src={ChangePin} alt="Change card PIN" />
                     <div>
                       <span className='body2'>Change card PIN</span>
                     </div>
                   </div>
+                  </Link>
                   <div>
                     <img src={ChevronRight} />
                   </div>

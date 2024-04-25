@@ -42,12 +42,12 @@ function AddAppleCard() {
 
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Card Number</span>
-          <span style={{color: "#c8c8c8"}}>5873 3873 6836 3456</span>
+          <span style={{color: "#c8c8c8"}}>5412 7512 3412 8832</span>
         </div>
 
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Expiry Date</span>
-          <span style={{color: "#c8c8c8"}}>09/28</span>
+          <span style={{color: "#c8c8c8"}}>01/29</span>
         </div>
 
         <div className='apple-waller-info-item'>

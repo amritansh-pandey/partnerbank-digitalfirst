@@ -51,7 +51,7 @@ function AppleCardAdded() {
 
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Expiry Date</span>
-          <span style={{ color: "#c8c8c8" }}>09/28</span>
+          <span style={{ color: "#c8c8c8" }}>01/29</span>
         </div>
 
         <div className='apple-waller-info-item'>

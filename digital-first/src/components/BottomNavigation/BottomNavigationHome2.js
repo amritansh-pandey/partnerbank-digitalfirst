@@ -9,15 +9,6 @@ import Rewards from "../../assets/icons/gift.svg";
 
 const BottomNavigationHome2 = ({ brand, theme, lang = "en" }) => {
 
-  const [showBottomSheet, setShowBottomSheet] = useState(false);
-
-  const openBottomSheet = () => {
-    setShowBottomSheet(true);
-  };
-
-  const closeBottomSheet = () => {
-    setShowBottomSheet(false);
-  };
 
   return (
     <div className="bottom_navigation_container">
@@ -44,7 +35,7 @@ const BottomNavigationHome2 = ({ brand, theme, lang = "en" }) => {
           </div>
      
 
-        <div className="bottom_navigation_button" onClick={openBottomSheet}>
+        <div className="bottom_navigation_button">
           <div className="menu-bg">
             <img src={ChevronUpWhite} alt="money_transfer" className="bottom-nav-icon32" />
           </div>

@@ -3,12 +3,26 @@ import './style.css';
 import { useNavigate } from 'react-router-dom';
 import TopNavigation1 from '../../components/TopNavigation/TopNavigation1';
 import { ChevronLeftIcon } from '../../components/Icons';
-import TextButtonSmall from '../../components/Buttons/TextButtonSmall';
+import DigitalCardArt from '../../assets/images/card-shadow.png';
 import DialPad from '../../components/Dialpad';
-
+import CustomHeightBottomSheet from "../../components/BottomSheet/CustomHeightBottomSheet";
+import { Link } from 'react-router-dom';
 
 
 function ChangePasscode() {
+
+
+    const [showBottomSheet, setShowBottomSheet] = useState(false);
+
+    const openBottomSheet = () => {
+        setShowBottomSheet(true);
+    };
+
+    const closeBottomSheet = () => {
+        setShowBottomSheet(false);
+    };
+
+
     const [shouldAnimate, setShouldAnimate] = useState(true);
 
     useEffect(() => {
@@ -22,7 +36,7 @@ function ChangePasscode() {
 
     useEffect(() => {
         setTimeout(() => {
-            navigate("/confirm-passcode", { replace: true });
+            navigate("/create-pin", { replace: true });
         }, 5000);
     }, []);
 
@@ -52,7 +66,7 @@ function ChangePasscode() {
             <TopNavigation1 leftIcon={<ChevronLeftIcon size={24} className="icon-black" />} />
 
             <div className='title-container1 text-center'>
-                <span className='title3'>Create passcode</span>
+                <span className='title3'>Change card PIN</span>
             </div>
 
 
@@ -67,7 +81,39 @@ function ChangePasscode() {
             </div>
 
             <div className='sub-title-container-pascode text-center'>
-                <span className='body1'>Choose a memorable 6-digit passcode for logging into the app.</span>
+                <span className='body1'>Enter your current card PIN to continue.</span>
+                <div className='forgot-button-container' >
+                    <button className="text-button-small-icon button-text-primary" onClick={openBottomSheet} >
+                        Forgot card PIN?"
+                    </button>
+                </div>
+
+            </div>
+            <CustomHeightBottomSheet
+                show={showBottomSheet}
+                setShowBottomSheet={closeBottomSheet}
+            >
+                <div className='forgot-pin-pop-up'>
+                    <div><span className='subheading2'>Forgot your card PIN?</span></div>
+                    <div>
+                        <img src={DigitalCardArt} alt="sustaible" className='forgot-pin-digital-card' />
+                    </div>
+
+                    <div>
+                        <span className='body1'>To reset the card PIN, first verify your mobile using an One Time Password (OTP)</span>
+                    </div>
+                    <div>
+                        {/* <Link to="/forgot-passcode" style={{ textDecoration: 'none' }}> */}
+                            <button className='primary-button-medium'>
+                                <span className='button-text-white'>Continue</span>
+                            </button>
+                        {/* </Link> */}
+
+                    </div>
+                </div>
+            </CustomHeightBottomSheet>
+            <div>
+
             </div>
             <DialPad />
 
