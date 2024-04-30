@@ -136,7 +136,7 @@ function CardSettings() {
                   <div className='card-setting-sub-item-info'>
                     <img src={Support} alt="Change card PIN" />
                     <div>
-                      <span className='body2'>Partner Bank help and support</span>
+                      <span className='body2'>Bank help and support</span>
                     </div>
                   </div>
                   <div>

@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
 import TopNavigation1 from '../../components/TopNavigation/TopNavigation1';
 import { ChevronLeftIcon } from '../../components/Icons';
-import data from '../../assets/data/data.json';
-import { importImage } from '../../utils';
+import VideoSelfieCameraImage from '../../assets/images/video-selfie.png';
 
-const VideoSelfieRecording = ({ brand, theme, lang = "en" }) => {
+const VideoSelfieRecording = () => {
     const [shouldAnimate, setShouldAnimate] = useState(true);
   
     useEffect(() => {
@@ -25,7 +24,7 @@ const VideoSelfieRecording = ({ brand, theme, lang = "en" }) => {
       </div>
                 <div style={{height: "64px"}}></div>
                 <div className='mt-64 getting-started-image-container'>
-                <img src={importImage(brand, theme, "video-selfie.png")} alt="photo-id"/>
+                <img src={VideoSelfieCameraImage} alt="photo-id"/>
                 
                 </div>
 
@@ -33,7 +32,7 @@ const VideoSelfieRecording = ({ brand, theme, lang = "en" }) => {
                     <span className="body1">We need a short video selfie to help us match your face with your photo ID.
                     </span>
 <div style={{height: "24px"}}></div>
-                    <span className="body1">We’ll walk you through what’s needed. No hats or sunglasses please.
+                    <span className="body1">We'll walk you through what's needed. No hats or sunglasses please.
                     </span>
                 </div>
 

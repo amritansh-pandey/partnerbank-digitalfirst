@@ -219,7 +219,6 @@ function AppRoutes() {
         <Route path="/view-card-detail" element={<ViewCardDetail/>} />
         <Route path="/view-card-detail-faceid" element={<ViewCardFaceID/>} />
         <Route path="/card-lock-faceid" element={<CardLockFaceID/>} />
-        <Route path="/card-lock-faceid" element={<CardLockFaceID/>} />
         <Route path="/lock-card" element={<CardLock/>} />
         <Route path="/new-home" element={<NewHomePage brand={selectedBrand} makePageUnclickable={true}
           theme={selectedTheme} lang={selectedLang} />} />

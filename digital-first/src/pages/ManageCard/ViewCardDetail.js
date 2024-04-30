@@ -52,7 +52,7 @@ const ViewCardDetail = ({ brand, theme, lang = "en" }) => {
 
     return (
         <div style={{ overflow: "scroll" }}>
-            <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
+            <div className="page-without-animation">
                 <div className='digital-card-container'>
 
                 </div>

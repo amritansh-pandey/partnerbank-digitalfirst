@@ -4,7 +4,7 @@
 }
 
 .progress-bar {
-  --primary: #18A886;
+  --primary: #0D1F7E;
   --secondary: #E1E1E1;
   --size: 300px;/* Initialize --percentage */
   width: var(--size);

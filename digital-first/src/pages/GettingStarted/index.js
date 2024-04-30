@@ -3,8 +3,7 @@ import './style.css';
 import { Link } from 'react-router-dom';
 import Title2 from '../../components/Title/Title2';
 import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
-import data from '../../assets/data/data.json';
-import { importImage } from '../../utils';
+import GettingStartedImage from '../../assets/images/getting-started.png'
 
 const GettingStarted = ({ brand, theme, lang = "en" }) => {
   const [shouldAnimate, setShouldAnimate] = useState(true);
@@ -18,10 +17,10 @@ const GettingStarted = ({ brand, theme, lang = "en" }) => {
   return (
     <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
       <div className='getting-started-container'>
-        <Title2 text={data['getting-started-title'][lang]} />
+        <Title2 text={"Getting started is easy"} />
 
         <div className='mt-56 getting-started-image-container'>
-          <img src={importImage(brand, theme, "getting-started.png")} alt="getting started" />
+          <img src={GettingStartedImage} alt="getting started" />
         </div>
 
         <div className='mt-32 getting-started-body-container'>

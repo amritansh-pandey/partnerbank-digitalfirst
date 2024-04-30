@@ -30,7 +30,7 @@
 
 .radio-button-label.selected {
   font-weight: bold;
-  color: #18A886; 
+  color: #0D1F7E; 
 }
 
 .toggle-switch {
@@ -71,7 +71,7 @@
 }
 
 input:checked + .slider {
-  background-color: #18A886;
+  background-color: #0D1F7E;
 }
 
 input:checked + .slider:before {
@@ -79,7 +79,7 @@ input:checked + .slider:before {
 }
 
 .confirm-button {
-  background-color: #18A886;
+  background-color: #0D1F7E;
   color: white;
   padding: 10px 20px;
   border: none;

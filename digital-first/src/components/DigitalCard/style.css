@@ -1,7 +1,7 @@
 .digital_card {
     height: 100%;
     width: 295px;
-    background: var( --primary-gradient);
+    background: linear-gradient(96deg, #4D4D4D 9.02%, #B7B7B7 96.61%);
     text-align: left;
     border-radius: 20px;
     padding-top: 16px;
