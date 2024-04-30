@@ -7,13 +7,10 @@ import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
 import { useParams, useNavigate } from 'react-router-dom';
 import bills from '../../assets/data/bill';
 import BellAlert from '../../assets/images/bell-alert.svg'
-import Warning from '../../assets/images/information-circle-orrange.svg'
+import Setting from '../../assets/images/cog-6-tooth.svg'
 import ChevronRight from '../../assets/images/chevron-right-black.svg'
-import Credit from '../../assets/images/credit-card-active.svg'
-import Notes from '../../assets/images/banknotes-active.svg'
-import Calendar from '../../assets/images/calendar-days-active.svg'
-import Notification from '../../assets/images/bell-alert-active.svg'
-import Toggle from '../../components/Toggle'
+import Document from '../../assets/images/document.svg'
+import History from '../../assets/images/document-magnifying-glass.svg'
 
 function BillDetails() {
 
@@ -50,124 +47,96 @@ function BillDetails() {
             <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`} >
 
 
+                <div className='bill-info-card-background'>
 
+                    <div className='bill-info-card-container'>
 
-                <div className='bill-info-card-container'>
+                        <div className='bill-card-container'>
 
-                    <div className='bill-card-container'>
-
-                        <div className='points-cash-container'>
+                            <div className='bill-detail-info-icon-container'>
+                                <div className='reward-card-image-container'>
+                                    <img src={selectedItem.billImg} alt='card-image' className='bill-logo' />
+                                </div>
+                                <div className='name-id-container'>
+                                    <div>
+                                        <span className='Body1'>{selectedItem.name}</span>
+                                    </div>
+                                    <div>
+                                        <span className='caption'>{selectedItem.billid}</span>
+                                    </div>
+                                </div>
+                            </div>
                             <div className='reward-card-image-container'>
-                                <img src={selectedItem.billImg} alt='card-image' className='bill-logo' />
+                                <img src={BellAlert} alt='card-image' />
                             </div>
 
 
-                            <div className='cash-equivalent-container'>
-                                <div>
-                                    <span className='Body1'>{selectedItem.name}</span>
-                                </div>
-                                <div>
-                                    <span className='caption'>{selectedItem.billid}</span>
-                                </div>
+                        </div>
+
+                        <div className='bill-amount-container'>
+                            <span className='title1'>{selectedItem.money}</span>
+                            <span className='amount-due-text'>Amount due</span>
+                        </div>
+
+                        <div className='bill-deatil-info-container'>
+                            <div className='bill-period-container'>
+                                <span className='caption'>Bill period</span>
+                                <span className='bill-period-text'>Apr 08 - May 08 2024</span>
+                            </div>
+                            <div style={{ height: "1px", backgroundColor: "#F0F0F0" }}></div>
+                            <div className='bill-period-container'>
+                                <span className='caption'>Due date</span>
+                                <span className='bill-period-text'>Apr 16 2024</span>
                             </div>
                         </div>
-                        <div className='reward-card-image-container'>
-                            <img src={BellAlert} alt='card-image' />
+
+
+                        <div style={{ textAlign: "center" }}>
+                            <div onClick={() => navigate(`/bill-review-pay/${id}`)}>
+                                <PrimaryButtonMedium text={"Pay now"} />
+                            </div>
                         </div>
 
 
+
                     </div>
-
-                    <div className='bill-amount-container'>
-                        <span className='title1'>{selectedItem.money}</span>
-                        <span className='amount-due-text'>Amount due</span>
-                    </div>
-
-                    <div className='bill-deatil-info-container'>
-                        <div className='bill-period-container'>
-                            <span className='caption'>Bill period</span>
-                            <span className='bill-period-text'>Apr 08 - May 08 2024</span>
-                        </div>
-
-                        <div className='bill-period-container'>
-                            <span className='caption'>Due date</span>
-                            <span className='bill-period-text'>Apr 16 2024</span>
-                        </div>
-                    </div>
-
-
 
 
 
                 </div>
-
-                <div className='warning-message-container'>
-                    <div>
-                        <img src={Warning} alt='card-image' />
-                    </div>
-
-                    <div className='warning-message-text'>
-                        <div>
-                            <span className='subheading3'>Credit card payments are accepted, but…</span>
-                        </div>
-                        <div>
-                            <span className='body1'>This biller charges a convenience fee of $2.50 for credit card payments.</span>
-                        </div>
-                    </div>
-
-                </div>
-
-
 
                 <div className='biller-settings-container'>
-                    <div className='biller-settings-title'>
-                        <div>
-                            <span className='title3'>Biller settings</span>
-                        </div>
 
-                        <div>
-                            <span className='subheading2'>Payment details & scheduling</span>
-                        </div>
-                    </div>
+
 
                     <div className='bill-settings-list-container'>
-                        <div className='bill-settings-list-item'>
-                            <div className='bill-setting-icon-text'>
-                                <div> <img src={Credit} alt='card-image' /></div>
-                                <div>
-                                    <div><span className='subheading2'>Digital Debit Card</span></div> <div><span className='body1'>•••• 8832</span></div>
-                                </div>
-                            </div>
-                            <div>  <img src={ChevronRight} alt='card-image' /></div>
-                        </div>
 
-                        <div className='bill-settings-list-item'>
-                            <div className='bill-setting-icon-text'>
-                                <div> <img src={Notes} alt='card-image' /></div>
-                                <div>
-                                    <div><span className='subheading2'>Pay the full balance</span></div> <div><span className='body1'>$53.60</span></div>
-                                </div>
-                            </div>
-                            <div>  <img src={ChevronRight} alt='card-image' /></div>
-                        </div>
-
-                        <div className='bill-settings-list-item'>
-                            <div className='bill-setting-icon-text'>
-                                <div> <img src={Calendar} alt='card-image' /></div>
-                                <div>
-                                    <div><span className='subheading2'>Digital Debit Card</span></div> <div><span className='body1'>10/03/2024</span></div>
-                                </div>
-                            </div>
-                            <div>  <img src={ChevronRight} alt='card-image' /></div>
-                        </div>
-
-                        <div style={{ marginTop: "16px" }}>
-                            <span className='subheading2'>Notifications</span>
-                        </div>
 
                         <div className='bill-settings-list-item'>
                             <div className='bill-setting-icon-text2'>
-                                <div> <img src={Notification} alt='card-image' /></div>
+                                <div> <img src={Setting} alt='card-image' /></div>
+                                <div>
+                                    <div><span className='subheading2'>Alert settings</span></div>
+                                </div>
+                            </div>
+                            <div>  <img src={ChevronRight} alt='card-image' /></div>
+                        </div>
+
+
+                        <div className='bill-settings-list-item'>
+                            <div className='bill-setting-icon-text2'>
+                                <div> <img src={Document} alt='card-image' /></div>
+                                <div>
+                                    <div><span className='subheading2'>Alert settings</span></div>
+                                </div>
+                            </div>
+                            <div>  <img src={ChevronRight} alt='card-image' /></div>
+                        </div>
+
+
+                        <div className='bill-settings-list-item'>
+                            <div className='bill-setting-icon-text2'>
+                                <div> <img src={History} alt='card-image' /></div>
                                 <div>
                                     <div><span className='subheading2'>Alert settings</span></div>
                                 </div>
@@ -177,11 +146,6 @@ function BillDetails() {
                     </div>
                 </div>
 
-                <div style={{ textAlign: "center" }}>
-                    <div onClick={() => navigate(`/biller-added/${id}`)}>
-                        <PrimaryButtonMedium text={"Add biller"} />
-                    </div>
-                </div>
 
                 <div style={{ height: "150px" }}></div>
             </div>

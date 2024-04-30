@@ -5,7 +5,6 @@ import TopNavigation6 from '../../components/TopNavigation/TopNavigation6'
 import WhiteChevronLeft from '../../assets/images/chevron-left-white.svg'
 import DigitalDebitCard from '../../assets/images/digital-card.png'
 import { Link } from 'react-router-dom';
-import BottomNavigationHome from '../../components/BottomNavigation/BottomNavigationHome';
 import SustainableIcon from '../../assets/images/sustainable-logo.svg';
 import InfoIcon from '../../assets/images/info-black.svg';
 import Eye from '../../assets/images/eye-active.svg';
@@ -20,6 +19,7 @@ import CustomHeightBottomSheet from "../../components/BottomSheet/CustomHeightBo
 import RecentTransaction from '../../components/TransactionList/RecentTransaction';
 import PrimaryBase2 from '../../components/Base/PrimaryBase/PrimaryBase2';
 import C2PPopup from '../../components/C2PPopoup';
+import BottomNavigationDefault from '../../components/BottomNavigation/BottomNavigationDefault';
 
 const ManageCard = ({ brand, theme, lang = "en" }) => {
 
@@ -207,7 +207,7 @@ const ManageCard = ({ brand, theme, lang = "en" }) => {
 
             </div>
           
-            <BottomNavigationHome />
+            <BottomNavigationDefault />
         </div>
     )
 }

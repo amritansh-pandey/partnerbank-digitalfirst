@@ -1,14 +1,15 @@
 .bill-info-card-container {
-  margin: 32px 16px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 16px;
   border-radius: 8px;
+  background-color: var(--white);
 }
 
 .bill-card-container {
   display: flex;
   justify-content: space-between;
   padding-bottom: 24px;
+  align-items: center;
   /* border-bottom: 1px solid var(--grey-50); */
 }
 
@@ -71,6 +72,7 @@
 .bill-setting-icon-text2 {
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 
 .bill-settings-list-item {
@@ -100,6 +102,49 @@
 }
 
 .amount-due-text {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--grey-500);
+  font-size: 12px;
+}
+
+.bill-detail-info-icon-container {
+  display: flex;
+  gap: 16px;
+}
+
+.name-id-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bill-info-card-background {
+  background-color: #F8F8F8;
+  padding: 32px 16px;
+}
+.bill-period-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bill-deatil-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.bill-period-text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.logo-card-info-container {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.confirmation-bill-info-container {
+  margin: 16px;
 }

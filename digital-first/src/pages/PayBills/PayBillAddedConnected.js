@@ -10,13 +10,8 @@ import Infinity from '../../assets/images/merchants/infinity.png'
 import ForwardArrow from '../../assets/images/chevron-right-black.svg'
 import bills from '../../assets/data/bill';
 
-function PayBillAdded() {
-  const [shouldAnimate, setShouldAnimate] = useState(true);
+function PayBillAddedConnected() {
 
-  useEffect(() => {
-    // Disable animation after the initial render
-    setShouldAnimate(false);
-  }, []);
 
   const { id } = useParams();
   const navigate = useNavigate();
@@ -30,7 +25,7 @@ function PayBillAdded() {
         pageTitle={"Pay bill"}
       />
 
-      <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
+      <div className='page-without-animation'>
 
         <div className='add-new-button-background'>
           <AddNewButton
@@ -40,24 +35,24 @@ function PayBillAdded() {
         </div>
 
         <div className='tab-list-container'>
-          <div className='upccoming-bill-tab'>
-            <span>Upcoming bills</span>
-          </div>
-          <div onClick={() => navigate(`/paybill-added-connected/${id}`)}>
-            <div className='connected-billers-tab'>
-              <span>Connected billers</span>
+          <div onClick={() => navigate(`/paybill-added2/${id}`)}>
+            <div className='upccoming-bill-tab2'>
+              <span>Upcoming bills</span>
             </div>
+          </div>
+          <div className='connected-billers-tab2'>
+            <span>Connected billers</span>
           </div>
         </div>
 
         <div className='bill-list-main-container'>
           <div className='bill-list-container'>
             <div className='bill-list-title'>
-              <span className='title3'>Bill schedule</span>
+              <span className='title3'>Biller connections</span>
             </div>
 
             <div>
-            <div onClick={() => navigate(`/bill-detail/${id}`)}>
+
               <div className='bill-item-container'>
                 <div className='bill-image-title'>
                   <div className='bill-image'>
@@ -81,14 +76,7 @@ function PayBillAdded() {
                   <div className=''>
 
 
-                    <div className='bill-amount'>
-                      <span className='subheading2'>{selectedItem.money}</span>
-                    </div>
-
-                    <div className='bill-date'>
-                      <span className='due-date'>Due in 3 days</span>
-                    </div>
-
+                   
 
                   </div>
                   <div className='bill-arrow'>
@@ -96,7 +84,7 @@ function PayBillAdded() {
                   </div>
                 </div>
               </div>
-              </div>
+
 
               <div className='bill-item-container'>
                 <div className='bill-image-title'>
@@ -120,14 +108,7 @@ function PayBillAdded() {
                   <div className=''>
 
 
-                    <div className='bill-amount'>
-                      <span className='subheading2'>$144.55</span>
-                    </div>
-
-                    <div className='bill-date'>
-                      <span className='due-date'>Due in 3 days</span>
-                    </div>
-
+                    
 
                   </div>
                   <div className='bill-arrow'>
@@ -160,14 +141,7 @@ function PayBillAdded() {
                   <div className=''>
 
 
-                    <div className='bill-amount'>
-                      <span className='subheading2'>$87.50</span>
-                    </div>
-
-                    <div className='bill-date'>
-                      <span className='caption'>Due on: 15/03</span>
-                    </div>
-
+                    
 
                   </div>
                   <div className='bill-arrow'>
@@ -176,47 +150,7 @@ function PayBillAdded() {
                 </div>
               </div>
 
-              <div className='bill-list-title'>
-                <span className='title3'>Recently paid</span>
-              </div>
-
-              <div className='bill-item-container'>
-                <div className='bill-image-title'>
-                  <div className='bill-image'>
-                    <img src={Infinity} alt='bill-logo' className='bill-logo' />
-                  </div>
-                  <div className='bill-title-container'>
-
-                    <div className='bill-title'>
-                      <span className='subheading2'>Infinity Wireless</span>
-                    </div>
-                    <div className='bill-category'>
-                      <span className='caption'>Utilities</span>
-                    </div>
-
-                  </div>
-
-
-                </div>
-                <div className='bill-amount-date-arrow'>
-                  <div className=''>
-
-
-                    <div className='bill-amount'>
-                      <span className='subheading2'>$87.50</span>
-                    </div>
-
-                    <div className='bill-date'>
-                      <span className='caption'>Paid: 15/02</span>
-                    </div>
-
-
-                  </div>
-                  <div className='bill-arrow'>
-                    <img src={ForwardArrow} alt='bill-arrow' className='bill-arrow' />
-                  </div>
-                </div>
-              </div>
+            
             </div>
           </div>
 
@@ -238,4 +172,4 @@ function PayBillAdded() {
 }
 
 
-export default PayBillAdded;
+export default PayBillAddedConnected;

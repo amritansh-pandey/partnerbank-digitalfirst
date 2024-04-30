@@ -1,17 +1,13 @@
-// TransactionList.jsx
 
 import React from 'react';
 import transactionsData from '../../assets/data/transaction';
-import './style.css';
-import TransactionListItem from './TransactionListItem'; // Import the new component
+import TransactionListItem from './TransactionListItem'; 
 
-const TransactionList = () => {
+const TransactionList = ({ onTransactionClick }) => {
   const groupedTransactions = transactionsData.reduce((grouped, transaction) => {
     const key = transaction.date || 'Uncategorized';
-
     grouped[key] = grouped[key] || [];
     grouped[key].push(transaction);
-
     return grouped;
   }, {});
 
@@ -24,12 +20,15 @@ const TransactionList = () => {
           </div>
           <ul>
             {transactions.map((transaction, index) => (
-              <TransactionListItem key={index} transaction={transaction} />
+              <TransactionListItem
+                key={index}
+                transaction={transaction}
+                onClick={onTransactionClick}
+              />
             ))}
           </ul>
         </div>
       ))}
-  
     </div>
   );
 };

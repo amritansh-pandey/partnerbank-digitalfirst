@@ -1,0 +1,82 @@
+
+.transaction-detail-main-container {
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 16px;
+    margin: 24px 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.transaction-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--grey-100);
+}
+
+.transaction-name-date {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.transaction-detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--grey-100);
+}
+
+.transaction-detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-address-share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 60%;
+
+}
+
+.merchant-transaction-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.map-image {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.redeem-main-container {
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 24px 48px;
+    margin: 24px 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.reward-redeemed-text-container {
+    text-align: center;
+    margin-top: 24px;
+}

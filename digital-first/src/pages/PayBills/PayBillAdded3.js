@@ -10,7 +10,7 @@ import Infinity from '../../assets/images/merchants/infinity.png'
 import ForwardArrow from '../../assets/images/chevron-right-black.svg'
 import bills from '../../assets/data/bill';
 
-function PayBillAdded() {
+function PayBillAdded2() {
   const [shouldAnimate, setShouldAnimate] = useState(true);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function PayBillAdded() {
         pageTitle={"Pay bill"}
       />
 
-      <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
+      <div className='page-without-animation'>
 
         <div className='add-new-button-background'>
           <AddNewButton
@@ -43,7 +43,7 @@ function PayBillAdded() {
           <div className='upccoming-bill-tab'>
             <span>Upcoming bills</span>
           </div>
-          <div onClick={() => navigate(`/paybill-added-connected/${id}`)}>
+          <div onClick={() => navigate(`/paybill-added-connected2/${id}`)}>
             <div className='connected-billers-tab'>
               <span>Connected billers</span>
             </div>
@@ -57,46 +57,8 @@ function PayBillAdded() {
             </div>
 
             <div>
-            <div onClick={() => navigate(`/bill-detail/${id}`)}>
-              <div className='bill-item-container'>
-                <div className='bill-image-title'>
-                  <div className='bill-image'>
-
-                    <img src={selectedItem.billImg} alt='bill-logo' className='bill-logo' />
-                  </div>
-                  <div className='bill-title-container'>
-
-                    <div className='bill-title'>
-                      <span className='subheading2'>{selectedItem.name}</span>
-                    </div>
-                    <div className='bill-category'>
-                      <span className='caption'>{selectedItem.type}</span>
-                    </div>
-
-                  </div>
-
-
-                </div>
-                <div className='bill-amount-date-arrow'>
-                  <div className=''>
-
-
-                    <div className='bill-amount'>
-                      <span className='subheading2'>{selectedItem.money}</span>
-                    </div>
-
-                    <div className='bill-date'>
-                      <span className='due-date'>Due in 3 days</span>
-                    </div>
-
-
-                  </div>
-                  <div className='bill-arrow'>
-                    <img src={ForwardArrow} alt='bill-arrow' className='bill-arrow' />
-                  </div>
-                </div>
-              </div>
-              </div>
+             
+             
 
               <div className='bill-item-container'>
                 <div className='bill-image-title'>
@@ -176,6 +138,46 @@ function PayBillAdded() {
                 </div>
               </div>
 
+
+              <div className='bill-item-container'>
+                  <div className='bill-image-title'>
+                    <div className='bill-image'>
+
+                      <img src={selectedItem.billImg} alt='bill-logo' className='bill-logo' />
+                    </div>
+                    <div className='bill-title-container'>
+
+                      <div className='bill-title'>
+                        <span className='subheading2'>{selectedItem.name}</span>
+                      </div>
+                      <div className='bill-category'>
+                        <span className='caption'>{selectedItem.type}</span>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+                  <div className='bill-amount-date-arrow'>
+                    <div className=''>
+
+
+                      <div className='bill-amount'>
+                        <span className='subheading2'>{selectedItem.money}</span>
+                      </div>
+
+                      <div className='bill-date'>
+                        <span className='caption'>Due on: 05/04</span>
+                      </div>
+
+
+                    </div>
+                    <div className='bill-arrow'>
+                      <img src={ForwardArrow} alt='bill-arrow' className='bill-arrow' />
+                    </div>
+                  </div>
+                </div>
+       
               <div className='bill-list-title'>
                 <span className='title3'>Recently paid</span>
               </div>
@@ -229,7 +231,7 @@ function PayBillAdded() {
 
 
 
-        <div style={{height: "250px"}}></div>
+        <div style={{ height: "250px" }}></div>
       </div>
 
       <BottomNavigationBill />
@@ -238,4 +240,4 @@ function PayBillAdded() {
 }
 
 
-export default PayBillAdded;
+export default PayBillAdded2;

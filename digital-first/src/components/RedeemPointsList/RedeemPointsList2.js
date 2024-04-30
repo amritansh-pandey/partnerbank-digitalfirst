@@ -3,7 +3,7 @@ import './style.css'
 import { Link } from 'react-router-dom'
 
 
-function RedeemPointsList() {
+function RedeemPointsList2() {
     return (
         <div>
             <Link to='/rewardsdeatils' style={{ textDecoration: "none" }}>
@@ -24,7 +24,7 @@ function RedeemPointsList() {
                         <span className='subheading3'>$40.50</span>
                     </div>
                     <div>
-                        <span className='caption-orrange'>Eligible for redemption</span>
+                        <span className='caption-green'>Redeemed 4,050 points</span>
                     </div>
                 </div>
             </div>
@@ -218,4 +218,4 @@ function RedeemPointsList() {
     )
 }
 
-export default RedeemPointsList
+export default RedeemPointsList2

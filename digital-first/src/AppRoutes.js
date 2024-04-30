@@ -85,6 +85,16 @@ import NewGoal from './pages/MyGoals/NewGoal';
 import NewGoal2 from './pages/MyGoals/NewGoal2';
 import GoalCreated from './pages/MyGoals/GoalCreated';
 import GoalDetail from './pages/MyGoals/GoalDetail';
+import RewardsDetails from './pages/Rewards/RewardsDetail';
+import RewardRedeemed from './pages/Rewards/RewardRedeemed';
+import RewardRedeemedDone from './pages/Rewards/RewardRedeemedDone';
+import PayBillAddedConnected from './pages/PayBills/PayBillAddedConnected';
+import PayBillAdded2 from './pages/PayBills/PayBillAdded2';
+import PayBillAdded3 from './pages/PayBills/PayBillAdded3';
+import BillReviewPay from './pages/BillPaymentsSettings/BillReviewPay';
+import BillPaidConfirmation from './pages/BillPaymentsSettings/BillPaidConfirmation';
+import PayBillAddedConnected2 from './pages/PayBills/PayBillAddedConnected2';
+import TransactionDetail from './pages/Transactions/TransactionDetail';
 
 
 function AppRoutes() {
@@ -202,6 +212,7 @@ function AppRoutes() {
         <Route path="/add-biller/:id" element={<AddBiller/>} />
         <Route path="/bill-payments-settings/:id" element={<BillPaymentsSettings/>} />
         <Route path="/bill-detail/:id" element={<BillDetails/>} />
+        <Route path="/bill-review-pay/:id" element={<BillReviewPay/>} />
         <Route path="/bill-search" element={<BillSearch/>} />
         <Route path="/use-faceid2" element={<UseFaceID2/>} /> 
         <Route path="/manage-card" element={<ManageCard/>} />
@@ -219,13 +230,22 @@ function AppRoutes() {
            <Route path="/video-selfie-camera" element={<VideoSelfieCamera />} />
            <Route path="/send-money" element={<SendMoney />} />
            <Route path="/rewards" element={<Rewards />} />
+           <Route path="/rewardsdeatils" element={<RewardsDetails />} />
+           <Route path="/rewards-successful" element={<RewardRedeemed />} />
+           <Route path="/rewards-redeemed" element={<RewardRedeemedDone />} />
            <Route path="/mygoals" element={<MyGoals />} />
            <Route path="/newgoal" element={<NewGoal />} />
            <Route path="/newgoal2" element={<NewGoal2 />} />
            <Route path="/goalcreated" element={<GoalCreated />} />
            <Route path="/goaldetail/:id" element={<GoalDetail />} />
+           <Route path="/transaction-detail/:id" element={<TransactionDetail />} />
            <Route path="/paybill" element={<PayBill />} />
            <Route path="/paybill-added/:id" element={<PayBillAdded />} />
+           <Route path="/paybill-confrimation/:id" element={<BillPaidConfirmation />} />
+           <Route path="/paybill-added2/:id" element={<PayBillAdded2 />} />
+           <Route path="/paybill-added3/:id" element={<PayBillAdded3 />} />
+           <Route path="/paybill-added-connected/:id" element={<PayBillAddedConnected/>} />
+           <Route path="/paybill-added-connected2/:id" element={<PayBillAddedConnected2/>} />
         <Route path="404" element={<Page404 />} />
         {/* Redirect to the brand and theme selector if the route doesn't match */}
         <Route path="*" element={<Navigate to="/old-home" />} />

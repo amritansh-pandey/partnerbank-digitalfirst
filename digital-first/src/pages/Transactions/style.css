@@ -1,18 +1,39 @@
 .donut-container {
-    margin: 32px;
+  margin: 32px;
 }
 
 .card-carousel-container {
-    margin: 32px auto;
+  margin: 32px auto;
 }
 
 .carousel-heading-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 16px;
 }
 
 .slick-next {
-   right: 0 !important;
-   display: none !important;
+  right: 0 !important;
+  display: none !important;
+}
+
+.month-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 24px auto;
+  justify-content: center;
+}
+
+.transaction-heading-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.transaction-popup-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 16px 0;
 }

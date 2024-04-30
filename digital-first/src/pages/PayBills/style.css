@@ -21,15 +21,33 @@
 }
 
 .connected-billers-tab {
-    font-family: "MarkforMC";
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    padding: 10px 20px;
+  font-family: "MarkforMC";
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 20px;
   color: var(--primary-text);
 }
 
-
 .bill-list-main-container {
-    margin: 24px;
+  margin: 24px;
+}
+
+.upccoming-bill-tab2 {
+  font-family: "MarkforMC";
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 20px;
+  color: var(--primary-text);
+}
+
+.connected-billers-tab2 {
+  border-bottom: 3px solid var(--primary-color);
+  color: var(--primary-color);
+  font-family: "MarkforMC";
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 20px;
 }

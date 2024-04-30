@@ -5,7 +5,7 @@
   font-size: 16px;
   white-space: nowrap;
   border-radius: 50px;
-  height: 40px;
+  height: 48px;
   margin: 16px auto;
   background: transparent;
   text-align: center;
@@ -45,7 +45,7 @@
   font-size: 16px;
   white-space: nowrap;
   border-radius: 50px;
-  height: 40px;
+  height: 48px;
   margin: 16px auto;
   background: var(--white);
   text-align: center;
@@ -58,7 +58,7 @@
     font-size: 16px;
     white-space: nowrap;
     border-radius: 50px;
-    height: 40px;
+    height: 48px;
     margin: 16px auto;
     background: var(--primary-gradient);
     text-align: center;
@@ -103,8 +103,22 @@
   font-size: 16px;
   white-space: nowrap;
   border-radius: 50px;
-  height: 40px;
+  height: 48px;
   margin: 16px auto;
   background: var(--grey-300);
   text-align: center;
+}
+
+.primary-full-width-button {
+  border: none;
+    padding: 0 32px;
+    cursor: pointer;
+    font-size: 16px;
+    white-space: nowrap;
+    border-radius: 50px;
+    height: 48px;
+    margin: 16px auto;
+    background: var(--primary-gradient);
+    text-align: center;
+    width: 100%;
 }

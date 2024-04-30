@@ -4,13 +4,13 @@ import TopNavigation4 from '../../components/TopNavigation/TopNavigation4';
 import { ChevronLeftIcon } from '../../components/Icons';
 import './style.css';
 import BottomNavigationReward from '../../components/BottomNavigation/BottomNavigationReward';
-import RewardInfoCard from '../../components/RewardInfoCard';
 import Tab from '../../components/Tab'
 import OffersList from '../../components/OfferList';
-import RedeemPointsList from '../../components/RedeemPointsList';
+import RedeemPointsList2 from '../../components/RedeemPointsList/RedeemPointsList2';
+import RewardInfoCard2 from '../../components/RewardInfoCard/RewardInfoCard2';
 
 
-function Rewards() {
+function RewardRedeemedDone() {
     const [shouldAnimate, setShouldAnimate] = useState(true);
 
     useEffect(() => {
@@ -22,7 +22,7 @@ function Rewards() {
 
     const tabContent = {
         'Offers': <OffersList />,
-        'Redeem points': <RedeemPointsList />,
+        'Redeem points': <RedeemPointsList2 />,
     };
 
 
@@ -35,7 +35,7 @@ function Rewards() {
            
                 <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
 
-                    <RewardInfoCard />
+                    <RewardInfoCard2 />
 
                     <div className='bill-list-container'>
                         <Tab tabs={tabs} defaultTab="Offers" content={tabContent} onTabChange={(tab) => console.log(`Switched to ${tab}`)} />
@@ -54,4 +54,4 @@ function Rewards() {
     );
 }
 
-export default Rewards;
+export default RewardRedeemedDone;
