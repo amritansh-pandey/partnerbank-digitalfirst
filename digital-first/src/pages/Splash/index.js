@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import TextButtonMedium from "../../components/Buttons/TextButtonMedium";
 import WhiteButtonMedium from "../../components/Buttons/WhiteButtonMedium";
 import "./style.css";
-import { importImage } from '../../utils';
+import Logo from '../../assets/images/bank-logo.png'
 
 
 function Splash({brand, theme}) {
@@ -11,7 +11,7 @@ function Splash({brand, theme}) {
     return (
         <div className="splash-background" >
             <div>
-                <img src={importImage(brand, theme, "logo.png")} alt="logo" className="splash-logo-white" />
+                <img src={Logo} alt="logo" className="splash-logo-white" />
             </div>
 
             <div className="button-container-splash">

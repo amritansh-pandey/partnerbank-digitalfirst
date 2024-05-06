@@ -41,6 +41,7 @@ function CreateNewPin() {
     }, []);
 
     const changeOtpInputClass = () => {
+        
         const otpInputs = document.querySelectorAll('.passcode-input');
         otpInputs.forEach((otpInput) => {
             otpInput.classList.add('passcode-filled');  // Change class name to 'passcode-filled'

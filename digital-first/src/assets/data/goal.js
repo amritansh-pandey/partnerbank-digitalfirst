@@ -4,7 +4,7 @@ import Phone from '../../assets/images/device-phone-mobile.svg';
 
 export const savingGoals = [
     {
-        title: 'Latest smart phone',
+        title: 'Latest smartphone',
         amountSaved: '$100',
         totalAmount: '$1,200',
         amountRemaining: '$1,100',

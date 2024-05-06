@@ -10,7 +10,7 @@ function CircleProgressBar({ percentage, amount }) {
         aria-valuenow={percentage}
         aria-valuemin="0"
         aria-valuemax="100"
-        style={{ '--percentage': percentage }}
+        style={{ width: `${percentage}%` }}
       ></div>
       <div className="main-progress-text">
         <span className='caption'>Saved amount</span>

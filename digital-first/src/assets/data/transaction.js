@@ -13,25 +13,51 @@ const transactionsData = [
     logo: ABC,
     name: 'ABC & Co.',
     duration: '11:57 PM',
-    amount: '$32.50',
+    amount: '$28.50',
     date: 'Today', 
-    day: '5th May 2024'
+    day: '5th May 2024',
+    itemcost: "$28.50",
+    product: "Fruit Salad",
+    iteminfo: "250g",
+    itemdiscount: "-$2.00",
+    tax: "$2.00",
+    subtotal: "$28.50"
   },
   {
     logo: GoodFood,
     name: 'Good Food Club',
     duration: '02:30 PM',
-    amount: '$75.50',
+    amount: '$31.5',
     date: 'Today',
-    day: '5th May 2024'
+    day: '5th May 2024',
+    itemcost: "$2.50",
+    product: "Apples",
+    iteminfo: "250g",
+    itemcost2: "$12.50",
+    product2: "Milk",
+    iteminfo2: "1l",
+    itemcost3: "$12.50",
+    product3: "Eggs",
+    iteminfo3: "12",
+    itemcost4: "$5.50",
+    product4: "Chicken",
+    iteminfo4: "500g",
+    itemdiscount: "-$5.50",
+    tax: "$4.00",
+    subtotal: "$33.00"
   },
   {
     logo: Spa,
     name: 'HealthSpa',
     duration: '08:45 PM',
-    amount: '$13.62',
+    amount: '$109.99',
     date: 'Yesterday',
-    day: '4th May 2024'
+    day: '4th May 2024',
+    itemcost: "$99.99",
+    product: "Spa",
+    iteminfo: "1 hour session",
+    tax: "$10.00",
+    subtotal: "99.99"
   },
 
 
@@ -39,9 +65,18 @@ const transactionsData = [
     logo: Apparel,
     name: 'Apparel Clothes',
     duration: '10:45 AM',
-    amount: '$16.22',
+    amount: '$48.00',
     date: '3rd May',
-    day: '3rd May 2024'
+    day: '3rd May 2024',
+    itemcost: "$12.50",
+    product: "T-Shirt",
+    iteminfo: "Red",
+    itemcost2: "$32.50",
+    product2: "Jeans",
+    iteminfo2: "Blue, Slim Fit",
+    itemdiscount: "-$2.00",
+    tax: "$5.00",
+    subtotal: "$45.00"
   },
 
 
@@ -49,27 +84,43 @@ const transactionsData = [
     logo: StyleHome,
     name: 'StyleHome',
     duration: '08:45 PM',
-    amount: '$361.55',
+    amount: "$209.99",
     date: 'Yesterday',
-    day: '4th May 2024'
+    day: '4th May 2024',
+    itemcost: "$199.99",
+    product: "Sofa",
+    iteminfo: "3 Seater",
+    itemdiscount: "-$20.00",
+    tax: "30.00",
+    subtotal: "$199.99"
   },
 
   {
     logo: Vacation,
     name: 'Authentic Food Co.',
     duration: '09:15 PM',
-    amount: '$31.55',
+    amount: '$2500.00',
     date: '2nd May',
-    day: '2nd May 2024'
+    day: '2nd May 2024',
+    itemcost: "2399.00",
+    product: "Spain Holiday Package",
+    iteminfo: "All Inclusive",
+    tax: "101.00",
+    subtotal: "2399.00"
   },
 
   {
     logo: Webflix,
     name: 'Webflix',
     duration: '07:45 AM',
-    amount: '$9.99',
+    amount: '$22.99',
     date: '2nd May',
-    day: '2nd May 2024'
+    day: '2nd May 2024',
+    itemcost: "$19.99",
+    product: "Monthly Subscrition",
+    iteminfo: "1 Month",
+    tax: "$3.00",
+    subtotal: "$22.99"
   },
 
   {
@@ -78,7 +129,22 @@ const transactionsData = [
     duration: '09:15 AM',
     amount: '$40.55',
     date: '2nd May',
-    day: '2nd May 2024'
+    day: '2nd May 2024',
+    itemcost: "$2.50",
+    product: "Bread",
+    iteminfo: "250g",
+    itemcost2: "$12.50",
+    product2: "Milk",
+    iteminfo2: "1l",
+    itemcost3: "$12.50",
+    product3: "Eggs",
+    iteminfo3: "12",
+    itemcost4: "$5.50",
+    product4: "Chicken",
+    iteminfo4: "500g",
+    itemdiscount: "-$5.50",
+    tax: "$4.00",
+    subtotal: "$33.00"
   },
 
 ];

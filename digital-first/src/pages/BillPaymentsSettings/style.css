@@ -5,6 +5,15 @@
   background-color: var(--white);
 }
 
+.bill-info-card-container2 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--white);
+  margin: 24px 16px;
+}
+
+
 .bill-card-container {
   display: flex;
   justify-content: space-between;

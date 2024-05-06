@@ -5,7 +5,6 @@ import LoginFaceID from './pages/LoginFaceID';
 import Intro from './pages/Intro';
 import GettingStarted from './pages/GettingStarted';
 import Page404 from './pages/404Page';
-import AdminSetting from './pages/AdminSetting';
 import NewHomePage from './pages/NewHomePage';
 import EnterDetails from './pages/EnterDetails';
 import Authentication from './pages/Authentication';
@@ -70,7 +69,6 @@ import InStoreShopping from './pages/CardSettings/InStoreShopping';
 import InternationalPayments from './pages/CardSettings/InternationalPayments';
 import ATMSettings from './pages/CardSettings/ATMSettings';
 import ChangePasscode from './pages/ChangePin';
-import ForgotPasscode from './pages/ForgotPasscode';
 import CreateNewPin from './pages/ChangePin/CreateNewPin';
 import ConfrimPin from './pages/ChangePin/ConfirmPin';
 import ChangePinConfrimation from './pages/ChangePin/ChangePinConfrimation';
@@ -94,7 +92,18 @@ import PayBillAdded3 from './pages/PayBills/PayBillAdded3';
 import BillReviewPay from './pages/BillPaymentsSettings/BillReviewPay';
 import BillPaidConfirmation from './pages/BillPaymentsSettings/BillPaidConfirmation';
 import PayBillAddedConnected2 from './pages/PayBills/PayBillAddedConnected2';
-import TransactionDetail from './pages/Transactions/TransactionDetail';
+import TransactionDispute from './pages/Transactions/TransactionDetail';
+import TransactionDispute2 from './pages/Transactions/TransactionDispute';
+import Transaction2 from './pages/Transactions/Transaction2';
+import SpendAnalysis from './pages/Transactions/SpendAnalysis';
+import ForgotPin from './pages/ChangePin/ForgotPin';
+import CardDamage from './pages/CardDamage';
+import CardDamageFaceId from './pages/CardDamage/CardDamageFaceID';
+import CardCancelled from './pages/CardDamage/CardCancelled';
+import CardConfirmAddress from './pages/CardDamage/CardConfirmAdress';
+import CardNewConfrim from './pages/CardDamage/CardNewConfirm';
+import TermsCondition from './pages/CardSettings/T&C';
+import Help from './pages/CardSettings/Help';
 
 
 function AppRoutes() {
@@ -128,20 +137,9 @@ function AppRoutes() {
         <Route path="/" element={<Splash brand={selectedBrand}
           theme={selectedTheme} lang={selectedLang} />} /> 
 
-        <Route
-          path="/admin-setting"
-          element={
-            <AdminSetting
-              brands={brands}
-              selectedBrand={selectedBrand}
-              selectedTheme={selectedTheme}
-              selectedLang={selectedLang}
-              onSelectBrand={handleBrandSelect}
-              onSelectTheme={handleThemeSelect}
-              onSelectLang={handleLangSelect}
-            />
-          }
-        />
+      
+          
+     
         <Route path="/login" element={<LoginFaceID />} />
         <Route path="/apple-wallet" element={<AppleWallet />} />
         <Route path="/c2p-info" element={<C2PInfo />} />
@@ -152,13 +150,18 @@ function AppRoutes() {
         <Route path="/apple-wallet-card-added-done" element={<AppleCardDone />} />
         <Route path="/apple-wallet" element={<AppleWallet />} />
         <Route path="/apple-wallet-add-card" element={<AddAppleCard />} />
-        
         <Route path="/apple-wallet-terms2" element={<AppleCardTerms2 />} />
         <Route path="/apple-wallet-card-added2" element={<AppleCardAdded2 />} />
         <Route path="/apple-wallet-card-added-done2" element={<AppleCardDone2 />} />
         <Route path="/apple-wallet2" element={<AppleWallet2 />} />
         <Route path="/apple-wallet-add-card2" element={<AddAppleCard2 />} />
-
+        <Route path="/card-damage" element={<CardDamage />} />
+        <Route path="/card-cancelled" element={<CardCancelled />} />
+        <Route path="/card-address" element={<CardConfirmAddress />} />
+        <Route path="/card-new-confirm" element={<CardNewConfrim />} />
+        <Route path="/card-damage-face-id" element={<CardDamageFaceId />} />
+        <Route path="/terms&condition" element={<TermsCondition />} />
+        <Route path="/help&support" element={<Help />} />
         <Route path="/intro" element={<Intro brand={selectedBrand}
           theme={selectedTheme} lang={selectedLang} />} />
         <Route path="/login-faceid" element={<LoginFaceID />} />
@@ -197,9 +200,9 @@ function AppRoutes() {
         <Route path="/confirm-passcode" element={<ConfirmPasscode />} />
         <Route path="/change-passcode" element={<ChangePasscode />} />
         <Route path="/create-pin" element={<CreateNewPin/>} />
+        <Route path="/forgot-pin" element={<ForgotPin/>} />
         <Route path="/create-pin-confirmation" element={<ChangePinConfrimation/>} />
         <Route path="/confirm-pin" element={<ConfrimPin/>} />
-        <Route path="/forgot-passcode" element={<ForgotPasscode />} />
         <Route path="/card-details" element={<CardDetailPage/>} />
         <Route path="/use-faceid" element={<UseFaceID/>} />
         <Route path="/biller-added/:id" element={<BillAdded/>} />
@@ -237,7 +240,10 @@ function AppRoutes() {
            <Route path="/newgoal2" element={<NewGoal2 />} />
            <Route path="/goalcreated" element={<GoalCreated />} />
            <Route path="/goaldetail/:id" element={<GoalDetail />} />
-           <Route path="/transaction-detail/:id" element={<TransactionDetail />} />
+           <Route path="/transaction-dispute" element={<TransactionDispute />} />
+           <Route path="/transaction2" element={<Transaction2 />} />
+           <Route path="/spend-analysis" element={<SpendAnalysis />} />
+           <Route path="/transaction-dispute2" element={<TransactionDispute2 />} />
            <Route path="/paybill" element={<PayBill />} />
            <Route path="/paybill-added/:id" element={<PayBillAdded />} />
            <Route path="/paybill-confrimation/:id" element={<BillPaidConfirmation />} />

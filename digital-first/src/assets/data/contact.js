@@ -33,7 +33,7 @@ const contacts = [
             name: "Jane Johnson",
             nickname: "J. Johnson",
             detail: "j.johnson@gmail.com",
-            sent: "16/02/23",
+            sent: "16/02/24",
             money: "$245.12",
             stat: "Pending",
           },

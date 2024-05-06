@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function RedeemPointsList2() {
     return (
         <div>
-            <Link to='/rewardsdeatils' style={{ textDecoration: "none" }}>
+            {/* <Link to='/rewardsdeatils' style={{ textDecoration: "none" }}> */}
         <div className='redeem-list-container'>
             <div className='redeem-list-item'>
                 <div className='purchase-name-container'>
@@ -29,7 +29,7 @@ function RedeemPointsList2() {
                 </div>
             </div>
         </div>
-</Link>
+{/* </Link> */}
         <div className='redeem-list-container'>
             <div className='redeem-list-item'>
                 <div className='purchase-name-container'>

@@ -17,7 +17,7 @@ function AddMoneyCard() {
     useEffect(() => {
       setTimeout(() => {
         navigate("/card-camera-scan", { replace: true });
-      }, 3000);
+      }, 2000);
     }, []);
 
 

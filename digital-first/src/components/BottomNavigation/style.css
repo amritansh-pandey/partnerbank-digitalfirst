@@ -29,7 +29,7 @@
 .bottom_navigation_text {
   font-size: 12px;
   font-weight: 600;
-  color: var(--black);
+  color: #919191;
 }
 
 .bottom_navigation_text_active {

@@ -18,7 +18,7 @@ function MyGoals() {
     }, []);
 
     return (
-        <div>
+        <div> 
             <TopNavigation4
                 leftIcon={<ChevronLeftIcon />}
                 pageTitle={"My saving goals"}

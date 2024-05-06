@@ -155,8 +155,42 @@
 }
 
 .success-alert-container-absolute {
-    position: fixed;
-    bottom: 100px;
-    left: 0;
-    right: 0;
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+}
+
+.terms-heading-container {
+  width: 60%;
+  text-align: center;
+  margin: 32px auto;
+}
+
+.terms-body-container {
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.terms-para-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.help-support-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+ padding-bottom: 32px;
+ text-align: center;
+}
+
+.phone-icon-number {
+  display: flex;
+  gap: 16px;
 }

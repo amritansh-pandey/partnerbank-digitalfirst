@@ -23,7 +23,7 @@ function SpendingAlerts() {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setShowBottomSheet(true);
-        }, 3000); // Show after 3 seconds
+        }, 2000); // Show after 3 seconds
 
         return () => clearTimeout(timeout);
     }, []);

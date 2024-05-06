@@ -165,6 +165,12 @@ label {
   color: var(--primary-color);
 }
 
+.body5 {
+  font-family: "MarkforMC";
+  font-weight: 400;
+  font-size: 14px;
+  color: red;
+}
 .subheading1 {
   font-family: "MarkforMC";
   font-weight: 400;
