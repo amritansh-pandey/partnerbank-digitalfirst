@@ -1,20 +1,18 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import './style.css';
+import { Link } from 'react-router-dom';
 
-function TopNavigation7({ leftIcon, pageUrl, rightIcon }) {
-  const navigate = useNavigate();
+function TopNavigation7({ leftIcon, pageUrl, rightIcon, leftIconPath }) {
+ 
 
-  const handleLeftIconClick = () => {
-    // Navigate back to the previous screen
-    navigate(-1);
-  };
 
   return (
     <div className='top-navigation-container'>
-       <div className='left-icon2' onClick={handleLeftIconClick}>
+       <Link to={leftIconPath} className='left-icon' style={{ textDecoration: "none" }}>  
+       <div className='left-icon2'>
         {leftIcon}
       </div>
+      </Link>
       <div className='page-logo'>{pageUrl}</div>
       <div className='right-icon'>{rightIcon}</div>
     </div>

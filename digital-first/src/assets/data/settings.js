@@ -9,8 +9,7 @@ import ATMCash from '../../assets/images/atm.svg'
 
 const setting_data = [
 
-    // { 
-    // //     // "en": [
+
     {
         id: 1,
         profileImg: Alerts,
@@ -43,7 +42,7 @@ const setting_data = [
         profileImg: Store,
         name: "In-store shopping",
         detail1: "Transaction Limit: $1,800",
-        detail2: "Transaction Limit: $1,000",
+        detail2: "Transaction Limit: $2,000",
         title: "Manage transaction limits for In-store shopping",
         navigationUrl: "/instore-shopping-setting"
     },
@@ -69,13 +68,5 @@ const setting_data = [
 
 
 ]
-// }
 
-//     "fr": [
-//         {
-
-
-//         }
-//     ]
-// }
 export default setting_data;

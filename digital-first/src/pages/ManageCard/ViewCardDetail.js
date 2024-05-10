@@ -62,7 +62,8 @@ const ViewCardDetail = ({ brand, theme, lang = "en" }) => {
                     <div>
                         <TopNavigation6
                             leftIcon={<img src={WhiteChevronLeft} alt="Page Logo" className='page-logo' />}
-                            pageLogo={<span className='navigation-title'>Digital Debit</span>} />
+                            pageLogo={<span className='navigation-title'>Digital Debit</span>} 
+                            leftIconPath="/old-home"  />
                     </div>
 
                 </GradientBase>
@@ -99,7 +100,7 @@ const ViewCardDetail = ({ brand, theme, lang = "en" }) => {
                             </div>
 
                             <div className='card-settings-container'>
-                            <Link to="/manage-card" style={{ textDecoration: "none" }}>
+                            <Link to="/hide-card-detail-faceid" style={{ textDecoration: "none" }}>
                                 <div className='card-setting-item'>
                                     <div><img src={EyeSlash} alt="photo-id" className='' /></div>
                                     <div className='card-setting-item-text'><span className='caption-bold'>Hide details</span></div>

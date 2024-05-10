@@ -2,18 +2,13 @@ import React from 'react';
 import './style.css'
 import AppleDone from '../../assets/images/apple-done.svg'
 import WalletIcon from '../../assets/images/wallet-icon.png'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
 function AppleCardAdded() {
 
-  const navigate = useNavigate();
-
-  const handleLeftIconClick = () => {
-    // Navigate back to the previous screen
-    navigate(-1);
-  };
+ 
   return (
     <div>
 

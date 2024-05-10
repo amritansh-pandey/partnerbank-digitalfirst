@@ -206,8 +206,6 @@ label {
   color: var(--primary-text);
 }
 
-
-
 .caption {
   font-family: "MarkforMC";
   font-weight: 400;
@@ -245,7 +243,6 @@ label {
   position: relative;
 }
 
-
 .page-without-animation {
   background: var(--primary-surface);
   width: 100%;
@@ -255,7 +252,6 @@ label {
 }
 
 .title-container1 {
- 
 }
 
 .sub-title-container1 {
@@ -269,7 +265,7 @@ label {
   margin: 0 auto;
   bottom: 128px;
 }
- 
+
 .animation-container64 {
   height: 120px;
   width: 120px;
@@ -445,7 +441,6 @@ label {
   color: var(--primary-color);
 }
 
-
 .icon16 {
   height: 16px;
   width: 16px;
@@ -482,20 +477,16 @@ label {
 
 #theme[data-brand="partnerbank"][data-theme="light"] {
   /* Primary */
-  --primary-color: #0D1F7E;
-  
-
-  
+  --primary-color: #0d1f7e;
 
   /* Primary gradient */
-  --primary-gradient: #0D1F7E;
-
+  --primary-gradient: #0d1f7e;
 
   /* Surface */
   --primary-surface: #ffffff;
   --secondary-surface: #f8f8f8;
   --tertiary-surface: #f1f1f1;
-  --gradient-surface: #0D1F7E;
+  --gradient-surface: #0d1f7e;
 
   /* Dividers */
   --divider-on-primary: #e1e1e1;
@@ -506,7 +497,7 @@ label {
 
   /* Icons */
   --icons-grey: #919191;
-  --icons-primary: #0D1F7E;
+  --icons-primary: #0d1f7e;
   --icons-white: #ffffff;
   --icons-black: #141414;
 
@@ -514,7 +505,7 @@ label {
   --primary-text: #212121;
   --secondary-text: #6e6e6e;
   --white-text: #ffffff;
-  --white-button-text: #0D1F7E;
+  --white-button-text: #0d1f7e;
   --button-text: #ffffff;
 
   /* Neutral colors */
@@ -555,4 +546,136 @@ label {
   --chart-color-6: #9455be;
   --chart-color-7: #c74765;
   --chart-color-8: #f960a6;
+}
+
+.primary-button {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+  background-color: transparent;
+  text-align: center;
+  color: #cf4500;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mweb-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  height: 100vh;
+  overflow: auto;
+  gap: 16px;
+  background-color: #141414;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.mweb-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  line-height: 21px;
+  margin: 16px;
+}
+
+.share-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.share-icon-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px); 
+  }
+}
+
+.dive {
+  animation: moveUpDown 2s ease-in-out infinite; 
+}
+
+.landingpage-main-container {
+  background-color: #141414;
+  height: 100vh;
+}
+
+.mc-circle-container {
+  position: absolute;
+  top: 4vh;
+  right: 0;
+  z-index: 0;
+}
+
+.landing-page-info-container {
+  display: flex;
+  padding: 6vh 16vw;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.landing-mc-logo {
+  height: 6vh;
+}
+
+.digital-first-title {
+  font-size: 6vh;
+  color: white;
+  font-weight: 500;
+}
+
+.df-body {
+  font-size: 2vh;
+  color: white
+}
+
+.digital-first-body-text-container {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.qr-code-image {
+  height: 22vh;
+  border-radius: 10%;
+}
+
+.info-ui-image-container {
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+
+}
+
+.df-caption {
+  font-size: 1.5vh;
+  color: white;
+  font-style: italic;
+}
+
+.app-ui {
+  width: 18vw;
 }

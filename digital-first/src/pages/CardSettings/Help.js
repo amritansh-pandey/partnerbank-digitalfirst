@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import TopNavigation4 from '../../components/TopNavigation/TopNavigation4';
+import TopNavigation8 from '../../components/TopNavigation/TopNavigation8';
 import { ChevronLeftIcon } from '../../components/Icons';
 import './style.css';
 import PhoneArrow from '../../assets/images/phone-arrow-up-right.svg'
@@ -27,9 +27,10 @@ function Help() {
 
   return (
     <div>
-      <TopNavigation4
-        leftIcon={<ChevronLeftIcon />}
-        pageTitle={"Help and support"}
+     <TopNavigation8
+        leftIcon={ <ChevronLeftIcon />}
+        pageTitle="Help and support"
+        leftIconPath="/card-settings" 
       />
 
       <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>

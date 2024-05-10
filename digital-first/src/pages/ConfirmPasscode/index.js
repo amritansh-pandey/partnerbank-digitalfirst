@@ -23,7 +23,7 @@ function ConfirmPasscode() {
     useEffect(() => {
         setTimeout(() => {
             navigate("/use-faceid", { replace: true });
-        }, 5000);
+        }, 4000);
     }, []);
 
 
@@ -34,7 +34,7 @@ function ConfirmPasscode() {
 
         const timeoutId = setTimeout(() => {
             changeOtpInputClass();
-        }, 3000);
+        }, 2000);
 
 
         return () => clearTimeout(timeoutId);

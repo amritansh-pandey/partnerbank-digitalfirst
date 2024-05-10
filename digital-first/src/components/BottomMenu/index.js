@@ -51,7 +51,7 @@ function BottomMenu() {
           </div>
           </div>
           </Link>
-          <Link to="/transactions" style={{ textDecoration: "none" }}>
+          <Link to="/spend-analysis" style={{ textDecoration: "none" }}>
           <div className="account-detail-flex">
           <div className="menu-card-detail">
               <div>

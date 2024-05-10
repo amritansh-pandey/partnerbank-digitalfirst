@@ -21,22 +21,23 @@ const transactionsData = [
     iteminfo: "250g",
     itemdiscount: "-$2.00",
     tax: "$2.00",
-    subtotal: "$28.50"
+    subtotal: "$28.50",
+    address: "25 Madison Ave, New York, NY 10010, USA"
   },
   {
     logo: GoodFood,
     name: 'Good Food Club',
     duration: '02:30 PM',
-    amount: '$31.5',
+    amount: '$22.50',
     date: 'Today',
-    day: '5th May 2024',
+    day: '6th May 2024',
     itemcost: "$2.50",
     product: "Apples",
     iteminfo: "250g",
     itemcost2: "$12.50",
     product2: "Milk",
     iteminfo2: "1l",
-    itemcost3: "$12.50",
+    itemcost3: "$3.50",
     product3: "Eggs",
     iteminfo3: "12",
     itemcost4: "$5.50",
@@ -44,7 +45,8 @@ const transactionsData = [
     iteminfo4: "500g",
     itemdiscount: "-$5.50",
     tax: "$4.00",
-    subtotal: "$33.00"
+    subtotal: "$24.00",
+    address: "123 Broadway, New York, NY 10010, USA"
   },
   {
     logo: Spa,
@@ -57,7 +59,8 @@ const transactionsData = [
     product: "Spa",
     iteminfo: "1 hour session",
     tax: "$10.00",
-    subtotal: "99.99"
+    subtotal: "99.99",
+    address: "456 Park Avenue, New York, NY 10010, USA"
   },
 
 
@@ -76,7 +79,8 @@ const transactionsData = [
     iteminfo2: "Blue, Slim Fit",
     itemdiscount: "-$2.00",
     tax: "$5.00",
-    subtotal: "$45.00"
+    subtotal: "$45.00",
+    address: "1313 Sixth Avenue, New York, NY 10010, USA"
   },
 
 
@@ -92,12 +96,13 @@ const transactionsData = [
     iteminfo: "3 Seater",
     itemdiscount: "-$20.00",
     tax: "30.00",
-    subtotal: "$199.99"
+    subtotal: "$199.99",
+    address: "456 Park Avenue, New York, NY 10010, USA"
   },
 
   {
     logo: Vacation,
-    name: 'Authentic Food Co.',
+    name: 'Premium Hotel',
     duration: '09:15 PM',
     amount: '$2500.00',
     date: '2nd May',
@@ -106,7 +111,8 @@ const transactionsData = [
     product: "Spain Holiday Package",
     iteminfo: "All Inclusive",
     tax: "101.00",
-    subtotal: "2399.00"
+    subtotal: "2399.00",
+    address: "567 Central Park West, New York, NY 10010, USA"
   },
 
   {
@@ -120,7 +126,8 @@ const transactionsData = [
     product: "Monthly Subscrition",
     iteminfo: "1 Month",
     tax: "$3.00",
-    subtotal: "$22.99"
+    subtotal: "$22.99",
+    address: "789 Madison Avenue, New York, NY 10010, USA"
   },
 
   {
@@ -144,7 +151,8 @@ const transactionsData = [
     iteminfo4: "500g",
     itemdiscount: "-$5.50",
     tax: "$4.00",
-    subtotal: "$33.00"
+    subtotal: "$33.00",
+    address: "123 Broadway, New York, NY 10010, USA"
   },
 
 ];

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import TopNavigation4 from '../../components/TopNavigation/TopNavigation4';
+import TopNavigation8 from '../../components/TopNavigation/TopNavigation8';
 import { ChevronLeftIcon } from '../../components/Icons';
 import './style.css';
 import ChangePin from '../../assets/images/passcode.svg'
@@ -38,9 +38,11 @@ function SettingsDone() {
 
   return (
     <div>
-      <TopNavigation4
-        leftIcon={<ChevronLeftIcon />}
+  
+        <TopNavigation8
+        leftIcon={ <ChevronLeftIcon />}
         pageTitle={"Manage card"}
+        leftIconPath="/manage-card" 
       />
 
       <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>

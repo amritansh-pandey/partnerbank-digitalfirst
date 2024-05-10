@@ -36,7 +36,7 @@ function NewGoal2() {
                     <div style={{marginTop: "16px"}}>
                         <TextField
                             label={"What are you saving for?"}
-                            value={"Latest smart phone"} />
+                            value={"Latest smartphone"} />
                     </div>
 
 

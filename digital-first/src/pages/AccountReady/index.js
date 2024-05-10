@@ -9,7 +9,7 @@ import SustainableIcon from '../../assets/images/sustainable-logo.svg';
 import InfoIcon from '../../assets/images/info-black.svg';
 import CustomHeightBottomSheet from "../../components/BottomSheet/CustomHeightBottomSheet";
 
-const AccountReady = ({ brand, theme, lang = "en" }) => {
+const AccountReady = () => {
     const [shouldAnimate, setShouldAnimate] = useState(true);
     useEffect(() => {
         setShouldAnimate(false);

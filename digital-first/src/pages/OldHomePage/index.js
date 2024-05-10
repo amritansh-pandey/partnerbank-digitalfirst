@@ -31,6 +31,7 @@ const OldHomePage = ({ brand, theme, lang = "en" }) => {
 
 
   return (
+    <div>
     <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
       <div className='digital-card-container'>
         <DigitalCard
@@ -75,6 +76,8 @@ const OldHomePage = ({ brand, theme, lang = "en" }) => {
       </PrimaryBase>
       <BottomNavigationHome />
     </div>
+     <BottomNavigationHome />
+     </div>
   )
 }
 

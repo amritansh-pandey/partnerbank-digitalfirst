@@ -20,7 +20,7 @@ function ForgotPin() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/create-pin", { replace: true });
-    }, 6000);
+    }, 5000);
   }, []);
 
 
@@ -31,7 +31,7 @@ function ForgotPin() {
   
     const timeoutId = setTimeout(() => {
       changeOtpInputClass();
-    }, 3000);
+    }, 2000);
 
  
     return () => clearTimeout(timeoutId);

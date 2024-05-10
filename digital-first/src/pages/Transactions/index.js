@@ -12,6 +12,9 @@ import BottomNavigationDefault from '../../components/BottomNavigation/BottomNav
 import CustomHeightBottomSheet from '../../components/BottomSheet/CustomHeightBottomSheet';
 import PrimaryFullWidthButton from '../../components/Buttons/PrimaryFullWidthButton';
 import Logo from '../../assets/images/logo.svg';
+import Map from '../../assets/images/map.png'
+import Share from '../../assets/images/share.svg';
+import FullHeightBottomSheet2 from '../../components/BottomSheet/FullHeightBottomSheet/FullHeightBottomSHeet2';
 
 function Transactions(props) {
 
@@ -35,7 +38,7 @@ function Transactions(props) {
     setBottomSheetVisible(false);
   };
 
-  
+
 
   return (
     <div>
@@ -64,7 +67,7 @@ function Transactions(props) {
             </div>
 
             <div>
-              <Link to="/spend-analysis" style={{ textDecoration: "none" }}>
+              <Link to="/spend-analysis2" style={{ textDecoration: "none" }}>
                 <div>
                   <span className='subheading4'>View analysis</span>
                 </div>
@@ -80,7 +83,7 @@ function Transactions(props) {
         <div>
           <TransactionList onTransactionClick={handleTransactionClick} />
         </div>
-        <CustomHeightBottomSheet
+        <FullHeightBottomSheet2
           show={bottomSheetVisible}
           onClose={handleCloseBottomSheet}
         >
@@ -189,33 +192,44 @@ function Transactions(props) {
                   <span className='body3'>{selectedTransaction.amount}</span>
                 </div>
                 <div className='transaction-info-list-container'>
-                <span className='body3'>Payment method</span>
-                <div className='card-transaction-detail'>
-                <span className='body1'>•••• 8832</span>
-                <img src={Logo} />
-                </div>
-                 
+                  <span className='body3'>Payment method</span>
+                  <div className='card-transaction-detail'>
+                    <span className='body1'>•••• 8832</span>
+                    <img src={Logo} />
+                  </div>
+
                 </div>
                 <div style={{ height: "1px", backgroundColor: "#EBEBEB" }}></div>
               </div>
-
+              <div className='logo-address-share-map'>
+                <div className='logo-address-share'>
+                  <div className='logo-address'>
+                    <img src={selectedTransaction.logo} className='merchant-transaction-logo' />
+                    <span className='body3'>{selectedTransaction.address}</span>
+                  </div>
+                  <div>
+                    <img src={Share} />
+                  </div>
+                </div>
+                <img src={Map} className='map-image' />
+              </div>
               <div className='dispute-container'>
-                <span className='subheading3'>Don’t recognize this transaction?</span>
+                <span className='subheading3'>Don't recognize this transaction?</span>
                 <Link to="/transaction-dispute" style={{ textDecoration: "none" }}>
-                <PrimaryFullWidthButton text={"Dispute"} />
+                  <PrimaryFullWidthButton text={"Dispute"} />
                 </Link>
               </div>
 
               <div style={{ marginBottom: "32px" }}  >
 
 
-                
+
 
               </div>
 
             </div>
           )}
-        </CustomHeightBottomSheet>
+        </FullHeightBottomSheet2>
 
       </div>
 

@@ -23,18 +23,18 @@ function ConfrimPin() {
     useEffect(() => {
         setTimeout(() => {
             navigate("/create-pin-confirmation", { replace: true });
-        }, 5000);
+        }, 4000);
     }, []);
 
 
 
-    const [showAlert, setShowAlert] = useState(true);
+    
 
     useEffect(() => {
 
         const timeoutId = setTimeout(() => {
             changeOtpInputClass();
-        }, 3000);
+        }, 2000);
 
 
         return () => clearTimeout(timeoutId);
@@ -43,8 +43,8 @@ function ConfrimPin() {
     const changeOtpInputClass = () => {
         const otpInputs = document.querySelectorAll('.passcode-input');
         otpInputs.forEach((otpInput) => {
-            otpInput.classList.add('passcode-filled');  // Change class name to 'passcode-filled'
-            otpInput.classList.remove('passcode-input'); // Remove 'passcode-input'
+            otpInput.classList.add('passcode-filled');  
+            otpInput.classList.remove('passcode-input'); 
         });
     };
     return (

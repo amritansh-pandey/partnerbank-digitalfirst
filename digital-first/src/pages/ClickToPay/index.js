@@ -38,6 +38,7 @@ function C2PInfo() {
                         <span>src.mastercard.com</span>
                     </div>}
                 rightIcon={<img src={RefreshIcon} />}
+                leftIconPath="/manage-card" 
             />
             <div style={{ height: "2px", width: "100%", backgroundColor: "#BCBCBC" }}></div>
             <div className="c2p-main-container">

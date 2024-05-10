@@ -27,6 +27,24 @@ function ChangePasscode() {
         setBottomSheetOpen(false);
     };
 
+    useEffect(() => {
+
+        const timeoutId = setTimeout(() => {
+            changeOtpInputClass();
+        }, 2000);
+
+
+        return () => clearTimeout(timeoutId);
+    }, []);
+
+    const changeOtpInputClass = () => {
+        
+        const otpInputs = document.querySelectorAll('.passcode-input');
+        otpInputs.forEach((otpInput) => {
+            otpInput.classList.add('passcode-filled');  
+            otpInput.classList.remove('passcode-input'); 
+        });
+    };
 
     return (
         <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>

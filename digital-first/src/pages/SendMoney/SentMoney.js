@@ -10,6 +10,9 @@ import AddNewButton from '../../components/Buttons/AddNewButton';
 import ContactList from '../../components/ContactList'; 
 import contacts from '../../assets/data/contact';
 import { useParams } from 'react-router-dom';
+import TopNavigation8 from '../../components/TopNavigation/TopNavigation8';
+import Person1 from '../../assets/images/p1.png'
+import Person3 from '../../assets/images/p3.png'
 
 function SentMoney() {
 
@@ -32,9 +35,10 @@ function SentMoney() {
 
   return (
     <div>
-      <TopNavigation4
+      <TopNavigation8
         leftIcon={<ChevronLeftIcon />}
         pageTitle={"Send money"}
+        leftIconPath="/old-home" 
         rightIcon={<img src={InfoActive} alt="info" />}
       />
 
@@ -76,6 +80,61 @@ function SentMoney() {
         </div>
       </div>
 </div>
+
+
+<div className='contact'>
+        <div className='contact-image-info'>
+          <div>
+            <img src={Person1} alt="John Doe" className='contact-image' />
+          </div>
+          <div className='contact-detail'>
+            <div className='contact-name'>
+              <span className='subheading2'>John Doe</span>
+            </div>
+            <div className='contact-date'>
+              <span className='caption'>Sent: 18/02/24</span>
+            </div>
+          </div>
+        </div>
+        <div className='contact-amount-info'>
+          <div>
+            <span className='subheading3'>$173.68</span>
+          </div>
+          <div style={{textAlign: "right"}}>
+            <span style={{ fontSize: '12px', color: "#FB853C" }}>Pending</span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div className='contact'>
+        <div className='contact-image-info'>
+          <div>
+            <img src={Person3} alt="John Doe" className='contact-image' />
+          </div>
+          <div className='contact-detail'>
+            <div className='contact-name'>
+              <span className='subheading2'>Jane Johnson</span>
+            </div>
+            <div className='contact-date'>
+              <span className='caption'>Sent: 16/02/24</span>
+            </div>
+          </div>
+        </div>
+        <div className='contact-amount-info'>
+          <div>
+            <span className='subheading3'>$245.12</span>
+          </div>
+          <div style={{textAlign: "right"}}>
+            <span style={{ fontSize: '12px', color: "#FB853C" }}>Pending</span>
+          </div>
+        </div>
+      </div>
+
+
           <ContactList contacts={contactsData} />
         </div>
       </div>

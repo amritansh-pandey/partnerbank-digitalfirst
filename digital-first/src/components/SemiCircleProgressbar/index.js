@@ -5,7 +5,7 @@ function CircleProgressBar({ percentage, amount }) {
   return (
     <div className="progress-container">
       <div
-        className="progress-bar"
+        className="progress-bar2"
         role="progressbar"
         aria-valuenow={percentage}
         aria-valuemin="0"

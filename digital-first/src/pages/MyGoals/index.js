@@ -4,14 +4,18 @@ import { ChevronLeftIcon } from '../../components/Icons';
 import './style.css';
 import BottomNavigationDefault from '../../components/BottomNavigation/BottomNavigationDefault';
 import AddNewButton2 from '../../components/Buttons/AddNewButton/Addbutton2';
-import { Link, useNavigate } from 'react-router-dom';
-import savingGoals from '../../assets/data/goal';
+import { Link } from 'react-router-dom';
+import savingGoals2 from '../../assets/data/goal2.js';
 import CircularProgress from '../../components/CircularProgress';
 
 function MyGoals() {
     const [shouldAnimate, setShouldAnimate] = useState(true);
-    const navigate = useNavigate();
+  
 
+
+    console.log('savingGoals:', savingGoals2);
+
+    
     useEffect(() => {
         // Disable animation after the initial render
         setShouldAnimate(false);
@@ -29,9 +33,9 @@ function MyGoals() {
                     <AddNewButton2 title={'Create a new goal'} />
                 </div>
 
-                {savingGoals.slice(1).map((item, index) => ( // Exclude the first data set
+                {savingGoals2.map((item, index) => ( 
                     <div key={index}>
-                        <Link to={`/goaldetail/${index}`} style={{ textDecoration: "none" }}>
+                        <Link to={`/goaldetail2/${index}`} style={{ textDecoration: "none" }}>
                             <div className='saving-goal-card-container'>
                                 <div className='saving-goal-title-container'>
                                     <img src={item.icon} alt="Icon" />

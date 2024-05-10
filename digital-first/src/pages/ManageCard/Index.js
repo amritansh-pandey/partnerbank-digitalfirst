@@ -61,7 +61,9 @@ const ManageCard = ({ brand, theme, lang = "en" }) => {
                     <div>
                         <TopNavigation6
                             leftIcon={<img src={WhiteChevronLeft} alt="Page Logo" className='page-logo' />}
-                            pageLogo={<span className='navigation-title'>Digital Debit</span>} />
+                            pageLogo={<span className='navigation-title'>Digital Debit</span>}
+                            leftIconPath="/old-home"  />
+                 
                     </div>
 
                 </GradientBase>

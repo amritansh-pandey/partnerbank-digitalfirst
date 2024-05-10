@@ -13,6 +13,7 @@ import CustomHeightBottomSheet from '../../components/BottomSheet/CustomHeightBo
 import PrimaryFullWidthButton from '../../components/Buttons/PrimaryFullWidthButton';
 import Logo from '../../assets/images/logo.svg';
 import AppNotification from '../../components/SMSAlert/AppNotification';
+import TopNavigation8 from '../../components/TopNavigation/TopNavigation8';
 
 function Transaction2(props) {
 
@@ -40,9 +41,12 @@ function Transaction2(props) {
 
   return (
     <div>
-      <TopNavigation4
+      <TopNavigation8
         leftIcon={<ChevronLeftIcon size={24} className="icon-black" />}
-        pageTitle={"Transactions"} />
+        pageTitle={"Transactions"}
+        leftIconPath="/manage-card" />
+
+
       <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
 
         <div className='month-container'>
@@ -65,7 +69,7 @@ function Transaction2(props) {
             </div>
 
             <div>
-            <Link to="/spend-analysis" style={{ textDecoration: "none" }}>
+            <Link to="/spend-analysis2" style={{ textDecoration: "none" }}>
                 <div>
                   <span className='subheading4'>View analysis</span>
                 </div>

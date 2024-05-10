@@ -1,4 +1,4 @@
-import HouseIcon from '../../assets/images/home.svg';
+import TravelIcon from '../../assets/images/plane.svg';
 import CarIcon from '../../assets/images/car.svg';
 import Phone from '../../assets/images/device-phone-mobile.svg';
 
@@ -17,7 +17,7 @@ export const savingGoals = [
     },
     {
         title: 'Trip to Greece',
-        amountSaved: '$1400',
+        amountSaved: '$1,400',
         totalAmount: '$2,400',
         amountRemaining: '$1,000',
         monthlyContribution: '$100',
@@ -25,7 +25,7 @@ export const savingGoals = [
         startMonth: 'May 2023',
         endMonth: 'Aug 2024',
         completionPercentage: 58,
-        icon: HouseIcon 
+        icon: TravelIcon
     },
     {
         title: 'New Car Fund',

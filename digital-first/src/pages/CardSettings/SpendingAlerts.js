@@ -31,7 +31,7 @@ function SpendingAlerts() {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setTransactionAmount("$50.00");
-        }, 5000);
+        }, 3000);
 
         return () => clearTimeout(timeout);
     }, []);
