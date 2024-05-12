@@ -41,6 +41,7 @@ function C2PLoader() {
                         <span>src.mastercard.com</span>
                     </div>}
                 rightIcon={<img src={RefreshIcon} />}
+              
             />
             <div style={{ height: "2px", width: "100%", backgroundColor: "#BCBCBC" }}></div>
             <div>

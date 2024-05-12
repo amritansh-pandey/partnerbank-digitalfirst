@@ -36,7 +36,7 @@
 .upccoming-bill-tab2 {
   font-family: "MarkforMC";
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   padding: 10px 20px;
   color: var(--primary-text);
@@ -47,7 +47,7 @@
   color: var(--primary-color);
   font-family: "MarkforMC";
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   padding: 10px 20px;
 }

@@ -10,8 +10,7 @@ function AppleWallet2() {
   const navigate = useNavigate();
 
   const handleLeftIconClick = () => {
-    // Navigate back to the previous screen
-    navigate(-1);
+    navigate("/account-ready");
   };
 
   return (

@@ -1,26 +1,28 @@
 import React, { useState } from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
-import { importImage } from '../../utils';
+import Intro1 from '../../assets/images/intro1.png'
+import Intro2 from '../../assets/images/intro2.png'
+import Intro3 from '../../assets/images/intro3.png'
 import TextButtonSmall from '../Buttons/TextButtonSmall';
-import data from '../../assets/data/data.json';
+
 
 const IntroCarousel = ({brand, theme, lang="en"}) => {
   const carouselData = [
     {
-      heading: data['carousel-intro1-heading'][lang],
-      image: importImage(brand, theme, "intro1.png"),
-      text: data['carousel-intro1-text'][lang]
+      heading: "No hanging around, go digital",
+      image: Intro1,
+      text: "Why wait for a card to arrive? Apply and start using your new Digital Debit card right away."
     },
     {
-      heading: data['carousel-intro2-heading'][lang],
-      image: importImage(brand, theme, "intro2.png"),
-      text: data['carousel-intro2-text'][lang]
+      heading: "Take charge of your card",
+      image: Intro2,
+      text: "Control card access and settings straight from your smartphone, anywhere, anytime.",
     },
     {
-      heading: data['carousel-intro3-heading'][lang],
-      image: importImage(brand, theme, "intro3.png"),
-      text: data['carousel-intro3-text'][lang]
+      heading: "Zero fees",
+      image: Intro3,
+      text: "Seamless transactions, zero fees. Your money, your freedom.",
     },
   ];
 

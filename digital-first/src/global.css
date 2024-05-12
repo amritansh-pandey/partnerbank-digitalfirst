@@ -165,6 +165,12 @@ label {
   color: var(--primary-color);
 }
 
+.body5 {
+  font-family: "MarkforMC";
+  font-weight: 400;
+  font-size: 14px;
+  color: red;
+}
 .subheading1 {
   font-family: "MarkforMC";
   font-weight: 400;
@@ -199,8 +205,6 @@ label {
   font-size: 18px;
   color: var(--primary-text);
 }
-
-
 
 .caption {
   font-family: "MarkforMC";
@@ -239,7 +243,6 @@ label {
   position: relative;
 }
 
-
 .page-without-animation {
   background: var(--primary-surface);
   width: 100%;
@@ -249,7 +252,6 @@ label {
 }
 
 .title-container1 {
- 
 }
 
 .sub-title-container1 {
@@ -263,7 +265,7 @@ label {
   margin: 0 auto;
   bottom: 128px;
 }
- 
+
 .animation-container64 {
   height: 120px;
   width: 120px;
@@ -439,7 +441,6 @@ label {
   color: var(--primary-color);
 }
 
-
 .icon16 {
   height: 16px;
   width: 16px;
@@ -454,55 +455,13 @@ label {
   height: 32px;
   width: 32px;
 }
-/* .icon-white {
-  stroke: var(--icons-white);
-}
-
-.icon-primary {
-  stroke: var(--icons-primary);
-}
-
-.icon-grey {
-  stroke: var(--icons-grey);
-}
-
-.icon-black {
-  stroke: var(--icons-black);
-} */
-
-/* Dynamic Color Variables */
-
-/* PartnerBank - Light mode */
 
 #theme[data-brand="partnerbank"][data-theme="light"] {
   /* Primary */
   --primary-color: #18a886;
-  --primary-tint20: #7eccb7;
-  --primary-tint30: #b1e0d3;
-  --primary-tint40: #dff3ee;
-  --primary-shade10: #008b67;
-  --primary-shad20: #006b4b;
-
-  /* Secondary */
-  --secondary-color: #2baab9;
-  --secondary-tint20: #85dde4;
-  --secondary-tint30: #b4ebee;
-  --secondary-tint40: #e1f7f8;
-  --secondary-shade10: #2896a0;
-  --secondary-shad20: #248288;
 
   /* Primary gradient */
   --primary-gradient: linear-gradient(180deg, #18a886 0%, #2baab9 100%);
-  --primary-gradient-tint20: linear-gradient(180deg, #7eccb7 0%, #85dde4 100%);
-  --primary-gradient-tint30: linear-gradient(180deg, #b1e0d3 0%, #b4ebee 100%);
-  --primary-gradient-tint40: linear-gradient(180deg, #dff3ee 0%, #e1f7f8 100%);
-  --primary-gradient-shade10: linear-gradient(180deg, #008b67 0%, #2896a0 100%);
-  --primary-gradient-shad20: linear-gradient(
-    180deg,
-    #006b4b 0%,
-    #2baab9 100%,
-    #248288 100%
-  );
 
   /* Surface */
   --primary-surface: #ffffff;
@@ -512,7 +471,7 @@ label {
 
   /* Dividers */
   --divider-on-primary: #e1e1e1;
-  --divider-on-secondary: #c8c8c8;
+  --divider-on-secondary: #919191;
 
   /* Disabled */
   --disabled-state: #acacac;
@@ -540,7 +499,7 @@ label {
   --grey-500: #6e6e6e;
   --grey-400: #919191;
   --grey-300: #acacac;
-  --grey-200: #c8c8c8;
+  --grey-200: #919191;
   --grey-100: #e1e1e1;
   --grey-50: #f1f1f1;
   --grey-25: #f8f8f8;
@@ -570,187 +529,134 @@ label {
   --chart-color-8: #f960a6;
 }
 
-#theme[data-brand="partnerbank"][data-theme="dark"] {
-  /* Primary */
-  --primary-color: #5fdbb6;
-  --primary-tint20: #a4e9d3;
-  --primary-tint30: #daf7ee;
-  --primary-tint40: #daf7ee;
-  --primary-shade10: #0c9b86;
-  --primary-shad20: #00513f;
-
-  /* Secondary */
-  --secondary-color: #4ed8ea;
-  --secondary-tint20: #82e4f0;
-  --secondary-tint30: #82e4f0;
-  --secondary-tint40: #e1f8fc;
-  --secondary-shade10: #0da6c6;
-  --secondary-shad20: #004f57;
-
-  /* Primary gradient */
-  --primary-gradient: linear-gradient(180deg, #5fdbb6 0%, #4ed8ea 100%);
-  --primary-gradient-tint20: linear-gradient(180deg, #a4e9d3 0%, #82e4f0 100%);
-  --primary-gradient-tint30: linear-gradient(180deg, #daf7ee 0%, #b4eef6 100%);
-  --primary-gradient-tint40: linear-gradient(180deg, #daf7ee 0%, #b4eef6 100%);
-  --primary-gradient-shade10: linear-gradient(180deg, #0c9b86 0%, #0da6c6 100%);
-  --primary-gradient-shad20: linear-gradient(
-    180deg,
-    #00513f 0%,
-    #2baab9 100%,
-    #004f57 100%
-  );
-
-  /* Surface */
-  --primary-surface: #141414;
-  --secondary-surface: #212121;
-  --tertiary-surface: #292929;
-  --gradient-surface: linear-gradient(180deg, #141414 0%, #404040 100%);
-
-  /* Dividers */
-  --divider-on-primary: #404040;
-  --divider-on-secondary: #6e6e6e;
-
-  /* Disabled */
-  --disabled-state: #404040;
-
-  /* Icons */
-  --icons-grey: #c8c8c8;
-  --icons-primary: #5fdbb6;
-  --icons-white: #ffffff;
-
-  /* Text */
-  --primary-text: #f8f8f8;
-  --secondary-text: #e1e1e1;
-  --white-text: #ffffff;
-  --white-button-text: #141414;
-  --button-text: #004f57;
-
-  /* Neutral colors */
-  --black: #000000;
-  --grey-950: #141414;
-  --grey-900: #212121;
-  --grey-800: #292929;
-  --grey-700: #303030;
-  --grey-600: #404040;
-  --grey-500: #6e6e6e;
-  --grey-400: #919191;
-  --grey-300: #acacac;
-  --grey-200: #c8c8c8;
-  --grey-100: #e1e1e1;
-  --grey-50: #f1f1f1;
-  --grey-25: #f8f8f8;
-  --white: #ffffff;
-
-  /* Message */
-  --success-text: #99f984;
-  --warning-text: #ffdf98;
-  --error-text: #ffdad4;
-
-  --success-container: #005301;
-  --warning-container: #5a4300;
-  --error-container: #930100;
-
-  --success-icon: #7edc6b;
-  --warning-icon: #f6be11;
-  --error-icon: #ffb4a8;
-
-  /* Chart Colors */
-  --chart-color-1: #93d4dc;
-  --chart-color-2: #ffcb85;
-  --chart-color-3: #b2e092;
-  --chart-color-4: #92c3f0;
-  --chart-color-5: #ffa268;
-  --chart-color-6: #cba0e8;
-  --chart-color-7: #e58ea2;
-  --chart-color-8: #ffabd1;
+.primary-button {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+  background-color: transparent;
+  text-align: center;
+  color: #cf4500;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-#theme[data-brand="bankpathy"][data-theme="light"] {
-  /* Primary */
-  --primary-color: #cf4500;
-  --primary-tint20: #f88a5d;
-  --primary-tint30: #faaa8b;
-  --primary-tint40: #fccbb9;
-  --primary-shade10: #dd4c03;
-  --primary-shad20: #b73800;
+.mweb-container {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  height: 100vh;
+  overflow: auto;
+  gap: 16px;
+  background-color: #141414;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
 
-  /* Primary gradient */
-  --primary-gradient: #cf4500;
-  --primary-gradient-tint20: #f88a5d;
-  --primary-gradient-tint30: #faaa8b;
-  --primary-gradient-tint40: #fccbb9;
-  --primary-gradient-shade10: #dd4c03;
-  --primary-gradient-shad20: #b73800;
+.mweb-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  line-height: 21px;
+  margin: 16px;
+}
 
-  /* Secondary */
-  --secondary-color: #f79f1b;
-  --secondary-tint20: #fad356;
-  --secondary-tint30: #fbde86;
-  --secondary-tint40: #fdebb5;
-  --secondary-shade10: #f68f19;
-  --secondary-shad20: #f57115;
+.share-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
 
-  /* Surface */
-  --primary-surface: #ffffff;
-  --secondary-surface: #f8f8f8;
-  --tertiary-surface: #f1f1f1;
-  --gradient-surface: linear-gradient(to bottom, #cf4500, #f79f1b);
+.share-icon-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 8px;
+}
 
-  /* Dividers */
-  --divider-on-primary: #e1e1e1;
-  --divider-on-secondary: #c8c8c8;
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px); 
+  }
+}
 
-  /* Disabled */
-  --disabled-state: #acacac;
+.dive {
+  animation: moveUpDown 2s ease-in-out infinite; 
+}
 
-  /* Icons */
-  --icons-grey: #919191;
-  --icons-primary: #cf4500;
-  --icons-white: #ffffff;
+.landingpage-main-container {
+  background-color: #141414;
+  height: 100vh;
+}
 
-  /* Text */
-  --primary-text: #212121;
-  --secondary-text: #6e6e6e;
-  --white-text: #ffffff;
-  --white-button-text: #cf4500;
-  --button-text: #ffffff;
+.mc-circle-container {
+  position: absolute;
+  top: 4vh;
+  right: 0;
+  z-index: 0;
+}
 
-  /* Neutral colors */
-  --black: #000000;
-  --grey-950: #141414;
-  --grey-900: #212121;
-  --grey-800: #292929;
-  --grey-700: #303030;
-  --grey-600: #404040;
-  --grey-500: #6e6e6e;
-  --grey-400: #919191;
-  --grey-300: #acacac;
-  --grey-200: #c8c8c8;
-  --grey-100: #e1e1e1;
-  --grey-50: #f1f1f1;
-  --grey-25: #f8f8f8;
-  --white: #ffffff;
+.landing-page-info-container {
+  display: flex;
+  padding: 6vh 16vw;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  /* Message */
-  --success-text: #097007;
-  --warning-text: #332805;
-  --error-text: #b00606;
+.info-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
 
-  --success-container: #dff7df;
-  --warning-container: #fff4d1;
-  --error-container: #fadede;
+.landing-mc-logo {
+  height: 6vh;
+}
 
-  --success-icon: #097007;
-  --warning-icon: #ffc61e;
-  --error-icon: #ee0000;
+.digital-first-title {
+  font-size: 6vh;
+  color: white;
+  font-weight: 500;
+}
 
-  /* Chart Colors */
-  --chart-color-1: #2baab9;
-  --chart-color-2: #ffa833;
-  --chart-color-3: #79b252;
-  --chart-color-4: #3c80be;
-  --chart-color-5: #fb853c;
-  --chart-color-6: #9455be;
-  --chart-color-7: #c74765;
-  --chart-color-8: #f960a6;
+.df-body {
+  font-size: 2vh;
+  color: white
+}
+
+.digital-first-body-text-container {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.qr-code-image {
+  height: 22vh;
+  border-radius: 10%;
+}
+
+.info-ui-image-container {
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+
+}
+
+.df-caption {
+  font-size: 1.5vh;
+  color: white;
+  font-style: italic;
+}
+
+.app-ui {
+  width: 18vw;
 }

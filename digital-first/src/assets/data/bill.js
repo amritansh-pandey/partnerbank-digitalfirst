@@ -12,7 +12,7 @@ const bills = [
     {
         id: 1,
         billImg: Bill1,
-        name: "Northwest Natural Gas",
+        name: "NW Natural Gas",
         type: "Utilities",
         due: "Due on: 08/03",
         money: "$182.00",

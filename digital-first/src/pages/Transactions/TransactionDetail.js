@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import TopNavigation4 from '../../components/TopNavigation/TopNavigation4'
 import { ChevronLeftIcon } from '../../components/Icons';
 import './style.css'
-import { Link } from 'react-router-dom';
-import transactionsData from '../../assets/data/transaction';
+import RadioButton from '../../components/RadioButton';
+import DisabledButtonMedium from '../../components/Buttons/DisabledButtonMedium';
 
 
-function TransactionDetail() {
+function TransactionDispute() {
 
   const [shouldAnimate, setShouldAnimate] = useState(true);
 
@@ -16,46 +16,117 @@ function TransactionDetail() {
     setShouldAnimate(false);
   }, []);
 
- 
+  const [selectedOption, setSelectedOption] = useState();
+
+  const handleOptionChange = (e) => {
+    setSelectedOption(e.target.value);
+  };
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    const navigationTimeout = setTimeout(() => {
+      navigate("/transaction-dispute2", { replace: true });
+    }, 2000);
+
+    return () => {
+      clearTimeout(navigationTimeout);
+    };
+  }, [navigate]);
+
+
+
   return (
     <div>
       <TopNavigation4
         leftIcon={<ChevronLeftIcon size={24} className="icon-black" />}
-        pageTitle={"Transactions"} />
+        pageTitle={"Dispute transaction"} />
       <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
 
 
+        <div className='dispute-list-heading'>
+          <span className='subheading3'>Select the reason for disputing:</span>
+        </div>
 
+        <div className='dispute-list-container'>
+          <div className='dispute-list-item'>
+            <RadioButton
+              checked={selectedOption === 'option1'}
+              onChange={handleOptionChange}
+              value="option1"
+            />
+            <span className='body1'>I do not recognize this transaction</span>
+          </div>
 
+          <div className='dispute-list-item'>
+            <RadioButton
+              checked={selectedOption === 'option2'}
+              onChange={handleOptionChange}
+              value="option1"
+            />
+            <span className='body1'>I have cancelled the ticket / reservation / order / service</span>
+          </div>
 
-        <div className='card-carousel-container'>
+          <div className='dispute-list-item'>
+            <RadioButton
+              checked={selectedOption === 'option3'}
+              onChange={handleOptionChange}
+              value="option1"
+            />
+            <span className='body1'>I have returned this item</span>
+          </div>
 
-          <div className='carousel-heading-container'>
-            <div>
-           
-            </div>
+          <div className='dispute-list-item'>
+            <RadioButton
+              checked={selectedOption === 'option4'}
+              onChange={handleOptionChange}
+              value="option1"
+            />
+            <span className='body1'>I have been billed more than once for this transaction</span>
+          </div>
 
-            <div>
-              <Link to="/new-home" style={{ textDecoration: "none" }}>
-                <div>
-                  <span className='subheading4'>View analysis</span>
-                </div>
-              </Link>
+          <div className='dispute-list-item'>
+            <RadioButton
+              checked={selectedOption === 'option5'}
+              onChange={handleOptionChange}
+              value="option1"
+            />
+            <span className='body1'>I have not received the ticket(s) /merchandise / goods / services</span>
+          </div>
 
-            </div>
-
+          <div className='dispute-list-item'>
+            <RadioButton
+              checked={selectedOption === 'option5'}
+              onChange={handleOptionChange}
+              value="option1"
+            />
+            <span className='body1'>I have been billed more than expected</span>
           </div>
 
 
+          <div style={{ textAlign: "center", marginTop: "148px" }}>
+
+            <DisabledButtonMedium text={"Continue"} />
+
+          </div>
         </div>
+
+
+
+
+
+
+
 
 
 
       </div>
 
 
+
     </div>
+
+
   )
 }
 
-export default TransactionDetail;
+export default TransactionDispute;

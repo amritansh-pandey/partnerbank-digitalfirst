@@ -45,22 +45,22 @@ function CardSettings() {
             </div>
             <div className='card-setting-sub-item-list'>
               {setting_data.map(item => (
-                 <Link to={item.navigationUrl} >
-                <div key={item.id}>
-                  <div className='card-setting-sub-item-container'>
-                    <div className='card-setting-sub-item-info'>
-                      <img src={item.profileImg} alt={item.name} />
-                      <div className='sub-item-info'>
-                        <span className='body2'>{item.name}</span>
-                        <span className='caption'>{item.detail1}</span>
+                <Link to={item.navigationUrl} >
+                  <div key={item.id}>
+                    <div className='card-setting-sub-item-container'>
+                      <div className='card-setting-sub-item-info'>
+                        <img src={item.profileImg} alt={item.name} />
+                        <div className='sub-item-info'>
+                          <span className='body2'>{item.name}</span>
+                          <span className='caption'>{item.detail1}</span>
+                        </div>
+                      </div>
+                      <div>
+                        <img src={ChevronRight} />
                       </div>
                     </div>
-                    <div>
-                      <img src={ChevronRight} />
-                    </div>
-                  </div>
 
-                </div>
+                  </div>
                 </Link>
               ))}
             </div>
@@ -74,35 +74,36 @@ function CardSettings() {
             <div className='card-setting-sub-item-list'>
 
               <div>
-              <Link to="/change-passcode" style={{ textDecoration: 'none' }}>
-                <div className='card-setting-sub-item-container'>
-                  <div className='card-setting-sub-item-info'>
-                    <img src={ChangePin} alt="Change card PIN" />
+                <Link to="/change-passcode" style={{ textDecoration: 'none' }}>
+                  <div className='card-setting-sub-item-container'>
+                    <div className='card-setting-sub-item-info'>
+                      <img src={ChangePin} alt="Change card PIN" />
+                      <div>
+                        <span className='body2'>Change card PIN</span>
+                      </div>
+                    </div>
                     <div>
-                      <span className='body2'>Change card PIN</span>
+                      <img src={ChevronRight} />
                     </div>
                   </div>
-                  <div>
-                    <img src={ChevronRight} />
-                  </div>
-                </div>
                 </Link>
 
               </div>
-             
+
               <div>
-                <div className='card-setting-sub-item-container'>
-                  <div className='card-setting-sub-item-info'>
-                    <img src={Damage} alt="Change card PIN" />
+                <Link to="/card-damage" style={{ textDecoration: 'none' }}>
+                  <div className='card-setting-sub-item-container'>
+                    <div className='card-setting-sub-item-info'>
+                      <img src={Damage} alt="Change card PIN" />
+                      <div>
+                        <span className='body2'>Damaged or lost card</span>
+                      </div>
+                    </div>
                     <div>
-                      <span className='body2'>Damaged or lost card</span>
+                      <img src={ChevronRight} />
                     </div>
                   </div>
-                  <div>
-                    <img src={ChevronRight} />
-                  </div>
-                </div>
-
+                </Link>
               </div>
 
             </div>
@@ -115,35 +116,37 @@ function CardSettings() {
             </div>
             <div className='card-setting-sub-item-list'>
 
-            <div>
-                <div className='card-setting-sub-item-container'>
-                  <div className='card-setting-sub-item-info'>
-                    <img src={Terms} alt="Change card PIN" />
+              <div>
+                <Link to="/terms&condition" style={{ textDecoration: 'none' }}>
+                  <div className='card-setting-sub-item-container'>
+                    <div className='card-setting-sub-item-info'>
+                      <img src={Terms} alt="Change card PIN" />
+                      <div>
+                        <span className='body2'>Terms and conditions</span>
+                      </div>
+                    </div>
                     <div>
-                      <span className='body2'>Terms and conditions</span>
+                      <img src={ChevronRight} />
                     </div>
                   </div>
-                  <div>
-                    <img src={ChevronRight} />
-                  </div>
-                </div>
-
+                </Link>
               </div>
 
 
               <div>
+              <Link to="/help&support" style={{ textDecoration: 'none' }}>
                 <div className='card-setting-sub-item-container'>
                   <div className='card-setting-sub-item-info'>
                     <img src={Support} alt="Change card PIN" />
                     <div>
-                      <span className='body2'>Partner Bank help and support</span>
+                      <span className='body2'>Bank help and support</span>
                     </div>
                   </div>
                   <div>
                     <img src={ChevronRight} />
                   </div>
                 </div>
-
+</Link>
               </div>
 
             </div>

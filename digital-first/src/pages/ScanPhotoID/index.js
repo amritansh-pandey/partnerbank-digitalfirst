@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
 import TopNavigation1 from '../../components/TopNavigation/TopNavigation1';
 import { ChevronLeftIcon } from '../../components/Icons';
-import data from '../../assets/data/data.json';
-import { importImage } from '../../utils';
+import ScanPhotoIDImage from '../../assets/images/photo-id.png'
 
-const ScanPhotoID = ({ brand, theme, lang = "en" }) => {
+const ScanPhotoID = () => {
     const [shouldAnimate, setShouldAnimate] = useState(true);
   
     useEffect(() => {
@@ -25,7 +24,7 @@ const ScanPhotoID = ({ brand, theme, lang = "en" }) => {
       </div>
                 <div style={{height: "64px"}}></div>
                 <div className='mt-64 getting-started-image-container'>
-                <img src={importImage(brand, theme, "photo-id.png")} alt="photo-id"/>
+                <img src={ScanPhotoIDImage} alt="photo-id"/>
                 
                 </div>
 

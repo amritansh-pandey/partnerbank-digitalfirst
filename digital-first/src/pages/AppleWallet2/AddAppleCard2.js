@@ -12,8 +12,7 @@ function AddAppleCard2() {
   const navigate = useNavigate();
 
   const handleLeftIconClick = () => {
-    // Navigate back to the previous screen
-    navigate(-1);
+    navigate("/account-ready");
   };
   return (
     <div>
@@ -37,22 +36,22 @@ function AddAppleCard2() {
       <div className='apple-waller-info-container'>
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Name</span>
-          <span style={{color: "#c8c8c8"}}>Mira Jansen</span>
+          <span style={{color: "#919191"}}>Mira Jansen</span>
         </div>
 
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Card Number</span>
-          <span style={{color: "#c8c8c8"}}>5412 7512 3412 8832</span>
+          <span style={{color: "#919191"}}>5412 7512 3412 8832</span>
         </div>
 
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Expiry Date</span>
-          <span style={{color: "#c8c8c8"}}>01/29</span>
+          <span style={{color: "#919191"}}>01/29</span>
         </div>
 
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Security Code</span>
-          <span style={{color: "#c8c8c8"}}>123</span>
+          <span style={{color: "#919191"}}>123</span>
         </div>
       </div>
 

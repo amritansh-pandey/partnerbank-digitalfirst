@@ -2,18 +2,13 @@ import React from 'react';
 import './style.css'
 import AppleDone from '../../assets/images/apple-done.svg'
 import WalletIcon from '../../assets/images/wallet-icon.png'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
 function AppleCardAdded() {
 
-  const navigate = useNavigate();
-
-  const handleLeftIconClick = () => {
-    // Navigate back to the previous screen
-    navigate(-1);
-  };
+ 
   return (
     <div>
 
@@ -41,22 +36,22 @@ function AppleCardAdded() {
       <div className='apple-waller-info-container'>
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Name</span>
-          <span style={{ color: "#c8c8c8" }}>Mira Jansen</span>
+          <span style={{ color: "#919191" }}>Mira Jansen</span>
         </div>
 
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Card Number</span>
-          <span style={{ color: "#c8c8c8" }}>5412 7512 3412 8832</span>
+          <span style={{ color: "#919191" }}>5412 7512 3412 8832</span>
         </div>
 
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Expiry Date</span>
-          <span style={{ color: "#c8c8c8" }}>01/29</span>
+          <span style={{ color: "#919191" }}>01/29</span>
         </div>
 
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Security Code</span>
-          <span style={{ color: "#c8c8c8" }}>123</span>
+          <span style={{ color: "#919191" }}>123</span>
         </div>
       </div>
 

@@ -17,6 +17,7 @@ function AddMoneyOTP() {
     const [showAlert, setShowAlert] = useState(true);
     
     const navigate = useNavigate();
+    
     const [shouldAnimate, setShouldAnimate] = useState(true);
 
     useEffect(() => {

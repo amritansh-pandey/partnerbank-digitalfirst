@@ -20,7 +20,7 @@ function AddMoneyCardFilled() {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setShowBottomSheet(true);
-        }, 3000); // Show after 3 seconds
+        }, 3000); 
 
         return () => clearTimeout(timeout);
     }, []);
@@ -122,7 +122,7 @@ function AddMoneyCardFilled() {
                                         <span className='button-text-white'>Save card</span>
                                     </button>
 
-                                    <button className='text-button-medium'>
+                                    <button className='text-button-medium' style={{margin: "0px"}}>
                                         <span className='button-text-primary'>Not now</span>
                                     </button>
 

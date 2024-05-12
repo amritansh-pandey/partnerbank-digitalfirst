@@ -13,9 +13,10 @@ function BottomMenu() {
     <div>
          <div className="menu-bottom-sheet">
         <div className="memu-digital-card-container">
+        <Link to="/manage-card" style={{ textDecoration: "none" }}>
         <div className="account-detail-flex">
 
-        <Link to="/manage-card" style={{ textDecoration: "none" }}>
+     
           <div className="menu-card-detail">
               <div>
             <img src={CardThumbnail} alt="digital-card" className="digital-card-thubnail" />
@@ -25,12 +26,12 @@ function BottomMenu() {
             </div>
             
           </div>
-          </Link>
+        
           <div>
           <img src={ChevRight} alt="chev-right"  />
           </div>
           </div>
-          
+          </Link>
           <div className="menu-heading-container"> 
           <span className='subheading2'>More options</span>
           </div>
@@ -50,7 +51,7 @@ function BottomMenu() {
           </div>
           </div>
           </Link>
-          <Link to="/transactions" style={{ textDecoration: "none" }}>
+          <Link to="/spend-analysis" style={{ textDecoration: "none" }}>
           <div className="account-detail-flex">
           <div className="menu-card-detail">
               <div>

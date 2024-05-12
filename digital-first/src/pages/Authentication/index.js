@@ -21,7 +21,7 @@ function Authentication() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/scan-instructions", { replace: true });
-    }, 6000);
+    }, 5000);
   }, []);
 
 
@@ -32,7 +32,7 @@ function Authentication() {
   
     const timeoutId = setTimeout(() => {
       changeOtpInputClass();
-    }, 3000);
+    }, 2000);
 
  
     return () => clearTimeout(timeoutId);

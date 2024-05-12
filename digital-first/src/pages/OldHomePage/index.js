@@ -31,6 +31,7 @@ const OldHomePage = ({ brand, theme, lang = "en" }) => {
 
 
   return (
+    <div>
     <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
       <div className='digital-card-container'>
         <DigitalCard
@@ -42,6 +43,7 @@ const OldHomePage = ({ brand, theme, lang = "en" }) => {
 
         <div>
           <TopNavigation6
+          leftIcon={""}
             pageLogo={<img src={BankLogo} alt="Page Logo" className='page-logo' />}
             rightIcon={<BellIcon size={24} className="icon-white" />} />
         </div>
@@ -75,6 +77,8 @@ const OldHomePage = ({ brand, theme, lang = "en" }) => {
       </PrimaryBase>
       <BottomNavigationHome />
     </div>
+     <BottomNavigationHome />
+     </div>
   )
 }
 

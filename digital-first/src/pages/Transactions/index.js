@@ -10,9 +10,11 @@ import LeftChevron from "../../assets/images/chevron-left-black.svg"
 import RightChevron from "../../assets/images/chevron-right-black.svg"
 import BottomNavigationDefault from '../../components/BottomNavigation/BottomNavigationDefault';
 import CustomHeightBottomSheet from '../../components/BottomSheet/CustomHeightBottomSheet';
-import Map from "../../assets/images/map2.png"
 import PrimaryFullWidthButton from '../../components/Buttons/PrimaryFullWidthButton';
-import transactionsData from '../../assets/data/transaction';
+import Logo from '../../assets/images/logo.svg';
+import Map from '../../assets/images/map.png'
+import Share from '../../assets/images/share.svg';
+import FullHeightBottomSheet2 from '../../components/BottomSheet/FullHeightBottomSheet/FullHeightBottomSHeet2';
 
 function Transactions(props) {
 
@@ -35,6 +37,8 @@ function Transactions(props) {
   const handleCloseBottomSheet = () => {
     setBottomSheetVisible(false);
   };
+
+
 
   return (
     <div>
@@ -63,7 +67,7 @@ function Transactions(props) {
             </div>
 
             <div>
-              <Link to="/new-home" style={{ textDecoration: "none" }}>
+              <Link to="/spend-analysis2" style={{ textDecoration: "none" }}>
                 <div>
                   <span className='subheading4'>View analysis</span>
                 </div>
@@ -79,44 +83,153 @@ function Transactions(props) {
         <div>
           <TransactionList onTransactionClick={handleTransactionClick} />
         </div>
-        <CustomHeightBottomSheet
+        <FullHeightBottomSheet2
           show={bottomSheetVisible}
           onClose={handleCloseBottomSheet}
         >
 
           {selectedTransaction && (
-            <div>
+            <div className='transaction-popup-info'>
               <div className='transaction-heading-container'>
                 <img src={selectedTransaction.logo} className='transaction-list-logo' alt={`${selectedTransaction.name} logo`} />
                 <span className='title3'>{selectedTransaction.name}</span>
               </div>
               <div className='transaction-popup-info-container'>
-                <div>
-                  <span className='body3'>Amount paid: {selectedTransaction.amount}</span>
+                <div className='transaction-info-list-container'>
+                  <span className='body3'>Order</span>
+                  <span className='body2'>ETHHTGR894144114</span>
                 </div>
-                <div>
-                  <span className='body3'>Date: {selectedTransaction.day}</span>
-                </div>
-                <div>
-                  <span className='body3'>Appears on Statement: ETHHTGR894144114</span>
-                </div>
-              </div>
 
-              <div>
+
+
+                <div className='transaction-info-list-container'>
+                  <span className='body3'>Ordered</span>
+                  <span className='body2'>{selectedTransaction.day}</span>
+                </div>
+
+                <div style={{ height: "1px", backgroundColor: "#EBEBEB" }}></div>
+
+                <div className='transaction-info-list-container'>
+                  <span className='body3'>Item</span>
+                  <span className='body3'>Price</span>
+                </div>
+                <div style={{ height: "1px", backgroundColor: "#EBEBEB" }}></div>
+
+
+                <div className='transaction-info-list-container'>
+                  <div>
+                    <div>
+                      <span className='body1'>{selectedTransaction.product}</span>
+                    </div>
+                    <div>
+                      <span className='caption'>{selectedTransaction.iteminfo}</span>
+                    </div>
+                  </div>
+                  <span className='body1'>{selectedTransaction.itemcost}</span>
+
+                </div>
+
+                <div className='transaction-info-list-container'>
+                  <div>
+                    <div>
+                      <span className='body1'>{selectedTransaction.product2}</span>
+                    </div>
+                    <div>
+                      <span className='caption'>{selectedTransaction.iteminfo2}</span>
+                    </div>
+                  </div>
+                  <span className='body1'>{selectedTransaction.itemcost2}</span>
+
+                </div>
+
+
+                <div className='transaction-info-list-container'>
+                  <div>
+                    <div>
+                      <span className='body1'>{selectedTransaction.product3}</span>
+                    </div>
+                    <div>
+                      <span className='caption'>{selectedTransaction.iteminfo3}</span>
+                    </div>
+                  </div>
+                  <span className='body1'>{selectedTransaction.itemcost3}</span>
+
+                </div>
+
+
+                <div className='transaction-info-list-container'>
+                  <div>
+                    <div>
+                      <span className='body1'>{selectedTransaction.product4}</span>
+                    </div>
+                    <div>
+                      <span className='caption'>{selectedTransaction.iteminfo4}</span>
+                    </div>
+                  </div>
+                  <span className='body1'>{selectedTransaction.itemcost4}</span>
+
+                </div>
+
+                <div style={{ height: "1px", backgroundColor: "#EBEBEB" }}></div>
+
+                <div className='transaction-info-list-container'>
+                  <span className='body3'>Subtotal</span>
+                  <span className='body3'>{selectedTransaction.subtotal}</span>
+                </div>
+                <div className='transaction-info-list-container'>
+                  <span className='body1'>Discount</span>
+                  <span className='body5'>{selectedTransaction.itemdiscount}</span>
+                </div>
+                <div className='transaction-info-list-container'>
+                  <span className='body1'>Tax & Fees</span>
+                  <span className='body1'>{selectedTransaction.tax}</span>
+                </div>
+
+                <div style={{ height: "1px", backgroundColor: "#EBEBEB" }}></div>
+
+                <div className='transaction-info-list-container'>
+                  <span className='body3'>Total</span>
+                  <span className='body3'>{selectedTransaction.amount}</span>
+                </div>
+                <div className='transaction-info-list-container'>
+                  <span className='body3'>Payment method</span>
+                  <div className='card-transaction-detail'>
+                    <span className='body1'>•••• 8832</span>
+                    <img src={Logo} />
+                  </div>
+
+                </div>
+                <div style={{ height: "1px", backgroundColor: "#EBEBEB" }}></div>
+              </div>
+              <div className='logo-address-share-map'>
+                <div className='logo-address-share'>
+                  <div className='logo-address'>
+                    <img src={selectedTransaction.logo} className='merchant-transaction-logo' />
+                    <span className='body3'>{selectedTransaction.address}</span>
+                  </div>
+                  <div>
+                    <img src={Share} />
+                  </div>
+                </div>
                 <img src={Map} className='map-image' />
               </div>
-            
-                <div style={{ marginBottom: "32px" }}  >
-               
-                 
-                    <PrimaryFullWidthButton
-                      text={"View receipt"} />
-              
-                </div>
-        
+              <div className='dispute-container'>
+                <span className='subheading3'>Don't recognize this transaction?</span>
+                <Link to="/transaction-dispute" style={{ textDecoration: "none" }}>
+                  <PrimaryFullWidthButton text={"Dispute"} />
+                </Link>
+              </div>
+
+              <div style={{ marginBottom: "32px" }}  >
+
+
+
+
+              </div>
+
             </div>
           )}
-        </CustomHeightBottomSheet>
+        </FullHeightBottomSheet2>
 
       </div>
 

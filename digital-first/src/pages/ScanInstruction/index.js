@@ -3,8 +3,8 @@ import './style.css';
 import TopNavigation1 from '../../components/TopNavigation/TopNavigation1';
 import { ChevronLeftIcon } from '../../components/Icons';
 import { Link } from 'react-router-dom';
-import data from '../../assets/data/data.json';
-import { importImage } from '../../utils';
+import ScanID  from '../../assets/images/scan-photo.png'
+import VideoScan  from '../../assets/images/record-video.png'
 
 const ScanInstruction = ({ brand, theme, lang = "en" }) => {
 
@@ -31,7 +31,7 @@ const ScanInstruction = ({ brand, theme, lang = "en" }) => {
 
       <div className='intruction-container'>
         <div className='intruction-image-container'>
-        <img src={importImage(brand, theme, "scan-photo.png")} alt="scan-photo" className='photo-id'/>
+        <img src={ScanID} alt="scan-photo" className='photo-id'/>
     
         </div>
         <div className='text-center'>
@@ -41,7 +41,7 @@ const ScanInstruction = ({ brand, theme, lang = "en" }) => {
 
       <div className='intruction-container'>
         <div className='intruction-image-container'>
-        <img src={importImage(brand, theme, "record-video.png")} alt="record-video" className='record-video'/>
+        <img src={VideoScan} alt="record-video" className='record-video'/>
       
         </div>
         <div className='text-center'>

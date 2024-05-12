@@ -1,24 +1,22 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './style.css';
 
-function TopNavigation2({ leftIcon, pageLogo, rightIcon }) {
-  const navigate = useNavigate();
+function TopNavigation6({ leftIcon, pageLogo, rightIcon, leftIconPath }) {
 
-  const handleLeftIconClick = () => {
-    // Navigate back to the previous screen
-    navigate(-1);
-  };
 
   return (
     <div className='top-navigation-container'>
-       <div className='left-icon2' onClick={handleLeftIconClick}>
+       <Link to={leftIconPath}>
+       <div className='left-icon2'>
         {leftIcon}
-      </div>
+        </div>
+      </Link>
+       
       <div className='page-logo'>{pageLogo}</div>
       <div className='right-icon'>{rightIcon}</div>
     </div>
   );
 }
 
-export default TopNavigation2;
+export default TopNavigation6;

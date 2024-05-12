@@ -10,8 +10,7 @@ function AppleWallet() {
   const navigate = useNavigate();
 
   const handleLeftIconClick = () => {
-    // Navigate back to the previous screen
-    navigate(-1);
+    navigate("/manage-card");
   };
 
   return (

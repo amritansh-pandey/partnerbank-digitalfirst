@@ -5,12 +5,12 @@ function CircleProgressBar({ percentage, amount }) {
   return (
     <div className="progress-container">
       <div
-        className="progress-bar"
+        className="progress-bar2"
         role="progressbar"
         aria-valuenow={percentage}
         aria-valuemin="0"
         aria-valuemax="100"
-        style={{ '--percentage': percentage }}
+        style={{ width: `${percentage}%` }}
       ></div>
       <div className="main-progress-text">
         <span className='caption'>Saved amount</span>

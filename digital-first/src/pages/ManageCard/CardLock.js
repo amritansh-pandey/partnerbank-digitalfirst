@@ -52,7 +52,7 @@ const CardLock = ({ brand, theme, lang = "en" }) => {
 
     return (
         <div style={{ overflow: "scroll" }}>
-            <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
+             <div className="page-without-animation">
                 <div className='digital-card-container'>
 
                 </div>
@@ -62,7 +62,8 @@ const CardLock = ({ brand, theme, lang = "en" }) => {
                     <div>
                         <TopNavigation6
                             leftIcon={<img src={WhiteChevronLeft} alt="Page Logo" className='page-logo' />}
-                            pageLogo={<span className='navigation-title'>Digital Debit</span>} />
+                            pageLogo={<span className='navigation-title'>Digital Debit</span>} 
+                            leftIconPath="/old-home"  />
                     </div>
 
                 </GradientBase>
@@ -112,7 +113,7 @@ const CardLock = ({ brand, theme, lang = "en" }) => {
                                 </div>
                                 </Link>
 
-                                <Link to="/manage-card" style={{ textDecoration: "none" }}>
+                                <Link to="/card-unlock-faceid" style={{ textDecoration: "none" }}>
                                 <div className='card-setting-item'>
                                     <div><img src={LockOpen} alt="photo-id" className='' /></div>
                                     <div className='card-setting-item-text'><span className='caption-bold'>Unlock card</span></div>

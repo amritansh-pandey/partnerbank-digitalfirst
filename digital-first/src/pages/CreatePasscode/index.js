@@ -23,7 +23,7 @@ function CreatePasscode() {
     useEffect(() => {
         setTimeout(() => {
             navigate("/confirm-passcode", { replace: true });
-        }, 5000);
+        }, 4000);
     }, []);
 
 
@@ -34,7 +34,7 @@ function CreatePasscode() {
 
         const timeoutId = setTimeout(() => {
             changeOtpInputClass();
-        }, 3000);
+        }, 2000);
 
 
         return () => clearTimeout(timeoutId);

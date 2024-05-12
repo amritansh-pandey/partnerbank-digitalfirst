@@ -1,0 +1,79 @@
+.progress-bar-container {
+    background-color: #F0F0F0;
+    width: 100%;
+    border-radius: 50px; 
+  }
+  
+  .progress-bar {
+    height: 12px;
+    border-radius: 50px; 
+    transition: width 0.3s ease-in-out; 
+  }
+.transaction-categories-title {
+    margin-bottom: 32px;
+}
+  .transaction-categories-container {
+    margin: 16px;
+  }
+
+  .transacton-category-info-container{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 16px 0;
+  }
+
+  .transaction-progressbar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .transaction-name-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .transaction-icon1 {
+    background-color: #2BAAB9;
+    padding: 6px 8px;
+    border-radius: 50%;
+  }
+
+  .transaction-icon2 {
+    background-color: #79B252;
+    padding: 6px 8px;
+    border-radius: 50%;
+  }
+
+  .transaction-icon3 {
+    background-color: #FB853C;
+    padding: 6px 8px;
+    border-radius: 50%;
+  }
+
+  .transaction-icon4 {
+    background-color: #9455BE;
+    padding: 6px 8px;
+    border-radius: 50%;
+  }
+
+  .transaction-icon5 {
+    background-color: #FFA833;
+    padding: 6px 8px;
+    border-radius: 50%;
+  }
+
+  .transaction-icon6 {
+    background-color: #C74765;
+    padding: 6px 8px;
+    border-radius: 50%;
+  }
+
+  .transaction-icon7 {
+    background-color: #F960A6;
+    padding: 6px 8px;
+    border-radius: 50%;
+  }

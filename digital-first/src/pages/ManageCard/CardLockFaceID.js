@@ -16,7 +16,7 @@ import PrimaryBase2 from '../../components/Base/PrimaryBase/PrimaryBase2';
 import Lottie from "lottie-react";
 import FaceIDLogin from "../../assets/animation/FaceID.json";
 
-const CardLockFaceID = ({ brand, theme, lang = "en" }) => {
+const CardLockFaceID = () => {
 
 
 

@@ -62,7 +62,7 @@ function BillPaymentsSettings() {
                 </div>
 
 
-                <div className='bill-info-card-container'>
+                <div className='bill-info-card-container2'>
 
                     <div className='bill-card-container'>
 
@@ -146,7 +146,7 @@ function BillPaymentsSettings() {
                             <div className='bill-setting-icon-text'>
                             <div> <img src={Notes} alt='card-image' /></div>
                             <div>
-                                <div><span className='subheading2'>Pay the full balance</span></div> <div><span className='body1'>$53.60</span></div>
+                                <div><span className='subheading2'>Pay the full balance</span></div> <div><span className='body1'>{selectedItem.money}</span></div>
                             </div>
                             </div>
                             <div>  <img src={ChevronRight} alt='card-image' /></div>

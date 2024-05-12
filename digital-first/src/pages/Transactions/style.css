@@ -26,14 +26,56 @@
 }
 
 .transaction-heading-container {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 24px;
 }
 
 .transaction-popup-info-container {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+
+.transaction-info-list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-transaction-detail {
+  display: flex;
+  gap: 4px;
+}
+
+.dispute-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.dispute-list-heading {
+  margin: 32px 16px 0px;
+}
+
+.dispute-list-item {
+  display: flex;
+margin: 24px 32px;
+
+}
+
+.spend-graph-container {
+  margin: 24px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.spend-graph-image {
+  width: 90%;
 }

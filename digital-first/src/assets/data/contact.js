@@ -15,38 +15,18 @@ import Person13 from '../../assets/images/p13.png'
 
 const contacts = [
 
-// { 
-// //     // "en": [
-        {
-            id: 1,
-            profileImg: Person1,
-            name: "John Doe",
-            nickname: "J. Doe",
-            detail: "john.d@gmail.com",
-            sent: "18/02/24",
-            money: "$173.68",
-            stat: "Pending",
-          },
+
           {
             id: 2,
             profileImg: Person2,
-            name: "Jane Johnson",
-            nickname: "J. Johnson",
-            detail: "j.johnson@gmail.com",
-            sent: "16/02/23",
-            money: "$245.12",
-            stat: "Pending",
-          },
-          {
-            id: 3,
-            profileImg: Person3,
             name: "Alice Williams",
             nickname: "A. Williams",
             detail: "a.williams@gmail.com",
             sent: "09/02/24",
             money: "$98.45",
-            stat: "Pending",
+            stat: "Completed",
           },
+         
           {
             id: 4,
             profileImg: Person4,

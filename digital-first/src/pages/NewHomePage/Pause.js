@@ -20,7 +20,7 @@ function Pause() {
             <div className='pause-content'>
                 <img src={Clock} />
                 <span style={{ fontSize: "24px" }}>Over the next few months</span>
-                <span style={{ fontSize: "16px" }}>Mira is now using her Partner Bank app regularly to shop, pay bills, set goals and more...</span>
+                <span style={{ fontSize: "16px" }}>Mira is now using her Bank app regularly to shop, pay bills, set goals and more...</span>
             </div>
 
 
