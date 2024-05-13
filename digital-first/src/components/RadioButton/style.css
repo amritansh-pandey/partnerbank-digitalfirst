@@ -29,8 +29,8 @@
   }
   
   .radio-container input:checked ~ .radio-custom {
-    background-color: #18a886; 
-    border: 2px solid  #18a886; 
+    background-color: #017F96; 
+    border: 2px solid  #017F96; 
   }
   
   .radio-custom::after {

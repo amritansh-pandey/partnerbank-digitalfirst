@@ -458,16 +458,16 @@ label {
 
 #theme[data-brand="partnerbank"][data-theme="light"] {
   /* Primary */
-  --primary-color: #18a886;
+  --primary-color: #017F96;
 
   /* Primary gradient */
-  --primary-gradient: linear-gradient(180deg, #18a886 0%, #2baab9 100%);
+  --primary-gradient: #017F96;
 
   /* Surface */
   --primary-surface: #ffffff;
   --secondary-surface: #f8f8f8;
   --tertiary-surface: #f1f1f1;
-  --gradient-surface: linear-gradient(180deg, #18a886 0%, #2baab9 100%);
+  --gradient-surface: #017F96;
 
   /* Dividers */
   --divider-on-primary: #e1e1e1;
@@ -478,7 +478,7 @@ label {
 
   /* Icons */
   --icons-grey: #919191;
-  --icons-primary: #18a886;
+  --icons-primary: #017F96;
   --icons-white: #ffffff;
   --icons-black: #141414;
 
@@ -486,7 +486,7 @@ label {
   --primary-text: #212121;
   --secondary-text: #6e6e6e;
   --white-text: #ffffff;
-  --white-button-text: #18a886;
+  --white-button-text: #017F96;
   --button-text: #ffffff;
 
   /* Neutral colors */
