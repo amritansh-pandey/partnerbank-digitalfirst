@@ -59,7 +59,7 @@ function TransactionCategories() {
                 </div>
                 <div className='transaction-progressbar-container'>
                     <div className='transaction-name-amount'>
-                        <span className='body1'>Food & dinningt</span>
+                        <span className='body1'>Food & dining</span>
                         <span className='body4'>$147.14</span>
                     </div>
                     <div className='transaction-progress-bar'>
