@@ -4,7 +4,7 @@ import TopNavigation4 from '../../components/TopNavigation/TopNavigation4';
 import './style.css';
 import { Link } from 'react-router-dom';
 import Lottie from "lottie-react";
-import DoneAnimation from "../../assets/animation/LoadingDone.json";
+import DoneAnimation2 from "../../assets/animation/LoadingDone2.json";
 import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
 
 
@@ -37,8 +37,8 @@ function RewardRedeemed() {
 
 
                 <div style={{ height: "124px" }}></div>
-                <div className='animation-container64'>
-                    <Lottie animationData={DoneAnimation} loop={false} />
+                <div className='animation-container48'>
+                    <Lottie animationData={DoneAnimation2} loop={false} />
                 </div>
                 <div className='reward-redeemed-text-container'>
                     <div>
