@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ee544e7c.css",
-    "main.js": "/static/js/main.6724e660.js",
+    "main.js": "/static/js/main.52fbf4f2.js",
     "static/media/appui.png": "/static/media/appui.e237c0e0a8076a2f2366.png",
     "static/media/sonic.gif": "/static/media/sonic.a24b52bd876e6dbee81d.gif",
     "static/media/digital-card.png": "/static/media/digital-card.4065e3c54843fe074bcd.png",
@@ -153,10 +153,10 @@
     "static/media/chevron-up-white.svg": "/static/media/chevron-up-white.4f4d387a1b25d2236c2799ad65851b88.svg",
     "static/media/mc-circle.svg": "/static/media/mc-circle.1b4d41d01a7fab3040ea7a6bf7a19e6f.svg",
     "main.ee544e7c.css.map": "/static/css/main.ee544e7c.css.map",
-    "main.6724e660.js.map": "/static/js/main.6724e660.js.map"
+    "main.52fbf4f2.js.map": "/static/js/main.52fbf4f2.js.map"
   },
   "entrypoints": [
     "static/css/main.ee544e7c.css",
-    "static/js/main.6724e660.js"
+    "static/js/main.52fbf4f2.js"
   ]
 }

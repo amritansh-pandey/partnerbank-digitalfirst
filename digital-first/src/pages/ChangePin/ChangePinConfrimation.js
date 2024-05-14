@@ -5,7 +5,7 @@ import Lottie from "lottie-react";
 import DoneAnimation from "../../assets/animation/LoadingDone.json";
 import { useNavigate } from 'react-router-dom';
 
-const ChangePinConfrimation = ({ brand, theme, lang = "en" }) => {
+const ChangePinConfrimation = () => {
 
     const [titleText, setTitleText] = useState('You’re almost there');
   

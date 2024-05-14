@@ -5,7 +5,7 @@ import './style.css';
 import { useParams, useNavigate } from 'react-router-dom';
 import bills from '../../assets/data/bill';
 import Lottie from "lottie-react";
-import DoneAnimation from "../../assets/animation/LoadingDone.json";
+import DoneAnimation2 from "../../assets/animation/LoadingDone2.json";
 import PrimaryButtonMedium from '../../components/Buttons/PrimaryButtonMedium';
 function BillAdded() {
     const [isChecked, setIsChecked] = useState(false);
@@ -41,15 +41,15 @@ function BillAdded() {
 
 
                 <div style={{ height: "124px" }}></div>
-                <div className='animation-container64'>
-                    <Lottie animationData={DoneAnimation} loop={false} />
+                <div className='animation-container48'>
+                    <Lottie animationData={DoneAnimation2} loop={false} />
                 </div>
                 <div className='biller-added-text-container'>
                     <div>
                         <span className='title1'>Biller added</span>
                     </div>
                     <div>
-                        <span className='Body1'>{selectedItem.name}</span>
+                        <span className='subheading3'>{selectedItem.name}</span>
                     </div>
 
                 </div>
