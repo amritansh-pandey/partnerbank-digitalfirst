@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import TextButtonMedium from "../../components/Buttons/TextButtonMedium";
 import WhiteButtonMedium from "../../components/Buttons/WhiteButtonMedium";
 import "./style.css";
-import Logo from '../../assets/images/bank-logo.png'
+import Logo from '../../assets/images/bank-logo2.png'
 
 
 function Splash({brand, theme}) {

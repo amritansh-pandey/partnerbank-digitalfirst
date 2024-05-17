@@ -11,7 +11,6 @@ import MonthlySpendCard from '../../components/Cards/MonthlySpend';
 import WorldCreditCard from '../../components/Cards/WorldCreditCard';
 import Rewardpoints from '../../components/Cards/Rewardpoints';
 import { Link } from 'react-router-dom';
-import data from '../../assets/data/data.json';
 import { importImage } from '../../utils';
 import BottomNavigationHome from '../../components/BottomNavigation/BottomNavigationHome';
 
