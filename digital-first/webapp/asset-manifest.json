@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d1bfd9c3.css",
-    "main.js": "/static/js/main.369793f4.js",
+    "main.css": "/static/css/main.8cf83a65.css",
+    "main.js": "/static/js/main.dca224db.js",
     "static/media/appui.png": "/static/media/appui.9b3bba7611044ad0a214.png",
     "static/media/sonic.gif": "/static/media/sonic.a24b52bd876e6dbee81d.gif",
     "static/media/bank-logo2.png": "/static/media/bank-logo2.7b32de74acc48568aa10.png",
@@ -152,11 +152,11 @@
     "static/media/chevron-left-white.svg": "/static/media/chevron-left-white.b30250d04512937c00dcb183236dac1d.svg",
     "static/media/chevron-up-white.svg": "/static/media/chevron-up-white.4f4d387a1b25d2236c2799ad65851b88.svg",
     "static/media/mc-circle.svg": "/static/media/mc-circle.1b4d41d01a7fab3040ea7a6bf7a19e6f.svg",
-    "main.d1bfd9c3.css.map": "/static/css/main.d1bfd9c3.css.map",
-    "main.369793f4.js.map": "/static/js/main.369793f4.js.map"
+    "main.8cf83a65.css.map": "/static/css/main.8cf83a65.css.map",
+    "main.dca224db.js.map": "/static/js/main.dca224db.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1bfd9c3.css",
-    "static/js/main.369793f4.js"
+    "static/css/main.8cf83a65.css",
+    "static/js/main.dca224db.js"
   ]
 }
