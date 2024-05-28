@@ -56,7 +56,7 @@ function C2PDone() {
 
 
                     <div className='c2p-title-container'>
-                        <span>Your card is ready for smarter, faster checkoutsn</span>
+                        <span>Your card is ready for smarter, faster checkout</span>
                     </div>
 
                     <div className='c2p-white-bg-container'>
