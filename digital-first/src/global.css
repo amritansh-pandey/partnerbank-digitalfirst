@@ -273,11 +273,10 @@ label {
 }
 
 .animation-container48 {
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   margin: 0 auto;
 }
-
 
 .animation-container128 {
   height: 240px;
@@ -462,19 +461,38 @@ label {
   height: 32px;
   width: 32px;
 }
+/* .icon-white {
+  stroke: var(--icons-white);
+}
+
+.icon-primary {
+  stroke: var(--icons-primary);
+}
+
+.icon-grey {
+  stroke: var(--icons-grey);
+}
+
+.icon-black {
+  stroke: var(--icons-black);
+} */
+
+/* Dynamic Color Variables */
+
+/* PartnerBank - Light mode */
 
 #theme[data-brand="partnerbank"][data-theme="light"] {
   /* Primary */
-  --primary-color: #017F96;
+  --primary-color: #0d1f7e;
 
   /* Primary gradient */
-  --primary-gradient: #017F96;
+  --primary-gradient: #0d1f7e;
 
   /* Surface */
   --primary-surface: #ffffff;
   --secondary-surface: #f8f8f8;
   --tertiary-surface: #f1f1f1;
-  --gradient-surface: #017F96;
+  --gradient-surface: #0d1f7e;
 
   /* Dividers */
   --divider-on-primary: #e1e1e1;
@@ -485,7 +503,7 @@ label {
 
   /* Icons */
   --icons-grey: #919191;
-  --icons-primary: #017F96;
+  --icons-primary: #0d1f7e;
   --icons-white: #ffffff;
   --icons-black: #141414;
 
@@ -493,7 +511,7 @@ label {
   --primary-text: #212121;
   --secondary-text: #6e6e6e;
   --white-text: #ffffff;
-  --white-button-text: #017F96;
+  --white-button-text: #0d1f7e;
   --button-text: #ffffff;
 
   /* Neutral colors */
@@ -536,13 +554,24 @@ label {
   --chart-color-8: #f960a6;
 }
 
+.primary-button {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+  background-color: transparent;
+  text-align: center;
+  color: #cf4500;
+  font-size: 16px;
+  font-weight: 600;
+}
 
 .mweb-container {
   display: flex;
   flex-direction: column;
   padding: 24px;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   gap: 16px;
   background-color: #141414;
   color: white;
@@ -557,6 +586,15 @@ label {
   line-height: 21px;
   margin: 16px;
 }
+
+.mweb-info-container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  line-height: 21px;
+}
+
+
 
 .share-icon-container {
   display: flex;
@@ -588,9 +626,14 @@ label {
 .landingpage-main-container {
   background-color: #141414;
   height: 100vh;
-  overflow: hidden;
 }
 
+.mc-circle-container {
+  position: absolute;
+  top: 4vh;
+  right: 0;
+  z-index: 0;
+}
 
 .landing-page-info-container {
   display: flex;
