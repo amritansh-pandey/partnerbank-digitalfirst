@@ -536,24 +536,13 @@ label {
   --chart-color-8: #f960a6;
 }
 
-.primary-button {
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  white-space: nowrap;
-  background-color: transparent;
-  text-align: center;
-  color: #cf4500;
-  font-size: 16px;
-  font-weight: 600;
-}
 
 .mweb-container {
   display: flex;
   flex-direction: column;
   padding: 24px;
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
   gap: 16px;
   background-color: #141414;
   color: white;
@@ -598,16 +587,10 @@ label {
 
 .landingpage-main-container {
   background-color: #141414;
-  height: 100%;
-  overflow: scroll;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.mc-circle-container {
-  position: absolute;
-  top: 4vh;
-  right: 0;
-  z-index: 0;
-}
 
 .landing-page-info-container {
   display: flex;
