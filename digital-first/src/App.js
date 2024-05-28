@@ -34,11 +34,11 @@ function App() {
           <div className='mastercard-logo'>
             <img src={MCLogo} className='mastercard-logo' />
           </div>
-          <div className='mweb-info-container'>
-            <span className='title4'>Digital First</span>
+          <div className='mweb-info-container2'>
+            <span className='title1'>Digital First</span>
             <div style={{ height: "0px" }}></div>
             <div style={{width: "60%" , margin: "0 auto"}}>
-            <span className='title3'>Experience the app on your phone</span>
+            <span className='subheading3'>Experience the app on your phone</span>
           </div></div>
           <div style={{ height: "1px", backgroundColor: "#C8C8C8" }}></div>
           <div className='mweb-info-container'>
