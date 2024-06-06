@@ -24,7 +24,7 @@ const setting_data = [
         profileImg: Wireless,
         name: "Contactless payments",
         detail1: "Transaction limit not set",
-        detail2: "Transaction Limit: $50",
+        detail2: "Transaction Limit: €50",
         title: "Manage transaction limits for contactless payments",
         navigationUrl: "/contactless-settings"
     },
@@ -32,8 +32,8 @@ const setting_data = [
         id: 3,
         profileImg: OnlineShoping,
         name: "Online shopping",
-        detail1: "Transaction Limit: $2,000",
-        detail2: "Transaction Limit: $1,000",
+        detail1: "Transaction Limit: €2,000",
+        detail2: "Transaction Limit: €1,000",
         title: "Manage transaction limits for online shopping",
         navigationUrl: "/online-shopping-setting"
     },
@@ -41,8 +41,8 @@ const setting_data = [
         id: 4,
         profileImg: Store,
         name: "In-store shopping",
-        detail1: "Transaction Limit: $1,800",
-        detail2: "Transaction Limit: $2,000",
+        detail1: "Transaction Limit: €1,800",
+        detail2: "Transaction Limit: €2,000",
         title: "Manage transaction limits for In-store shopping",
         navigationUrl: "/instore-shopping-setting"
     },
@@ -50,8 +50,8 @@ const setting_data = [
         id: 5,
         profileImg: International,
         name: "International payments",
-        detail1: "Transaction Limit: $1,000",
-        detail2: "Transaction Limit: $1,500",
+        detail1: "Transaction Limit: €1,000",
+        detail2: "Transaction Limit: €1,500",
         title: "Manage transaction limits for international payments",
         navigationUrl: "/international-setting"
     },
@@ -59,8 +59,8 @@ const setting_data = [
         id: 6,
         profileImg: ATMCash,
         name: "ATM withdrawal",
-        detail1: "Withdrawal Limit: $1,000",
-        detail2: "Withdrawal Limit: $1,500",
+        detail1: "Withdrawal Limit: €1,000",
+        detail2: "Withdrawal Limit: €1,500",
         title: "Manage limits for ATM withdrawal per transaction",
         navigationUrl: "/atm-settings"
     },

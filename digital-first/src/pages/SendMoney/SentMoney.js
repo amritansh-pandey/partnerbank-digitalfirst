@@ -98,7 +98,7 @@ function SentMoney() {
         </div>
         <div className='contact-amount-info'>
           <div>
-            <span className='subheading3'>$173.68</span>
+            <span className='subheading3'>€173.68</span>
           </div>
           <div style={{textAlign: "right"}}>
             <span style={{ fontSize: '12px', color: "#FB853C" }}>Pending</span>
@@ -126,7 +126,7 @@ function SentMoney() {
         </div>
         <div className='contact-amount-info'>
           <div>
-            <span className='subheading3'>$245.12</span>
+            <span className='subheading3'>€245.12</span>
           </div>
           <div style={{textAlign: "right"}}>
             <span style={{ fontSize: '12px', color: "#FB853C" }}>Pending</span>

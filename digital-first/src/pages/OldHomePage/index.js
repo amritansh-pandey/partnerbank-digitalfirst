@@ -4,7 +4,7 @@ import GradientBase from '../../components/Base/GradientBase';
 import PrimaryBase from '../../components/Base/PrimaryBase';
 import TopNavigation6 from '../../components/TopNavigation/TopNavigation6'
 import { BellIcon } from '../../components/Icons';
-import BankLogo from '../../assets/images/bank-logo.png'
+import BankLogo from '../../assets/images/logo.png'
 import DigitalCard from '../../components/DigitalCard';
 import CircelNavigation from '../../components/CircleNavigations/Index';
 import MonthlySpendCard from '../../components/Cards/MonthlySpend';
@@ -35,7 +35,7 @@ const OldHomePage = ({ brand, theme, lang = "en" }) => {
     <div className={`page-container ${shouldAnimate ? 'slide-enter' : ''}`}>
       <div className='digital-card-container'>
         <DigitalCard
-        amount="$2,640.55"
+        amount="€2,640.55"
         />
       </div>
 
@@ -54,7 +54,7 @@ const OldHomePage = ({ brand, theme, lang = "en" }) => {
           <CircelNavigation />
           <Link to="/transactions" style={{ textDecoration: "none" }}>
           <MonthlySpendCard
-          money="$817.44"
+          money="€817.44"
           />
           </Link>
 

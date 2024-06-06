@@ -84,7 +84,7 @@ const HideCardFaceID = ({ brand, theme, lang = "en" }) => {
                                     <span className='caption'>Available balance</span>
                                 </div>
                                 <div>
-                                    <span className='title1'>$2,640.55</span>
+                                    <span className='title1'>€2,640.55</span>
                                 </div>
                             </div>
 

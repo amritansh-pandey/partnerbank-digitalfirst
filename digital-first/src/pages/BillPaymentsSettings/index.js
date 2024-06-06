@@ -112,7 +112,7 @@ function BillPaymentsSettings() {
                             <span className='subheading3'>Credit card payments are accepted, but…</span>
                         </div>
                         <div>
-                            <span className='body1'>This biller charges a convenience fee of $2.50 for credit card payments.</span>
+                            <span className='body1'>This biller charges a convenience fee of €2.50 for credit card payments.</span>
                         </div>
                     </div>
 
@@ -136,7 +136,7 @@ function BillPaymentsSettings() {
                             <div className='bill-setting-icon-text'>
                             <div> <img src={Credit} alt='card-image' /></div>
                             <div>
-                                <div><span className='subheading2'>Digital Debit Card</span></div> <div><span className='body1'>•••• 8832</span></div>
+                                <div><span className='subheading2'>Digital Debit Card</span></div> <div><span className='body1'>•••• 1234</span></div>
                             </div>
                             </div>
                             <div>  <img src={ChevronRight} alt='card-image' /></div>

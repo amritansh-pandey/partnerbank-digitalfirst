@@ -22,7 +22,7 @@ const ScanInstruction = ({ brand, theme, lang = "en" }) => {
       <TopNavigation1 leftIcon={<ChevronLeftIcon size={24} className="icon-black" />} />
 
       <div className='title-container1 text-center'>
-        <span className='title3'>Let’s confirm it’s really you</span>
+        <span className='title3'>Let's confirm it's really you</span>
       </div>
 
       <div className='sub-title-container1 text-center'>

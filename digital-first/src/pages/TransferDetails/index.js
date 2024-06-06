@@ -50,7 +50,7 @@ const TransferDetails = () => {
                                 <TextField label={"Category"} value="Gift" />
                             </div>
                             <div className='mt-32'>
-                                <TextField label={"Transfer from"} value="Digital Debit Card •••• 8832" />
+                                <TextField label={"Transfer from"} value="Digital Debit Card •••• 1234" />
                             </div>
                         </div>
                     </div>

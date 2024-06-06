@@ -51,8 +51,8 @@ function ContactlessPayments() {
 
                         {changeSettingAmountContainer ? (
                             <div className='setting-amount-container-value'>
-                                <span className='body1'>Set per transaction limit ($0 - $250)</span>
-                                <span className='title1'>$50.00</span>
+                                <span className='body1'>Set per transaction limit (€0 - €250)</span>
+                                <span className='title1'>€50.00</span>
                                 <Link to="/card-setting-done" style={{ textDecoration: "none" }}>
                                 <button className='primary-button-medium'>
                                     <span className='button-text-white'>Save</span>
@@ -61,8 +61,8 @@ function ContactlessPayments() {
                             </div>
                         ) : (
                             <div className='setting-amount-container'>
-                                <span className='body1'>Set per transaction limit ($0 - $250)</span>
-                                <span className='title1'>$0.00</span>
+                                <span className='body1'>Set per transaction limit (€0 - €250)</span>
+                                <span className='title1'>€0.00</span>
                                 <button className='disabled-button-medium'>
                                     <span className='button-text-white'>Save</span>
                                 </button>

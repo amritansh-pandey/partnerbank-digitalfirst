@@ -52,7 +52,7 @@ function EnterDetails() {
                     <div className='mt-32'>
                         <TextField
                             label={"Email"}
-                            value={"mira.jansen@email.com"} />
+                            value={"Alexis.jansen@email.com"} />
                     </div>
 
 

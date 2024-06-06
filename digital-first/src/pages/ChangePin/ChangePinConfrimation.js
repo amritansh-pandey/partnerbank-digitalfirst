@@ -32,7 +32,7 @@ const ChangePinConfrimation = () => {
                 <div style={{ height: "24px" }}></div>
                 <div className='hiding_body_container'>
                   
-                        <span className="body1">PIN for your card ending 8832 has been changed successfully</span>
+                        <span className="body1">PIN for your card ending 1234 has been changed successfully</span>
                  
                 </div>
             </div>

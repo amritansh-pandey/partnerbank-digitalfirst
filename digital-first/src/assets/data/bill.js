@@ -15,8 +15,8 @@ const bills = [
         name: "NW Natural Gas",
         type: "Utilities",
         due: "Due on: 08/03",
-        money: "$182.00",
-        billid: "NW12345678910",
+        money: "€182.00",
+        billid: "NW12123478910",
         stat: Math.random() < 0.5 ? "Pending" : "Completed",
     },
     {
@@ -25,8 +25,8 @@ const bills = [
         name: "The Tribune",
         type: "Subscription",
         due: "Due on: 08/03",
-        money: "$20.50",
-        billid: "TT12345678910",
+        money: "€20.50",
+        billid: "TT12123478910",
         stat: Math.random() < 0.5 ? "Pending" : "Completed",
     },
     {
@@ -35,8 +35,8 @@ const bills = [
         name: "Muse",
         type: "Streaming",
         due: "Due on: 08/03",
-        money: "$4.55",
-        billid: "MU12345678910",
+        money: "€4.55",
+        billid: "MU12123478910",
         stat: Math.random() < 0.5 ? "Pending" : "Completed",
     },
     {
@@ -45,8 +45,8 @@ const bills = [
         name: "Keystone Mutual",
         type: "Insurance",
         due: "Due on: 08/03",
-        money: "$249.99",
-        billid: "KM12345678910",
+        money: "€249.99",
+        billid: "KM12123478910",
         stat: Math.random() < 0.5 ? "Pending" : "Completed",
     },
     {
@@ -55,8 +55,8 @@ const bills = [
         name: "Bank Partners",
         type: "Banking",
         due: "Due on: 08/03",
-        money: "$99.50",
-        billid: "BP12345678910",
+        money: "€99.50",
+        billid: "BP12123478910",
         stat: Math.random() < 0.5 ? "Pending" : "Completed",
     }
 

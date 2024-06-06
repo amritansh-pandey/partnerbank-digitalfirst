@@ -22,10 +22,10 @@ function TransactionCategories() {
                 <div className='transaction-progressbar-container'>
                     <div className='transaction-name-amount'>
                         <span className='body1'>Entertainment</span>
-                        <span className='body4'>$73.56</span>
+                        <span className='body4'>€73.56</span>
                     </div>
                     <div className='transaction-progress-bar'>
-                        <TransactionProgressBar  progress={9} color="#2BAAB9" />
+                        <TransactionProgressBar  progress={9} color="#E60028" />
                     </div>
                     <div className='transaction-name-amount'>
                         <span className='caption'>2 Transactions (9%)</span>
@@ -41,7 +41,7 @@ function TransactionCategories() {
                 <div className='transaction-progressbar-container'>
                     <div className='transaction-name-amount'>
                         <span className='body1'>Grocery</span>
-                        <span className='body4'>$122.61</span>
+                        <span className='body4'>€122.61</span>
                     </div>
                     <div className='transaction-progress-bar'>
                         <TransactionProgressBar  progress={15} color="#79B252" />
@@ -60,7 +60,7 @@ function TransactionCategories() {
                 <div className='transaction-progressbar-container'>
                     <div className='transaction-name-amount'>
                         <span className='body1'>Food & dining</span>
-                        <span className='body4'>$147.14</span>
+                        <span className='body4'>€147.14</span>
                     </div>
                     <div className='transaction-progress-bar'>
                         <TransactionProgressBar  progress={18} color="#FB853C" />
@@ -79,7 +79,7 @@ function TransactionCategories() {
                 <div className='transaction-progressbar-container'>
                     <div className='transaction-name-amount'>
                         <span className='body1'>Shopping</span>
-                        <span className='body4'>$188.026</span>
+                        <span className='body4'>€188.026</span>
                     </div>
                     <div className='transaction-progress-bar'>
                         <TransactionProgressBar  progress={23} color="#9455BE" />
@@ -98,7 +98,7 @@ function TransactionCategories() {
                 <div className='transaction-progressbar-container'>
                     <div className='transaction-name-amount'>
                         <span className='body1'>Travel</span>
-                        <span className='body4'>$40.88</span>
+                        <span className='body4'>€40.88</span>
                     </div>
                     <div className='transaction-progress-bar'>
                         <TransactionProgressBar  progress={5} color="#FFA833" />
@@ -117,7 +117,7 @@ function TransactionCategories() {
                 <div className='transaction-progressbar-container'>
                     <div className='transaction-name-amount'>
                         <span className='body1'>Utility & Bills</span>
-                        <span className='body4'>$163.49</span>
+                        <span className='body4'>€163.49</span>
                     </div>
                     <div className='transaction-progress-bar'>
                         <TransactionProgressBar  progress={20} color="#C74765" />
@@ -136,7 +136,7 @@ function TransactionCategories() {
                 <div className='transaction-progressbar-container'>
                     <div className='transaction-name-amount'>
                         <span className='body1'>Others</span>
-                        <span className='body4'>$81.74</span>
+                        <span className='body4'>€81.74</span>
                     </div>
                     <div className='transaction-progress-bar'>
                         <TransactionProgressBar  progress={10} color="#F960A6" />

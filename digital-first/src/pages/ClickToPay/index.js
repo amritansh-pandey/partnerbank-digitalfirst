@@ -69,7 +69,7 @@ function C2PInfo() {
                             <div> <img src={DigtalCard} className='c2p-digital-card' alt='c2p' /></div>
                             <div className='digital-card-info-container'>
                                 <span className='subheading2'>Debit Card</span>
-                                <span className='caption'>•••• 8832</span>
+                                <span className='caption'>•••• 1234</span>
                             </div>
                         </div>
 
@@ -81,9 +81,9 @@ function C2PInfo() {
                             </div>
 
                             <div className='billing-details-container'>
-                                <span>Mira Jansen</span>
+                                <span>Alexis Jansen</span>
                                 <span>123 Main St.</span>
-                                <span>New York, NY 10001</span>
+                                <span>Paris, NY 10001</span>
                             </div>
 
                             <div>
@@ -110,7 +110,7 @@ function C2PInfo() {
                             <div className='contact-details-container'>
                                 <div className='c2p-email-container'>
                                     <span className='caption'>Email</span>
-                                    <span>mira.jansen@mail.com</span>
+                                    <span>Alexis.jansen@mail.com</span>
                                 </div>
 
                                 <div className='c2p-phone-container'>

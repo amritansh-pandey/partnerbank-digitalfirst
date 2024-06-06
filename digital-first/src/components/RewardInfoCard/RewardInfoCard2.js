@@ -31,7 +31,7 @@ function RewardInfoCard2() {
                             <span className='caption'>Cash equivalent</span>
                         </div>
                         <div>
-                            <span className='subheading3'>$40.46</span>
+                            <span className='subheading3'>€40.46</span>
                         </div>
                     </div>
                 </div>

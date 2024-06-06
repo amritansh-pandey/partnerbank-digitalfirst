@@ -204,7 +204,7 @@ function PayBillAdded() {
 
 
                     <div className='bill-amount'>
-                      <span className='subheading2'>$87.50</span>
+                      <span className='subheading2'>€87.50</span>
                     </div>
 
                     <div className='bill-date'>

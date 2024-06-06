@@ -44,7 +44,7 @@ const NewHomePage = ({ brand, theme, lang = "en" }) => {
 
 
           <NewDigitalCard
-            amount="$0.00"
+            amount="€0.00"
           />
         </div>
 
@@ -70,7 +70,7 @@ const NewHomePage = ({ brand, theme, lang = "en" }) => {
 
 
             <MonthlySpendCard
-              money="$0.00"
+              money="€0.00"
             />
 
 

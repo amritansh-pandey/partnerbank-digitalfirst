@@ -53,14 +53,14 @@ function AddMoneyCardFilled() {
                     <div className='mt-32'>
                         <TextField
                             label={"Name"}
-                            value={"Mira Jansen"} />
+                            value={"Alexis Jansen"} />
                     </div>
 
 
                     <div className='mt-32' style={{ position: "relative" }}>
                         <TextField
                             label={"Card number*"}
-                            value={"5873 3873 6836 3456"}
+                            value={"5873 3873 6836 1234"}
                         />
 
                         <div className='text-field-icon'>

@@ -28,7 +28,7 @@ function BillInfoCard() {
                             <span className='Body1'>Cash equivalent</span>
                         </div>
                         <div>
-                            <span className='caption'>$80.96</span>
+                            <span className='caption'>€80.96</span>
                         </div>
                     </div>
                 </div>

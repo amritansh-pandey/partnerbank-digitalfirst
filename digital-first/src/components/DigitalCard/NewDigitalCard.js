@@ -29,7 +29,7 @@ function NewDigitalCard({amount}) {
                             <img src={MCLogo} alt="logo" className="logo16" />
                         </div>
                         <div className="balance_text_container">
-                            <span className="white_card_text">Digital Debit •••• 8832</span>
+                            <span className="white_card_text">Digital Debit •••• 1234</span>
                         </div>
                       
                     </div>

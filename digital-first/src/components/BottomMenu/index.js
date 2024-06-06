@@ -22,7 +22,7 @@ function BottomMenu() {
             <img src={CardThumbnail} alt="digital-card" className="digital-card-thubnail" />
             </div>
             <div>
-              <span className="body1">Digital Debit •••• 8832</span>
+              <span className="body1">Digital Debit •••• 1234</span>
             </div>
             
           </div>

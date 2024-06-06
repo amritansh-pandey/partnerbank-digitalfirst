@@ -56,10 +56,10 @@ function AddBiller() {
                     <div>
                         <div className='form-container'>
                             <div>
-                                <TextField label={"Full Name*"} value="Mira Jansen" />
+                                <TextField label={"Full Name*"} value="Alexis Jansen" />
                             </div>
                             <div className='mt-32'>
-                                <TextField label={"Billing account number*"} value="NW12345678910" />
+                                <TextField label={"Billing account number*"} value="NW12123478910" />
                             </div>
                             <div className='check-box-bill-term-container'>
                                 <div>

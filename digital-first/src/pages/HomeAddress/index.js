@@ -36,7 +36,7 @@ function HomeAddress() {
                         <div className='mt-32'>
                             <TextField
                                 label={"First Name"}
-                                value={"Mira"} />
+                                value={"Alexis"} />
                         </div>
 
 
@@ -50,27 +50,27 @@ function HomeAddress() {
                         <div className='mt-32'>
                             <TextField
                                 label={"Address line 1"}
-                                value={"123 Main street"} />
+                                value={"789 Prestige Place"} />
                         </div>
 
 
                         <div className='mt-32'>
                             <TextField
                                 label={"Address line 2"}
-                                value={""} />
+                                value={"Metropolitan Square"} />
                           
                         </div>
 
                         <div className='mt-32'>
                             <TextField
                                 label={"City"}
-                                value={"New York"} />
+                                value={"Paris"} />
                         </div>
 
                         <div className='mt-32'>
                             <TextField
-                                label={"State"}
-                                value={"NY"} />
+                                label={"State (optional)"}
+                                value={""} />
                         </div>
 
                         <div className='mt-32'>

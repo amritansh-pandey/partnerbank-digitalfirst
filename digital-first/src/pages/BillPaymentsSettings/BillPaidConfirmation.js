@@ -61,7 +61,7 @@ function BillPaidConfirmation() {
                             <span className='caption'>Paid from</span>
                             <div className='logo-card-info-container'>
                                 <img src={Logo} />
-                                <span className='bill-period-text'>Digital Debit Card •••• 8832</span>
+                                <span className='bill-period-text'>Digital Debit Card •••• 1234</span>
                             </div>
                         </div>
                         <div style={{ height: "1px", backgroundColor: "#F0F0F0" }}></div>

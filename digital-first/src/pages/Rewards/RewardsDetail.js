@@ -37,7 +37,7 @@ function RewardsDetails() {
                             <span className='body1'>03/04/24</span>
                         </div>
                         <div>
-                            <span className='title3'>$40.50</span>
+                            <span className='title3'>€40.50</span>
                         </div>
                     </div>
 
@@ -71,7 +71,7 @@ function RewardsDetails() {
                         <div className='logo-address-share'>
                             <div className='logo-address'>
                                 <img src={GoodFood} className='merchant-transaction-logo' />
-                                <span className='body3'>25 Madison Ave, New York, NY 10010, USA</span>
+                                <span className='body3'>25 Madison Ave, Paris, NY 10010, USA</span>
                             </div>
                             <div>
                                 <img src={Share} />

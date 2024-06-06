@@ -53,7 +53,7 @@ function AddMoneyCard() {
                     <div className='mt-32'>
                         <TextField
                             label={"Name"}
-                            value={"Mira Jansen"} />
+                            value={"Alexis Jansen"} />
                     </div>
 
 

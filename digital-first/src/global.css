@@ -464,17 +464,16 @@ label {
 
 #theme[data-brand="partnerbank"][data-theme="light"] {
   /* Primary */
-  --primary-color: #18a886;
+  --primary-color: #E60028;
 
   /* Primary gradient */
-  --primary-gradient: linear-gradient(180deg, #18a886 0%, #2baab9 100%);
+  --primary-gradient: linear-gradient(180deg, #E60028 0%, #E60028 100%);
 
   /* Surface */
   --primary-surface: #ffffff;
   --secondary-surface: #f8f8f8;
   --tertiary-surface: #f1f1f1;
-  --gradient-surface: linear-gradient(180deg, #18a886 0%, #2baab9 100%);
-
+  --gradient-surface: #ffffff;
   /* Dividers */
   --divider-on-primary: #e1e1e1;
   --divider-on-secondary: #919191;
@@ -484,7 +483,7 @@ label {
 
   /* Icons */
   --icons-grey: #919191;
-  --icons-primary: #18a886;
+  --icons-primary: #E60028;
   --icons-white: #ffffff;
   --icons-black: #141414;
 
@@ -492,7 +491,7 @@ label {
   --primary-text: #212121;
   --secondary-text: #6e6e6e;
   --white-text: #ffffff;
-  --white-button-text: #18a886;
+  --white-button-text: #E60028;
   --button-text: #ffffff;
 
   /* Neutral colors */
@@ -525,7 +524,7 @@ label {
   --error-icon: #ee0000;
 
   /* Chart Colors */
-  --chart-color-1: #2baab9;
+  --chart-color-1: #E60028;
   --chart-color-2: #ffa833;
   --chart-color-3: #79b252;
   --chart-color-4: #3c80be;
@@ -675,3 +674,11 @@ label {
 .app-ui {
   width: 18vw;
 }
+
+.mastercard-logo {
+ margin: 0 auto;
+}
+
+.mastercard-logo-image {
+  width: 50%;
+ }

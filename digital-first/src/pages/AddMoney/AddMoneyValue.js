@@ -34,9 +34,9 @@ function AddMoneyValue() {
                 </div>
 
                 <div className='add-money-value-container'>
-                    <span className='headline2'>$1,000.00</span>
+                    <span className='headline2'>€1,000.00</span>
                     <div className='add-money-value-subtext'>
-                        <span>Available balance: $1628.34</span>
+                        <span>Available balance: €1628.34</span>
                     </div>
                 </div>
 
@@ -44,7 +44,7 @@ function AddMoneyValue() {
                 <div className='card-detail-container'>
                     <div className='add-money-card-detail'>
                         <div> <img src={CardActive} alt="photo-id" className='' /></div>
-                        <div><span className='body1'>Mastercard - 3456</span></div>
+                        <div><span className='body1'>Mastercard - 1234</span></div>
                     </div>
 
 

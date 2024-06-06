@@ -54,7 +54,7 @@ function AddMoneyDone() {
 
                 <div className='confirmation-info-container'>
                     <div>
-                        <span className='title1'>$1,000.00</span>
+                        <span className='title1'>€1,000.00</span>
                     </div>
                     <div style={{width: "70%"}}>
                         <span className='body1'>This money should appear in your account instantly</span>

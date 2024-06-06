@@ -1,7 +1,7 @@
 import React from 'react'
 import MCCircle from '../src/assets/images/mc-circle.svg'
 import AppUI from '../src/assets/images/appui.png'
-import MCLogo from '../src/assets/images/mc-logo.svg'
+import MCLogo from '../src/assets/images/sg-logo.png'
 import QRCode from '../src/assets/images/qrcode.png'
 
 function LandingPage() {

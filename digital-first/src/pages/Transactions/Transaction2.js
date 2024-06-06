@@ -196,7 +196,7 @@ function Transaction2(props) {
                 <div className='transaction-info-list-container'>
                   <span className='body3'>Payment method</span>
                   <div className='card-transaction-detail'>
-                    <span className='body1'>•••• 8832</span>
+                    <span className='body1'>•••• 1234</span>
                     <img src={Logo} />
                   </div>
 

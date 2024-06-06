@@ -58,7 +58,7 @@ const CardDamage = () => {
                     <div className='sustainable-cards-pop-up' style={{ marginBottom: "48px" }} >
 
                         <div>
-                            <span className='body1'>Are you sure you want to cancel your physical card ending in 8832? This cannot be undone.</span>
+                            <span className='body1'>Are you sure you want to cancel your physical card ending in 1234? This cannot be undone.</span>
                         </div>
                         <div>
                             <Link to="/card-damage-face-id" style={{ textDecoration: 'none' }}>
@@ -77,7 +77,7 @@ const CardDamage = () => {
                 </CustomHeightBottomSheet>
 
                 <div onClick={handleOpenBottomSheet}>
-                    <PrimaryButtonMedium text={"Cancel card ending in 8832"} />
+                    <PrimaryButtonMedium text={"Cancel card ending in 1234"} />
                 </div>
             </div>
         </div>

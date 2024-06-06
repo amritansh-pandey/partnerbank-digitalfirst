@@ -30,7 +30,7 @@ function RedeemPointsList2() {
                     </div>
                     <div>
                         <div className='purchase-amount-container'>
-                            <span className='subheading3'>$40.50</span>
+                            <span className='subheading3'>€40.50</span>
                         </div>
                         <div>
                         <span className='caption-green'>Redeemed 4,500 points</span>
@@ -58,7 +58,7 @@ function RedeemPointsList2() {
                 </div>
                 <div>
                     <div className='purchase-amount-container'>
-                        <span className='subheading3'>$52.48</span>
+                        <span className='subheading3'>€52.48</span>
                     </div>
                     <div>
                         <span className='caption-green'>Redeemed 5,248 points</span>
@@ -85,7 +85,7 @@ function RedeemPointsList2() {
                 </div>
                 <div>
                     <div className='purchase-amount-container'>
-                        <span className='subheading3'>$80.00</span>
+                        <span className='subheading3'>€80.00</span>
                     </div>
                     <div>
                         <span className='caption-green'>Redeemed 8,000 points</span>
@@ -112,7 +112,7 @@ function RedeemPointsList2() {
                 </div>
                 <div>
                     <div className='purchase-amount-container'>
-                        <span className='subheading3'>$55.00</span>
+                        <span className='subheading3'>€55.00</span>
                     </div>
                     <div>
                         <span className='caption-green'>Redeemed 5,500 points</span>
@@ -139,7 +139,7 @@ function RedeemPointsList2() {
                 </div>
                 <div>
                     <div className='purchase-amount-container'>
-                        <span className='subheading3'>$165.00</span>
+                        <span className='subheading3'>€165.00</span>
                     </div>
                     <div>
                         <span className='caption-green'>Redeemed 16,500 points</span>
@@ -166,7 +166,7 @@ function RedeemPointsList2() {
                 </div>
                 <div>
                     <div className='purchase-amount-container'>
-                        <span className='subheading3'>$45.00</span>
+                        <span className='subheading3'>€45.00</span>
                     </div>
                     <div>
                         <span className='caption-green'>Redeemed 4,500 points</span>
@@ -193,7 +193,7 @@ function RedeemPointsList2() {
                 </div>
                 <div>
                     <div className='purchase-amount-container'>
-                        <span className='subheading3'>$100.00</span>
+                        <span className='subheading3'>€100.00</span>
                     </div>
                     <div>
                         <span className='caption-green'>Redeemed 10,000 points</span>
@@ -220,7 +220,7 @@ function RedeemPointsList2() {
                 </div>
                 <div>
                     <div className='purchase-amount-container'>
-                        <span className='subheading3'>$75.00</span>
+                        <span className='subheading3'>€75.00</span>
                     </div>
                     <div>
                         <span className='caption-green'>Redeemed 7,500 points</span>
@@ -247,7 +247,7 @@ function RedeemPointsList2() {
                 </div>
                 <div>
                     <div className='purchase-amount-container'>
-                        <span className='subheading3'>$95.00</span>
+                        <span className='subheading3'>€95.00</span>
                     </div>
                     <div>
                         <span className='caption-green'>Redeemed 9,500 points</span>

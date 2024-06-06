@@ -36,12 +36,12 @@ function AppleCardAdded2() {
       <div className='apple-waller-info-container'>
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Name</span>
-          <span style={{ color: "#919191" }}>Mira Jansen</span>
+          <span style={{ color: "#919191" }}>Alexis Jansen</span>
         </div>
 
         <div className='apple-waller-info-item'>
           <span className='subheading2'>Card Number</span>
-          <span style={{ color: "#919191" }}>5412 7512 3412 8832</span>
+          <span style={{ color: "#919191" }}>5412 7512 3412 1234</span>
         </div>
 
         <div className='apple-waller-info-item'>

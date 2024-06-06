@@ -122,7 +122,7 @@ function PayBillAdded2() {
 
 
                     <div className='bill-amount'>
-                      <span className='subheading2'>$144.55</span>
+                      <span className='subheading2'>€144.55</span>
                     </div>
 
                     <div className='bill-date'>
@@ -162,7 +162,7 @@ function PayBillAdded2() {
 
 
                     <div className='bill-amount'>
-                      <span className='subheading2'>$87.50</span>
+                      <span className='subheading2'>€87.50</span>
                     </div>
 
                     <div className='bill-date'>
@@ -204,7 +204,7 @@ function PayBillAdded2() {
 
 
                     <div className='bill-amount'>
-                      <span className='subheading2'>$87.50</span>
+                      <span className='subheading2'>€87.50</span>
                     </div>
 
                     <div className='bill-date'>

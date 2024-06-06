@@ -29,7 +29,7 @@ function AddMoneyOTPFilled() {
                         <span className='subheading2'>2-step verification</span>
                     </div>
                     <div>
-                        <span className='body1'>Enter the 6-digit code sent to the phone number ending in <span className='subheading2'>3456</span></span>
+                        <span className='body1'>Enter the 6-digit code sent to the phone number ending in <span className='subheading2'>1234</span></span>
                     </div>
 
                     <div className='otp-number-container'>
@@ -50,9 +50,9 @@ function AddMoneyOTPFilled() {
 
                 <div className='otp-payment-info'>
                     <div><span>Merchant: PartnerBank</span></div>
-                    <div><span>Amount: $1,000</span></div>
+                    <div><span>Amount: €1,000</span></div>
                     <div><span>Date: 02/05/2024</span></div>
-                    <div><span>Card number: •••• •••• •••• 3456</span></div>
+                    <div><span>Card number: •••• •••• •••• 1234</span></div>
                 </div>
                 <div>
 

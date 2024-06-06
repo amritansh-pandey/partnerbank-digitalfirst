@@ -56,7 +56,7 @@ function C2PDone() {
 
 
                     <div className='c2p-title-container'>
-                        <span>Your card is ready for smarter, faster checkoutsn</span>
+                        <span>Your card is ready for smarter, faster checkout</span>
                     </div>
 
                     <div className='c2p-white-bg-container'>
@@ -65,7 +65,7 @@ function C2PDone() {
                             <div> <img src={DigtalCard} className='c2p-digital-card' alt='c2p' /></div>
                             <div className='digital-card-info-container'>
                                 <span className='subheading2'>Debit Card</span>
-                                <span className='caption'>•••• 8832</span>
+                                <span className='caption'>•••• 1234</span>
                             </div>
                         </div>
                     </div>

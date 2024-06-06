@@ -97,14 +97,14 @@ function NewGoal2() {
                         <div className='mt-32'>
                         <TextField
                             label={"How much do you want to save?"}
-                            value={"$1200"}
+                            value={"€1200"}
                         />
                         </div>
 
                         <div className='mt-32'>
                             <TextField
                                 label={"Starting goal contribution"}
-                                value={"$100"} />
+                                value={"€100"} />
                         </div>
 
 

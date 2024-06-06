@@ -65,7 +65,7 @@ function AmountToSend() {
                                 <span className='subheading3'>Pay with</span>
                             </div>
                             <div>
-                                <span className='caption'>Digital Debit Card •••• 8832</span>
+                                <span className='caption'>Digital Debit Card •••• 1234</span>
                             </div>
                         </div>
                         <div>

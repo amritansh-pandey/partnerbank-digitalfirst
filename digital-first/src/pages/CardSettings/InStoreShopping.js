@@ -48,8 +48,8 @@ function InStoreShopping() {
 
                         {changeSettingAmountContainer ? (
                             <div className='setting-amount-container-value'>
-                                <span className='body1'>Set per transaction limit ($0 - $2,000)</span>
-                                <span className='title1'>$2,000.00</span>
+                                <span className='body1'>Set per transaction limit (€0 - €2,000)</span>
+                                <span className='title1'>€2,000.00</span>
                                 <Link to="/card-setting-done" style={{ textDecoration: "none" }}>
                                 <button className='primary-button-medium'>
                                     <span className='button-text-white'>Save</span>
@@ -58,8 +58,8 @@ function InStoreShopping() {
                             </div>
                         ) : (
                             <div className='setting-amount-container'>
-                                <span className='body1'>Set per transaction limit ($0 - $2,000)</span>
-                                <span className='title1'>$1,800.00</span>
+                                <span className='body1'>Set per transaction limit (€0 - €2,000)</span>
+                                <span className='title1'>€1,800.00</span>
                                 <button className='disabled-button-medium'>
                                     <span className='button-text-white'>Save</span>
                                 </button>

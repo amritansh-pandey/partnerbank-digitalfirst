@@ -23,7 +23,7 @@ const contacts = [
             nickname: "A. Williams",
             detail: "a.williams@gmail.com",
             sent: "09/02/24",
-            money: "$98.45",
+            money: "€98.45",
             stat: "Completed",
           },
          
@@ -34,7 +34,7 @@ const contacts = [
             nickname: "B. Miller",
             detail: "b.miller@gmail.com",
             sent: "02/02/24",
-            money: "$134.20",
+            money: "€134.20",
             stat: "Completed",
           },
           {
@@ -44,7 +44,7 @@ const contacts = [
             nickname: "E. Wilson",
             detail: "e.wilson@gmail.com",
             sent: "28/01/24",
-            money: "$89.75",
+            money: "€89.75",
             stat: "Completed",
           },
           {
@@ -54,7 +54,7 @@ const contacts = [
             nickname: "C. Taylor",
             detail: "c.taylor@gmail.com",
             sent: "24/01/24",
-            money: "$200.30",
+            money: "€200.30",
             stat: "Completed",
           },
           {
@@ -64,7 +64,7 @@ const contacts = [
             nickname: "E. Chang",
             detail: "e.change@gmail.com",
             sent: "20/01/24",
-            money: "$176.90",
+            money: "€176.90",
             stat:"Completed",
           },
           {
@@ -74,7 +74,7 @@ const contacts = [
             nickname: "C. Martin",
             detail: "c.martin@gmail.com",
             sent: "18/01/24",
-            money: "$112.40",
+            money: "€112.40",
             stat: "Completed",
           },
           {
@@ -84,7 +84,7 @@ const contacts = [
             nickname: "G. Thompson",
             detail: "g.thompson@gmail.com",
             sent: "15/01/24",
-            money: "$156.75",
+            money: "€156.75",
             stat:"Completed",
           },
           {
@@ -94,7 +94,7 @@ const contacts = [
             nickname: "H. Clark",
             detail: "h.clark@gmail.com",
             sent: "11/01/24",
-            money: "$189.60",
+            money: "€189.60",
             stat: "Completed",
           },
           {
@@ -104,7 +104,7 @@ const contacts = [
             nickname: "I. Turner",
             detail: "i.turner@gmail.com",
             sent: "09/01/24",
-            money: "$134.90",
+            money: "€134.90",
             stat: "Completed",
           },
           {
@@ -114,7 +114,7 @@ const contacts = [
             nickname: "J. Adams",
             detail: "j.adams@gmail.com",
             sent: "07/01/24",
-            money: "$87.20",
+            money: "€87.20",
             stat:"Completed",
           },
           {
@@ -124,7 +124,7 @@ const contacts = [
             nickname: "S. Johnson",
             detail: "s.johnson@gmail.com",
             sent: "05/01/24",
-            money: "$123.56",
+            money: "€123.56",
             stat: "Completed",
           },
 

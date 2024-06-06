@@ -11,7 +11,7 @@ const DonutChart = () => {
     datasets: [{
       data: [73.56, 122.61, 147.14, 188.02, 40.88, 163.49, 81.74],
       backgroundColor: [
-        '#2BAAB9',
+        '#E60028',
         '#79B252',
         '#FB853C',
         '#9455BE',

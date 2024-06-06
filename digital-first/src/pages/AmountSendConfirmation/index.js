@@ -48,7 +48,7 @@ function AmountSendConfirmation() {
                         <span>You can expect the funds to arrive same day if accepted before 5pm.</span>
                     </div>
                     <div>
-                        <span>Your reference is: 12345678</span>
+                        <span>Your reference is: 12123478</span>
                     </div>
                 </div>
                 <div className='mt-32' style={{ textAlign: "center" }}>

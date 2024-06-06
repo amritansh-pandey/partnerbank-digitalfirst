@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import "./global.css";
 import AppRoutes from './AppRoutes';
 import LandingPage from './LandingPage';
-import MCLogo from './assets/images/mc-logo.svg';
+import MCLogo from './assets/images/sg-logo.png';
 import ShareIcon from './assets/images/ios-share.svg';
 import ArrowDown from './assets/images/arrow-down.svg';
 
@@ -32,7 +32,7 @@ function App() {
       {!isDesktop && showAddToHomeScreen ? (
         <div className='mweb-container'>
           <div className='mastercard-logo'>
-            <img src={MCLogo} className='mastercard-logo' />
+            <img src={MCLogo} className='mastercard-logo-image' />
           </div>
           <div className='mweb-info-container2'>
             <span className='title1'>Digital First</span>

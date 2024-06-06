@@ -15,7 +15,7 @@ import SuccessAlert from '../../components/Alerts/SuccessAlert';
 function SpendingAlerts() {
     const [showBottomSheet, setShowBottomSheet] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
-    const [transactionAmount, setTransactionAmount] = useState("$0.00");
+    const [transactionAmount, setTransactionAmount] = useState("€0.00");
     const [shouldAnimate, setShouldAnimate] = useState(true);
     const [contentChanged, setContentChanged] = useState(false);
     const [showSuccessAlert, setShowSuccessAlert] = useState(false);
@@ -30,7 +30,7 @@ function SpendingAlerts() {
 
     useEffect(() => {
         const timeout = setTimeout(() => {
-            setTransactionAmount("$50.00");
+            setTransactionAmount("€50.00");
         }, 3000);
 
         return () => clearTimeout(timeout);
@@ -93,7 +93,7 @@ function SpendingAlerts() {
                                     </div>
                                 </div>
                                 <div className='transaction-info'>
-                                        <span className='caption'>Transactions higher than: $50.00</span>
+                                        <span className='caption'>Transactions higher than: €50.00</span>
                                         <img src={Edit} alt="Edit icon" />
                                     </div>
                             </div>
@@ -175,7 +175,7 @@ function SpendingAlerts() {
                         <div>
                             <div className='save-card-button-container'>
                                 <button
-                                    className={transactionAmount !== "$0.00" ? 'primary-button-medium' : 'disabled-button-medium'}
+                                    className={transactionAmount !== "€0.00" ? 'primary-button-medium' : 'disabled-button-medium'}
                                     onClick={handleSave}
                                 >
                                     <span className='button-text-white'>Save</span>

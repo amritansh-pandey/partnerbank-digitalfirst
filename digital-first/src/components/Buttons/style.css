@@ -47,8 +47,10 @@
   border-radius: 50px;
   height: 48px;
   margin: 16px auto;
-  background: var(--white);
+  background: #E9041E;
   text-align: center;
+  color: white;
+  font-weight: 600;
 }
 
 .primary-button-medium {
@@ -66,6 +68,11 @@
 
 .button-text-white {
   color: var(--white);
+  font-weight: 600;
+}
+
+.button-text-red {
+  color: #E9041E;
   font-weight: 600;
 }
 
@@ -121,4 +128,19 @@
     background: var(--primary-gradient);
     text-align: center;
     width: 100%;
+}
+
+.text-button-medium-red-text {
+  border: none;
+  padding: 0 32px;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+  border-radius: 50px;
+  height: 48px;
+  margin: 16px auto;
+  background: transparent;
+  text-align: center;
+  color: #E9041E;
+  font-weight: 600;
 }
